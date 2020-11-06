@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="LaArtistica.Registro">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Nombre"/>
+            <Entry Placeholder="Digite su nombre" x:Name="nombre"/>
+            <Label Text="Apellidos"/>
+            <Entry Placeholder="Digite su apellido" x:Name="apellido"/>
+            <Label Text="Correo Electronico"/>
+            <Entry Placeholder="Digite su correo electronico" x:Name="correo"/>
+            <Button Text="Registrarse" x:Name="btnRegistro"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

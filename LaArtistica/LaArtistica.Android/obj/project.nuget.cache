@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Bub7KbLJe4TolAg3aFp4YgfvJvX02hrRwGXDvvFmw1rYvuKGz89ZNe1wz7Fee2MDHq0alYEAqYBSfQBQ++4Luw==",
+  "dgSpecHash": "JYtm5FfsQ20Wx5N/A1cEYHHLI+MyLJ1yilNmCzVyzb+dbKynE0xJ9RRa5FR8tZ2hMeV3w868pduRPnW1a7YnhQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Robert\\Documents\\Proyecto C#\\LaArtistica\\LaArtistica\\LaArtistica.Android\\LaArtistica.Android.csproj",
+  "projectFilePath": "C:\\Users\\PC\\Desktop\\U\\Lenguaje C#\\LaArtistica\\LaArtistica\\LaArtistica.Android\\LaArtistica.Android.csproj",
   "expectedPackageFiles": [
     "C:\\Microsoft\\Xamarin\\NuGet\\xamarin.android.arch.core.common\\1.1.1.3\\xamarin.android.arch.core.common.1.1.1.3.nupkg.sha512",
     "C:\\Microsoft\\Xamarin\\NuGet\\xamarin.android.arch.core.runtime\\1.1.1.3\\xamarin.android.arch.core.runtime.1.1.1.3.nupkg.sha512",

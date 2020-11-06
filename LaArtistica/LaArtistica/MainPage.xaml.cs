@@ -13,6 +13,38 @@ namespace LaArtistica
         public MainPage()
         {
             InitializeComponent();
+            btnIngresar.Clicked += BtnIngresar_Clicked;
+            btnRegristrarse.Clicked += BtnRegristrarse_Clicked;
         }
+
+        private void BtnRegristrarse_Clicked(object sender, EventArgs e)
+        {
+            ((NavigationPage)this.Parent).PushAsync(new Registro());
+        }
+
+        private void BtnIngresar_Clicked(object sender, EventArgs e)
+        {
+            if(username.Text != null && password.Text != null)
+            {
+                if(username.Text.Length > 0 && password.Text.Length > 0)
+                {
+                    Console.WriteLine("Ingreso");
+                }
+                else
+                {
+                    llenarAlert();
+                }
+            }
+            else
+            {
+                llenarAlert();
+            }
+        }
+
+        private async Task llenarAlert()
+        {
+            await DisplayAlert("La Artistica", "Por favor ingrese su usuario y contraseña", "Aceptar");
+        }
+
     }
 }
