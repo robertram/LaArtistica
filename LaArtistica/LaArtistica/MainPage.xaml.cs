@@ -29,6 +29,10 @@ namespace LaArtistica
                 if(username.Text.Length > 0 && password.Text.Length > 0)
                 {
                     Console.WriteLine("Ingreso");
+                    if ((username.Text == "admin") && (password.Text == "123"))
+                    {
+                        Application.Current.MainPage = new Productos();
+                    }
                 }
                 else
                 {
