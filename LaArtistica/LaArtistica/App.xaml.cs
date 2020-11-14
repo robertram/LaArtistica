@@ -1,4 +1,5 @@
 ﻿using System;
+using LaArtistica.Views.AccessView;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -10,7 +11,7 @@ namespace LaArtistica
         {
             InitializeComponent();
 
-            MainPage = new MainPage();
+            MainPage = new RegisterPage();
         }
 
         protected override void OnStart()

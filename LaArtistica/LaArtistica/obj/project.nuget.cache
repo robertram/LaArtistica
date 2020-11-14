@@ -1,14 +1,14 @@
 {
   "version": 2,
-  "dgSpecHash": "FwJmuF6pQNgVyPwI/Fb+sNH2G64SLA01lUEV5PPR1g3FkVY4puPIdTAG68UZ63mE+MxudwfD7+wHoFITRotYcw==",
+  "dgSpecHash": "UICeFDOVW2EE2p8IUVKcKNJSPsk6sY/EUGGLpOXxwnigNUGGnhQZehr36BemWW4DiMqZPmNFFogAirKX+8GsIA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Robert\\Documents\\Proyecto C#\\LaArtistica\\LaArtistica\\LaArtistica\\LaArtistica.csproj",
+  "projectFilePath": "/Users/Valeria/GitHub/LaArtistica/LaArtistica/LaArtistica/LaArtistica.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\Robert\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
-    "C:\\Users\\Robert\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
-    "C:\\Users\\Robert\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
-    "C:\\Microsoft\\Xamarin\\NuGet\\xamarin.essentials\\1.5.3.2\\xamarin.essentials.1.5.3.2.nupkg.sha512",
-    "C:\\Microsoft\\Xamarin\\NuGet\\xamarin.forms\\4.6.0.1141\\xamarin.forms.4.6.0.1141.nupkg.sha512"
+    "/usr/local/share/dotnet/sdk/NuGetFallbackFolder/microsoft.netcore.platforms/1.1.0/microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "/usr/local/share/dotnet/sdk/NuGetFallbackFolder/netstandard.library/2.0.3/netstandard.library.2.0.3.nupkg.sha512",
+    "/Users/Valeria/.nuget/packages/system.numerics.vectors/4.5.0/system.numerics.vectors.4.5.0.nupkg.sha512",
+    "/Users/Valeria/.nuget/packages/xamarin.essentials/1.5.3.2/xamarin.essentials.1.5.3.2.nupkg.sha512",
+    "/Users/Valeria/.nuget/packages/xamarin.forms/4.6.0.1141/xamarin.forms.4.6.0.1141.nupkg.sha512"
   ],
   "logs": []
 }

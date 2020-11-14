@@ -1,0 +1,16 @@
+/Users/Valeria/GitHub/LaArtistica/LaArtistica/LaArtistica/obj/Debug/netstandard2.0/App.xaml.g.cs
+/Users/Valeria/GitHub/LaArtistica/LaArtistica/LaArtistica/obj/Debug/netstandard2.0/MainPage.xaml.g.cs
+/Users/Valeria/GitHub/LaArtistica/LaArtistica/LaArtistica/obj/Debug/netstandard2.0/Views/AccessView/LoginPage.xaml.g.cs
+/Users/Valeria/GitHub/LaArtistica/LaArtistica/LaArtistica/obj/Debug/netstandard2.0/Views/AccessView/RegisterPage.xaml.g.cs
+/Users/Valeria/GitHub/LaArtistica/LaArtistica/LaArtistica/obj/Debug/netstandard2.0/LaArtistica.AssemblyInfoInputs.cache
+/Users/Valeria/GitHub/LaArtistica/LaArtistica/LaArtistica/obj/Debug/netstandard2.0/LaArtistica.AssemblyInfo.cs
+/Users/Valeria/GitHub/LaArtistica/LaArtistica/LaArtistica/obj/Debug/netstandard2.0/LaArtistica.csproj.CoreCompileInputs.cache
+/Users/Valeria/GitHub/LaArtistica/LaArtistica/LaArtistica/obj/Debug/netstandard2.0/LaArtistica.dll
+/Users/Valeria/GitHub/LaArtistica/LaArtistica/LaArtistica/obj/Debug/netstandard2.0/ref/LaArtistica.dll
+/Users/Valeria/GitHub/LaArtistica/LaArtistica/LaArtistica/obj/Debug/netstandard2.0/LaArtistica.pdb
+/Users/Valeria/GitHub/LaArtistica/LaArtistica/LaArtistica/bin/Debug/netstandard2.0/LaArtistica.deps.json
+/Users/Valeria/GitHub/LaArtistica/LaArtistica/LaArtistica/bin/Debug/netstandard2.0/LaArtistica.dll
+/Users/Valeria/GitHub/LaArtistica/LaArtistica/LaArtistica/bin/Debug/netstandard2.0/ref/LaArtistica.dll
+/Users/Valeria/GitHub/LaArtistica/LaArtistica/LaArtistica/bin/Debug/netstandard2.0/LaArtistica.pdb
+/Users/Valeria/GitHub/LaArtistica/LaArtistica/LaArtistica/obj/Debug/netstandard2.0/LaArtistica.csprojAssemblyReference.cache
+/Users/Valeria/GitHub/LaArtistica/LaArtistica/LaArtistica/obj/Debug/netstandard2.0/XamlC.stamp
