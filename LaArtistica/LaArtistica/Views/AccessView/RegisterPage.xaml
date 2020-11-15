@@ -119,35 +119,31 @@
                      FontSize="13"
                      TextColor="Black"/>
 
-                 <Frame
+                    <Frame
                      HasShadow="True"
                      Padding="6"
-                     CornerRadius="7"
-                     >
-                  
-                <Entry
+                     CornerRadius="7">
+                        
+                        <Entry
                     Placeholder="18"
                     MaxLength="2"
                     FontSize="15"
                     Keyboard="Numeric"
                     Text="{Binding AgeTxt, Mode=TwoWay}"
-                    IsEnabled="{Binding IsEnabledTxt}"
-                    />
-                    
-                       </Frame>
-                 </StackLayout>
+                    IsEnabled="{Binding IsEnabledTxt}" />
+                    </Frame>
+
+                </StackLayout>
 
 
 
             </StackLayout>
 
              <StackLayout Grid.Row="7" HorizontalOptions="Center">
-                   <ActivityIndicator
+                <ActivityIndicator
                        IsRunning="{Binding IsRunningTxt, Mode=TwoWay}"
                        IsVisible="{Binding IsVisibleTxt, Mode=TwoWay}"
-                       Color="Black"
-
-                      ></ActivityIndicator>
+                       Color="Black"/>
             </StackLayout>
 
 
@@ -164,14 +160,12 @@
                             HeightRequest="50"
                             CornerRadius="7"
                             Command="{Binding RegisterCommand}"
-                            IsEnabled="{Binding IsEnabledTxt, Mode=TwoWay}"
-                    />
+                            IsEnabled="{Binding IsEnabledTxt, Mode=TwoWay}"/>
                   <Button
                             Text="Already have an acount? Log in"
                             TextColor="Black"
                             FontSize="11"
-                            BackgroundColor="White"
-                            />
+                            BackgroundColor="White"/>
                 
             </StackLayout>
 
