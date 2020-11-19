@@ -931,23 +931,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Dannia\\.nuget\\packages\\": {},
+    "C:\\Users\\Robert\\.nuget\\packages\\": {},
     "C:\\Microsoft\\Xamarin\\NuGet\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Dannia\\Documents\\GitHub\\LaArtistica\\LaArtistica\\LaArtistica\\LaArtistica.csproj",
+      "projectUniqueName": "C:\\Users\\Robert\\Desktop\\LaArtistica\\LaArtistica\\LaArtistica\\LaArtistica.csproj",
       "projectName": "LaArtistica",
-      "projectPath": "C:\\Users\\Dannia\\Documents\\GitHub\\LaArtistica\\LaArtistica\\LaArtistica\\LaArtistica.csproj",
-      "packagesPath": "C:\\Users\\Dannia\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Dannia\\Documents\\GitHub\\LaArtistica\\LaArtistica\\LaArtistica\\obj\\",
+      "projectPath": "C:\\Users\\Robert\\Desktop\\LaArtistica\\LaArtistica\\LaArtistica\\LaArtistica.csproj",
+      "packagesPath": "C:\\Users\\Robert\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Robert\\Desktop\\LaArtistica\\LaArtistica\\LaArtistica\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\"
       ],
       "configFilePaths": [
-        "C:\\Users\\Dannia\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Robert\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],

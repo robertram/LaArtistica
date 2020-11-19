@@ -37,23 +37,23 @@ namespace LaArtistica.Models
         private UserRepository(String dbPath)
         {
             con = new SQLiteConnection(dbPath);
-            con.CreateTable<User>();
+            con.CreateTable<User>(); 
+            con.CreateTable<Products>();
         }
 
         public string EstadoMensaje;
         // Insert
-        public int AddNewUser(string username, string email, string password)
+        public int AddNewUser(string email, string password)
         {
             int result = 0;
             try
             {
                 result = con.Insert(new User
                 {
-                    Username = username,
                     Email = email,
                     Password = password
                 });
-                EstadoMensaje = string.Format("Cantidad filas : {0}", result);
+                EstadoMensaje = "Insertado";
             }
             catch (Exception e)
             { EstadoMensaje = e.Message; }
@@ -71,5 +71,46 @@ namespace LaArtistica.Models
             }
             return Enumerable.Empty<User>();
         }
+
+
+        //-----------------------------------------------
+
+        
+
+        // Insert
+        public int AddNewProduct(string nombre, string stock, string precio, string garantiaMeses, string imagen)
+        {
+            int result = 0;
+            try
+            {
+                result = con.Insert(new Products
+                {
+                    Nombre = nombre,
+                    Stock = stock,
+                    Precio = precio,
+                    GarantiaMeses = garantiaMeses,
+                    Imagen = imagen
+                });
+                EstadoMensaje = "Insertado";
+            }
+
+
+            catch (Exception e)
+            { EstadoMensaje = e.Message; }
+            return result;
+        }
+        public IEnumerable<Products> GetAllProducts()
+        {
+            try
+            {
+                return con.Table<Products>();
+            }
+            catch (Exception e)
+            {
+                EstadoMensaje = e.Message;
+            }
+            return Enumerable.Empty<Products>();
+        }
+
     }
 }
