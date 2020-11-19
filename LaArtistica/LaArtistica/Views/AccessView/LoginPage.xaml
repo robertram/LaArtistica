@@ -61,6 +61,7 @@
                     Text="{Binding EmailTxt, Mode=TwoWay}"
                     IsEnabled="{Binding IsEnabledTxt}"
                     FontSize="{OnPlatform Android=15,iOS=16}"
+                    x:Name="txtEmail"
                     />
                      </Frame>   
             </StackLayout>
@@ -100,6 +101,7 @@
                     FontSize="15"
                     Text="{Binding PasswordTxt, Mode=TwoWay}"
                     IsEnabled="{Binding IsEnabledTxt}"
+                    x:Name="txtPassword"
                     />
                     
                  </Frame>
@@ -130,6 +132,7 @@
                             HeightRequest="50"
                             Command="{Binding LoginCommand}"
                             IsEnabled="{Binding IsEnabledTxt}" 
+                            x:Name="btnLogIn"
                     />
                   <Button
                             Text="Don't have an account? Sign Up"
@@ -138,6 +141,7 @@
                             FontSize="11"
                             BackgroundColor="White"
                             IsEnabled="{Binding IsEnabledTxt}"
+                            x:Name="btnSingUp"
                             />
               
             </StackLayout>

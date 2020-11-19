@@ -29,3 +29,19 @@ C:\Users\Dannia\Documents\GitHub\LaArtistica\LaArtistica\LaArtistica\obj\Debug\n
 C:\Users\Dannia\Documents\GitHub\LaArtistica\LaArtistica\LaArtistica\obj\Debug\netstandard2.0\LaArtistica.dll
 C:\Users\Dannia\Documents\GitHub\LaArtistica\LaArtistica\LaArtistica\obj\Debug\netstandard2.0\ref\LaArtistica.dll
 C:\Users\Dannia\Documents\GitHub\LaArtistica\LaArtistica\LaArtistica\obj\Debug\netstandard2.0\LaArtistica.pdb
+C:\Users\PC\Desktop\U\Lenguaje C#\LaArtistica\LaArtistica\LaArtistica\bin\Debug\netstandard2.0\LaArtistica.deps.json
+C:\Users\PC\Desktop\U\Lenguaje C#\LaArtistica\LaArtistica\LaArtistica\bin\Debug\netstandard2.0\LaArtistica.dll
+C:\Users\PC\Desktop\U\Lenguaje C#\LaArtistica\LaArtistica\LaArtistica\bin\Debug\netstandard2.0\ref\LaArtistica.dll
+C:\Users\PC\Desktop\U\Lenguaje C#\LaArtistica\LaArtistica\LaArtistica\bin\Debug\netstandard2.0\LaArtistica.pdb
+C:\Users\PC\Desktop\U\Lenguaje C#\LaArtistica\LaArtistica\LaArtistica\obj\Debug\netstandard2.0\LaArtistica.csprojAssemblyReference.cache
+C:\Users\PC\Desktop\U\Lenguaje C#\LaArtistica\LaArtistica\LaArtistica\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\Users\PC\Desktop\U\Lenguaje C#\LaArtistica\LaArtistica\LaArtistica\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
+C:\Users\PC\Desktop\U\Lenguaje C#\LaArtistica\LaArtistica\LaArtistica\obj\Debug\netstandard2.0\Views\AccessView\LoginPage.xaml.g.cs
+C:\Users\PC\Desktop\U\Lenguaje C#\LaArtistica\LaArtistica\LaArtistica\obj\Debug\netstandard2.0\Views\AccessView\RegisterPage.xaml.g.cs
+C:\Users\PC\Desktop\U\Lenguaje C#\LaArtistica\LaArtistica\LaArtistica\obj\Debug\netstandard2.0\LaArtistica.AssemblyInfoInputs.cache
+C:\Users\PC\Desktop\U\Lenguaje C#\LaArtistica\LaArtistica\LaArtistica\obj\Debug\netstandard2.0\LaArtistica.AssemblyInfo.cs
+C:\Users\PC\Desktop\U\Lenguaje C#\LaArtistica\LaArtistica\LaArtistica\obj\Debug\netstandard2.0\LaArtistica.csproj.CoreCompileInputs.cache
+C:\Users\PC\Desktop\U\Lenguaje C#\LaArtistica\LaArtistica\LaArtistica\obj\Debug\netstandard2.0\XamlC.stamp
+C:\Users\PC\Desktop\U\Lenguaje C#\LaArtistica\LaArtistica\LaArtistica\obj\Debug\netstandard2.0\LaArtistica.dll
+C:\Users\PC\Desktop\U\Lenguaje C#\LaArtistica\LaArtistica\LaArtistica\obj\Debug\netstandard2.0\ref\LaArtistica.dll
+C:\Users\PC\Desktop\U\Lenguaje C#\LaArtistica\LaArtistica\LaArtistica\obj\Debug\netstandard2.0\LaArtistica.pdb

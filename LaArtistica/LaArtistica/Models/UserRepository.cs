@@ -42,18 +42,17 @@ namespace LaArtistica.Models
 
         public string EstadoMensaje;
         // Insert
-        public int AddNewUser(string username, string email, string password)
+        public int AddNewUser(string email, string password)
         {
             int result = 0;
             try
             {
                 result = con.Insert(new User
                 {
-                    Username = username,
                     Email = email,
                     Password = password
                 });
-                EstadoMensaje = string.Format("Cantidad filas : {0}", result);
+                EstadoMensaje = "Insertado";
             }
             catch (Exception e)
             { EstadoMensaje = e.Message; }

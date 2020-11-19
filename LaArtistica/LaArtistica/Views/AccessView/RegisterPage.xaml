@@ -1,7 +1,8 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="LaArtistica.Views.AccessView.RegisterPage" BackgroundColor="White" >
     <ContentPage.Content>
-         <Grid RowSpacing="20">
+        <ScrollView>
+            <Grid RowSpacing="20">
                 <Grid.RowDefinitions>
                     <RowDefinition Height="Auto"/> <!--1-->
                     <RowDefinition Height="Auto"/>  <!--2-->
@@ -79,6 +80,7 @@
                     FontSize="15"
                     Text="{Binding EmailTxt, Mode=TwoWay}"
                     IsEnabled="{Binding IsEnabledTxt}"
+                    x:Name="txtEmail"
                     />
                      </Frame>   
             </StackLayout>
@@ -104,6 +106,7 @@
                     FontSize="15"
                     Text="{Binding PasswordTxt, Mode=TwoWay}"
                     IsEnabled="{Binding IsEnabledTxt}"
+                    x:Name="txtPassword"
                     />
                     
                  </Frame>
@@ -160,15 +163,18 @@
                             HeightRequest="50"
                             CornerRadius="7"
                             Command="{Binding RegisterCommand}"
-                            IsEnabled="{Binding IsEnabledTxt, Mode=TwoWay}"/>
+                            IsEnabled="{Binding IsEnabledTxt, Mode=TwoWay}"
+                            x:Name="btnRegister"/>
                   <Button
                             Text="Already have an acount? Log in"
                             TextColor="Black"
                             FontSize="11"
-                            BackgroundColor="White"/>
+                            BackgroundColor="White"
+                            x:Name="btnLogIn"/>
                 
             </StackLayout>
 
             </Grid>
+        </ScrollView>
     </ContentPage.Content>
 </ContentPage>
