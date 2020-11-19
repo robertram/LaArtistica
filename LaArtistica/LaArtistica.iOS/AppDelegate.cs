@@ -1,9 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-
-using Foundation;
+﻿using Foundation;
 using UIKit;
+using System;
+using System.Collections.Generic;
+using System.IO;
+using System.Linq;
+using LaArtistica.Models;
+
+
 
 namespace LaArtistica.iOS
 {
@@ -23,7 +26,8 @@ namespace LaArtistica.iOS
         public override bool FinishedLaunching(UIApplication app, NSDictionary options)
         {
             global::Xamarin.Forms.Forms.Init();
-            LoadApplication(new App());
+            string dbPath = FileAccess.GetLocalFilePath("users.db3");
+            LoadApplication(new App(dbPath));
 
             return base.FinishedLaunching(app, options);
         }

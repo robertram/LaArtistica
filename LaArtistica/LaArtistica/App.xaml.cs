@@ -2,16 +2,17 @@
 using LaArtistica.Views.AccessView;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
+using LaArtistica.Models;
 
 namespace LaArtistica
 {
     public partial class App : Application
     {
-        public App()
+        public App(string filename)
         {
             InitializeComponent();
-
-            MainPage = new RegisterPage();
+            UserRepository.Inicializador(filename);
+            MainPage = new MainPage();
         }
 
         protected override void OnStart()

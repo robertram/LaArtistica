@@ -1,24 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Robert\\Documents\\Proyecto C#\\LaArtistica\\LaArtistica\\LaArtistica.iOS\\LaArtistica.iOS.csproj": {}
+    "C:\\Users\\Dannia\\Documents\\GitHub\\LaArtistica\\LaArtistica\\LaArtistica.iOS\\LaArtistica.iOS.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Robert\\Documents\\Proyecto C#\\LaArtistica\\LaArtistica\\LaArtistica.iOS\\LaArtistica.iOS.csproj": {
+    "C:\\Users\\Dannia\\Documents\\GitHub\\LaArtistica\\LaArtistica\\LaArtistica.iOS\\LaArtistica.iOS.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Robert\\Documents\\Proyecto C#\\LaArtistica\\LaArtistica\\LaArtistica.iOS\\LaArtistica.iOS.csproj",
+        "projectUniqueName": "C:\\Users\\Dannia\\Documents\\GitHub\\LaArtistica\\LaArtistica\\LaArtistica.iOS\\LaArtistica.iOS.csproj",
         "projectName": "LaArtistica.iOS",
-        "projectPath": "C:\\Users\\Robert\\Documents\\Proyecto C#\\LaArtistica\\LaArtistica\\LaArtistica.iOS\\LaArtistica.iOS.csproj",
-        "packagesPath": "C:\\Users\\Robert\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Robert\\Documents\\Proyecto C#\\LaArtistica\\LaArtistica\\LaArtistica.iOS\\obj\\",
+        "projectPath": "C:\\Users\\Dannia\\Documents\\GitHub\\LaArtistica\\LaArtistica\\LaArtistica.iOS\\LaArtistica.iOS.csproj",
+        "packagesPath": "C:\\Users\\Dannia\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Dannia\\Documents\\GitHub\\LaArtistica\\LaArtistica\\LaArtistica.iOS\\obj\\",
         "projectStyle": "PackageReference",
         "skipContentFileWrite": true,
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\"
         ],
         "configFilePaths": [
-          "C:\\Users\\Robert\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Dannia\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
@@ -32,8 +32,8 @@
         "frameworks": {
           "xamarinios10": {
             "projectReferences": {
-              "C:\\Users\\Robert\\Documents\\Proyecto C#\\LaArtistica\\LaArtistica\\LaArtistica\\LaArtistica.csproj": {
-                "projectPath": "C:\\Users\\Robert\\Documents\\Proyecto C#\\LaArtistica\\LaArtistica\\LaArtistica\\LaArtistica.csproj"
+              "C:\\Users\\Dannia\\Documents\\GitHub\\LaArtistica\\LaArtistica\\LaArtistica\\LaArtistica.csproj": {
+                "projectPath": "C:\\Users\\Dannia\\Documents\\GitHub\\LaArtistica\\LaArtistica\\LaArtistica\\LaArtistica.csproj"
               }
             }
           }
@@ -48,7 +48,11 @@
             },
             "Xamarin.Forms": {
               "target": "Package",
-              "version": "[4.6.0.1141, )"
+              "version": "[4.8.0.1687, )"
+            },
+            "sqlite-net-pcl": {
+              "target": "Package",
+              "version": "[1.7.335, )"
             }
           }
         }
@@ -65,20 +69,20 @@
         }
       }
     },
-    "C:\\Users\\Robert\\Documents\\Proyecto C#\\LaArtistica\\LaArtistica\\LaArtistica\\LaArtistica.csproj": {
+    "C:\\Users\\Dannia\\Documents\\GitHub\\LaArtistica\\LaArtistica\\LaArtistica\\LaArtistica.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Robert\\Documents\\Proyecto C#\\LaArtistica\\LaArtistica\\LaArtistica\\LaArtistica.csproj",
+        "projectUniqueName": "C:\\Users\\Dannia\\Documents\\GitHub\\LaArtistica\\LaArtistica\\LaArtistica\\LaArtistica.csproj",
         "projectName": "LaArtistica",
-        "projectPath": "C:\\Users\\Robert\\Documents\\Proyecto C#\\LaArtistica\\LaArtistica\\LaArtistica\\LaArtistica.csproj",
-        "packagesPath": "C:\\Users\\Robert\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Robert\\Documents\\Proyecto C#\\LaArtistica\\LaArtistica\\LaArtistica\\obj\\",
+        "projectPath": "C:\\Users\\Dannia\\Documents\\GitHub\\LaArtistica\\LaArtistica\\LaArtistica\\LaArtistica.csproj",
+        "packagesPath": "C:\\Users\\Dannia\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Dannia\\Documents\\GitHub\\LaArtistica\\LaArtistica\\LaArtistica\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\"
         ],
         "configFilePaths": [
-          "C:\\Users\\Robert\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Dannia\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
@@ -115,7 +119,11 @@
             },
             "Xamarin.Forms": {
               "target": "Package",
-              "version": "[4.6.0.1141, )"
+              "version": "[4.8.0.1687, )"
+            },
+            "sqlite-net-pcl": {
+              "target": "Package",
+              "version": "[1.7.335, )"
             }
           },
           "imports": [
