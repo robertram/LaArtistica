@@ -6,16 +6,29 @@
 			  ItemTapped="OnItemTapped"
 			  ItemsSource="{Binding .}" />-->
 
-    <ListView x:Name="listView">
-        <ListView.ItemTemplate>
-            <DataTemplate>
-                <ViewCell>
-                    <Grid>
-                        <Label Grid.Column="1" Text="{Binding Nombre}" />
-                        <Label Grid.Column="2" Text="{Binding Stock}" />
-                    </Grid>
-                </ViewCell>
-            </DataTemplate>
-        </ListView.ItemTemplate>
-    </ListView>
+    <ScrollView>
+        <ListView x:Name="listView" HasUnevenRows="True" ItemTapped="ListView_ItemTapped">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <Grid Padding="10">
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="Auto"/>
+                                <RowDefinition Height="*"/>
+                            </Grid.RowDefinitions>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="Auto"/>
+                                <ColumnDefinition Width="*"/>
+                            </Grid.ColumnDefinitions>
+                            <Image Grid.RowSpan="2" Source="{Binding Imagen}" Aspect="AspectFill" HeightRequest="90" WidthRequest="90"/>
+                            <Label Grid.Column="1" Text="{Binding Nombre}" />
+                            <Label Grid.Column="2" Text="{Binding Stock}" />
+                        </Grid>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+
+
+    </ScrollView>
 </ContentPage>

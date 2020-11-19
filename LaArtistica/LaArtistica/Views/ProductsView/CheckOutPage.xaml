@@ -1,0 +1,273 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="LaArtistica.Views.ProductsView.CheckOutPage">
+    <ScrollView>
+        <Grid RowSpacing="20">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <!--1-->
+                <RowDefinition Height="Auto"/>
+                <!--2-->
+                <RowDefinition Height="Auto"/>
+                <!--3-->
+                <RowDefinition Height="Auto"/>
+                <!--4-->
+                <RowDefinition Height="Auto"/>
+                <!--5-->
+                <RowDefinition Height="Auto"/>
+                <!--6-->
+                <RowDefinition Height="Auto"/>
+                <!--7-->
+                <RowDefinition Height="Auto"/>
+                <!--8-->
+                <RowDefinition Height="Auto"/>
+                <!--9-->
+                <RowDefinition Height="Auto"/>
+                <!--10-->
+                <RowDefinition Height="Auto"/>
+                <!--11-->
+            </Grid.RowDefinitions>
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+
+            <StackLayout Grid.Row="1">
+                <Image
+                    Source="logo.png"
+                    HeightRequest="60"
+                    WidthRequest="0"
+                    Margin="20"
+                    />
+            </StackLayout>
+
+            <StackLayout Grid.Row="2" HorizontalOptions="Center">
+                <Label
+                    Text="Ingrese sus datos"
+                            FontAttributes="Bold"
+                            TextColor="Black"
+                            Font="Montserrat-Medium.otf"
+                            FontSize="20"
+                            WidthRequest="300"
+                    />
+            </StackLayout>
+
+            <StackLayout Grid.Row="3" HorizontalOptions="Center" WidthRequest="300" Orientation="Vertical" >
+                <Label
+                     Text="Full Name"
+                     FontSize="13"
+                     TextColor="Black"/>
+
+                <Frame
+                     HasShadow="True"
+                     Padding="6"
+                     CornerRadius="5"
+                     >
+
+                    <Entry
+                    Placeholder="Enter your full name"
+                    MaxLength="25"
+                    Keyboard="Text"
+                    FontSize="15"
+                    Text="{Binding NameTxt, Mode=TwoWay}"
+                    IsEnabled="{Binding IsEnabledTxt}"
+                        x:Name="txtName"
+                    />
+
+                </Frame>
+            </StackLayout>
+
+
+
+
+            <StackLayout Grid.Row="4" HorizontalOptions="Center" WidthRequest="300" Orientation="Vertical">
+                <StackLayout WidthRequest="140">
+
+                    <Label
+                     Text="Cedula"
+                     FontSize="13"
+                     TextColor="Black"/>
+
+                    <Frame
+                     HasShadow="True"
+                     Padding="6"
+                     CornerRadius="7">
+
+                        <Entry
+                    Placeholder="Identification Number"
+                    MaxLength="12"
+                    FontSize="15"
+                    Keyboard="Numeric"
+                    Text="{Binding AgeTxt, Mode=TwoWay}"
+                    IsEnabled="{Binding IsEnabledTxt}" 
+                    x:Name="txtCedula"/>
+                    </Frame>
+
+                </StackLayout>
+            </StackLayout>
+
+
+            <StackLayout Grid.Row="5" HorizontalOptions="Center" WidthRequest="300" Orientation="Vertical" >
+                <Label
+                     Text="Card"
+                     FontSize="13"
+                     TextColor="Black"/>
+
+                <Frame
+                     HasShadow="True"
+                     Padding="6"
+                     CornerRadius="5"
+                     >
+
+                    <Picker x:Name="picker"  TitleColor="Black" >
+                        <Picker.ItemsSource>
+                            <x:Array Type="{x:Type x:String}">
+                                <x:String>VISA</x:String>
+                                <x:String>Master Card</x:String>
+                            </x:Array>
+                        </Picker.ItemsSource>
+                    </Picker>
+                </Frame>
+            </StackLayout>
+
+            <StackLayout Grid.Row="6" HorizontalOptions="Center" WidthRequest="300" Orientation="Horizontal" Spacing="20">
+                <StackLayout WidthRequest="140">
+
+                    <Label
+                     Text="CVV"
+                     FontSize="13"
+                     TextColor="Black"/>
+
+                    <Frame
+                     HasShadow="True"
+                     Padding="6"
+                     CornerRadius="7">
+
+                        <Entry
+                    Placeholder="CVC"
+                    MaxLength="3"
+                    IsPassword="True"
+                    FontSize="15"
+                    Keyboard="Numeric"
+                    Text="{Binding AgeTxt, Mode=TwoWay}"
+                    IsEnabled="{Binding IsEnabledTxt}"
+                    x:Name="txtCVV"/>
+                    </Frame>
+
+                </StackLayout>
+            </StackLayout>
+
+
+            <StackLayout Grid.Row="7" HorizontalOptions="Center" WidthRequest="300" Orientation="Horizontal" Spacing="20">
+                <StackLayout WidthRequest="140">
+
+                    <Label
+                     Text="Contact Number"
+                     FontSize="13"
+                     TextColor="Black"/>
+
+                    <Frame
+                     HasShadow="True"
+                     Padding="6"
+                     CornerRadius="7">
+
+                        <Entry
+                    Placeholder="Phone Number"
+                    MaxLength="8"
+                    FontSize="15"
+                    Keyboard="Numeric"
+                    Text="{Binding AgeTxt, Mode=TwoWay}"
+                    IsEnabled="{Binding IsEnabledTxt}"
+                    x:Name="txtNumeroC"/>
+                    </Frame>
+
+                </StackLayout>
+            </StackLayout>
+
+            <StackLayout Grid.Row="8" HorizontalOptions="Center" WidthRequest="300" Orientation="Vertical"  >
+                <Label
+                    Text="Email"
+                    FontSize="13"
+                    TextColor="Black"
+                    />
+                <Frame
+                    HasShadow="True"
+                    Padding="6"
+                    CornerRadius="7"
+                    >
+                    <Entry
+                    Placeholder="example@email.com"
+                    Keyboard="Email"
+                    MaxLength="25"
+                    FontSize="15"
+                    Text="{Binding EmailTxt, Mode=TwoWay}"
+                    IsEnabled="{Binding IsEnabledTxt}"
+                    x:Name="txtEmail"
+                    />
+                </Frame>
+            </StackLayout>
+
+            <StackLayout Grid.Row="9" HorizontalOptions="Center" WidthRequest="300" Orientation="Vertical" >
+
+                <Label
+                    Text="Location"
+                    FontSize="13"
+                    TextColor="Black"
+                    />
+
+                <Frame
+                     HasShadow="True"
+                     Padding="6"
+                    CornerRadius="7"
+                     >
+
+                    <Entry
+                    Placeholder="Where you live"
+                    MaxLength="100"
+                    FontSize="15"
+                    Text="{Binding PasswordTxt, Mode=TwoWay}"
+                    IsEnabled="{Binding IsEnabledTxt}"
+                    x:Name="txtDireccion"
+                    />
+
+                </Frame>
+
+            </StackLayout>
+
+            <StackLayout Grid.Row="10" HorizontalOptions="Center">
+                <ActivityIndicator
+                       IsRunning="{Binding IsRunningTxt, Mode=TwoWay}"
+                       IsVisible="{Binding IsVisibleTxt, Mode=TwoWay}"
+                       Color="Black"/>
+            </StackLayout>
+
+
+
+            <StackLayout Grid.Row="11" HorizontalOptions="Center" Orientation="Vertical" >
+                <Button
+                     Text="BUY"
+                            TextColor="Black"
+                            Font="Montserrat-Medium.otf"
+                            FontSize="15"
+                            BackgroundColor="#fcfcfc"
+                            BorderColor="#f2f2f2"
+                            BorderWidth="1.5"
+                            WidthRequest="300"
+                            HeightRequest="50"
+                            CornerRadius="7"
+                            Command="{Binding RegisterCommand}"
+                            IsEnabled="{Binding IsEnabledTxt, Mode=TwoWay}"
+                            x:Name="btnBuy"/>
+                <Button
+                            Text="Cancel the buy"
+                            TextColor="Black"
+                            FontSize="11"
+                            BackgroundColor="White"
+                            x:Name="btnCancel"/>
+
+            </StackLayout>
+
+        </Grid>
+    </ScrollView>
+</ContentPage>

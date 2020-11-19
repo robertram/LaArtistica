@@ -1441,24 +1441,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Robert\\.nuget\\packages\\": {},
+    "C:\\Users\\XP^C\\.nuget\\packages\\": {},
     "C:\\Microsoft\\Xamarin\\NuGet\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Robert\\Desktop\\LaArtistica\\LaArtistica\\LaArtistica.iOS\\LaArtistica.iOS.csproj",
+      "projectUniqueName": "C:\\Users\\XP^C\\Desktop\\CheckOutLaArtistica\\LaArtistica\\LaArtistica.iOS\\LaArtistica.iOS.csproj",
       "projectName": "LaArtistica.iOS",
-      "projectPath": "C:\\Users\\Robert\\Desktop\\LaArtistica\\LaArtistica\\LaArtistica.iOS\\LaArtistica.iOS.csproj",
-      "packagesPath": "C:\\Users\\Robert\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Robert\\Desktop\\LaArtistica\\LaArtistica\\LaArtistica.iOS\\obj\\",
+      "projectPath": "C:\\Users\\XP^C\\Desktop\\CheckOutLaArtistica\\LaArtistica\\LaArtistica.iOS\\LaArtistica.iOS.csproj",
+      "packagesPath": "C:\\Users\\XP^C\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\XP^C\\Desktop\\CheckOutLaArtistica\\LaArtistica\\LaArtistica.iOS\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\"
       ],
       "configFilePaths": [
-        "C:\\Users\\Robert\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\XP^C\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
@@ -1472,8 +1472,8 @@
       "frameworks": {
         "xamarinios10": {
           "projectReferences": {
-            "C:\\Users\\Robert\\Desktop\\LaArtistica\\LaArtistica\\LaArtistica\\LaArtistica.csproj": {
-              "projectPath": "C:\\Users\\Robert\\Desktop\\LaArtistica\\LaArtistica\\LaArtistica\\LaArtistica.csproj"
+            "C:\\Users\\XP^C\\Desktop\\CheckOutLaArtistica\\LaArtistica\\LaArtistica\\LaArtistica.csproj": {
+              "projectPath": "C:\\Users\\XP^C\\Desktop\\CheckOutLaArtistica\\LaArtistica\\LaArtistica\\LaArtistica.csproj"
             }
           }
         }

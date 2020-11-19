@@ -63,6 +63,8 @@ namespace LaArtistica.Models
             { EstadoMensaje = e.Message; }
             return result;
         }
+
+        //Select
         public IEnumerable<Products> GetAllProducts()
         {
             try
@@ -75,5 +77,19 @@ namespace LaArtistica.Models
             }
             return Enumerable.Empty<Products>();
         }
+
+        public IEnumerable<Products> GetSelectedProduct(string nombre, string imagen)
+        {
+            try
+            {
+                return con.Query<Products>("select * from Products where Nombre=? and Imagen=?", nombre, imagen);
+            }
+            catch (Exception e)
+            {
+                EstadoMensaje = e.Message;
+            }
+            return Enumerable.Empty<Products>();
+        }
+
     }
 }

@@ -17,12 +17,13 @@ namespace LaArtistica.Views.ProductsView
         {
             InitializeComponent();
             //ProductsRepository.Instancia.AddNewProduct("Mueble", "4", "10.000", "2", "");
-            UserRepository.Instancia.AddNewUser("robert@gmail.com", "1234");
-            UserRepository.Instancia.AddNewProduct("Mueble", "4", "10.000", "2", "");
+            //UserRepository.Instancia.AddNewUser("robert@gmail.com", "1234");
+            UserRepository.Instancia.AddNewProduct("Sillon Cafe", "14", "45.000", "2", "Sillon.png");
             //ProductsRepository.Instancia.AddNewProduct("Mesa", "4", "30.000", "2", "");
             //ProductsRepository.Instancia.AddNewProduct("Cama", "4", "100.000", "2", "");
             //ProductsRepository.Instancia.AddNewProduct("Escritorio", "4", "50.000", "2", "");
             List<Products> products = UserRepository.Instancia.GetAllProducts().ToList();
+            //UserRepository.Instancia.AddNewProduct("Mueble", "4", "10.000", "2", "");
             //var products = UserRepository.Instancia.GetAllProducts();
 
             //this.BindingContext = products;
@@ -34,10 +35,26 @@ namespace LaArtistica.Views.ProductsView
 
         }
 
-        async void OnItemTapped(object sender, ItemTappedEventArgs e)
+        async void ListView_ItemTapped(object sender, ItemTappedEventArgs e)
         {
-            Object product = e.Item;
-            await DisplayAlert("La Artistica", "{product} ", "Aceptar");
+            var index = e.Item as Products;
+            if (index != null)
+            {
+                bool buy = await DisplayAlert("Producto elegido", "Producto: " + index.Nombre + "\nPrecio: " + index.Precio + "\nGarantias por mes: " + index.GarantiaMeses +
+                     "\nEn stock: " + index.Stock, "Comprar", "Cancelar");
+
+                if (buy == true)
+                {
+                    //await ((NavigationPage)this.Parent).PushAsync(new CheckOutPage());
+                    Application.Current.MainPage = new CheckOutPage();
+                }
+                else
+                {
+                   await DisplayAlert("Cancelled", "Buy was cancelled.", "OK");
+                }
+            }
         }
+
+        
     }
 }

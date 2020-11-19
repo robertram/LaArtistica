@@ -19,6 +19,9 @@
     <Folder Include="Views\AccessView\" />
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Update="Views\ProductsView\CheckOutPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
     <EmbeddedResource Update="Views\ProductsView\ProductsPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
