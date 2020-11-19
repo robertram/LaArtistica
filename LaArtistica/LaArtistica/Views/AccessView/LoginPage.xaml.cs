@@ -5,6 +5,7 @@ using Xamarin.Forms;
 using System.IO;
 using System.Linq;
 using LaArtistica.Models;
+using LaArtistica.Views.ProductsView;
 
 namespace LaArtistica.Views.AccessView
 {
@@ -45,6 +46,7 @@ namespace LaArtistica.Views.AccessView
                     if (canLogin)
                     {
                         //((NavigationPage)this.Parent).PushAsync(new Page());
+                        Application.Current.MainPage = new ProductsPage();
                     }
                     else
                     {

@@ -37,7 +37,8 @@ namespace LaArtistica.Models
         private UserRepository(String dbPath)
         {
             con = new SQLiteConnection(dbPath);
-            con.CreateTable<User>();
+            con.CreateTable<User>(); 
+            con.CreateTable<Products>();
         }
 
         public string EstadoMensaje;
@@ -70,5 +71,46 @@ namespace LaArtistica.Models
             }
             return Enumerable.Empty<User>();
         }
+
+
+        //-----------------------------------------------
+
+        
+
+        // Insert
+        public int AddNewProduct(string nombre, string stock, string precio, string garantiaMeses, string imagen)
+        {
+            int result = 0;
+            try
+            {
+                result = con.Insert(new Products
+                {
+                    Nombre = nombre,
+                    Stock = stock,
+                    Precio = precio,
+                    GarantiaMeses = garantiaMeses,
+                    Imagen = imagen
+                });
+                EstadoMensaje = "Insertado";
+            }
+
+
+            catch (Exception e)
+            { EstadoMensaje = e.Message; }
+            return result;
+        }
+        public IEnumerable<Products> GetAllProducts()
+        {
+            try
+            {
+                return con.Table<Products>();
+            }
+            catch (Exception e)
+            {
+                EstadoMensaje = e.Message;
+            }
+            return Enumerable.Empty<Products>();
+        }
+
     }
 }
