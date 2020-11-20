@@ -4,6 +4,7 @@ using System.IO;
 using LaArtistica.Models;
 using Xamarin.Forms;
 using System.Threading.Tasks;
+using System.Linq;
 
 namespace LaArtistica.Views.AccessView
 {
@@ -25,22 +26,41 @@ namespace LaArtistica.Views.AccessView
         {
             if(!string.IsNullOrEmpty(txtEmail.Text) && !string.IsNullOrEmpty(txtPassword.Text))
             {
-                if(txtPassword.Text.Length < 8)
+                List<User> users = UserRepository.Instancia.GetAllUsers().ToList();
+                bool exists = false;
+                foreach (User u in users)
                 {
-                    passwordSize();
-                }
-                else
-                {
-                    UserRepository.Instancia.AddNewUser(txtEmail.Text,txtPassword.Text);
-                    if (UserRepository.Instancia.EstadoMensaje.Equals("Insertado"))
+                    if (txtEmail.Text==u.Email)
                     {
-                        succesfulRegistered();
-                        Application.Current.MainPage.Navigation.PopAsync();
+                        exists = true;
+                        break;
+                    }
+                }
+                if (!exists)
+                {
+
+                    if (txtPassword.Text.Length < 8)
+                    {
+                        passwordSize();
                     }
                     else
                     {
-                        errorRegister();
+                        UserRepository.Instancia.AddNewUser(txtEmail.Text,txtPassword.Text);
+                        if (UserRepository.Instancia.EstadoMensaje.Equals("Insertado"))
+                        {
+                            succesfulRegistered();
+                            Application.Current.MainPage.Navigation.PopAsync();
+                        }
+                        else
+                        {
+                            errorRegister();
+                        }
                     }
+
+                }
+                else
+                {
+                    duplicatedEmail();
                 }
             }
             else
@@ -67,6 +87,11 @@ namespace LaArtistica.Views.AccessView
         private async Task noDataAlert()
         {
             await DisplayAlert("La Artistica", "Por favor introduzca todos los datos", "Aceptar");
+        }
+
+        private async Task duplicatedEmail()
+        {
+            await DisplayAlert("La Artistica", "Este correo ya está registrado", "Aceptar");
         }
     }
 }

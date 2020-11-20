@@ -72,10 +72,23 @@ namespace LaArtistica.Models
             return Enumerable.Empty<User>();
         }
 
+        public int DeleteProduct(Products p)
+        {
+            int result = 0;
+            try
+            {
+                result = con.Delete(p);
+                EstadoMensaje = string.Format("Cantidad filas : {0}", result);
+            }
+            catch (Exception e)
+            { EstadoMensaje = e.Message; }
+            return result;
+        }
+
 
         //-----------------------------------------------
 
-        
+
 
         // Insert
         public int AddNewProduct(string nombre, string stock, string precio, string garantiaMeses, string imagen)

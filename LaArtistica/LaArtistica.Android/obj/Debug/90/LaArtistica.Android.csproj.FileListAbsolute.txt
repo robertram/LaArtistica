@@ -1475,3 +1475,9 @@ C:\Users\Robert\Desktop\LaArtistica\LaArtistica\LaArtistica.Android\obj\Debug\90
 C:\Users\Robert\Desktop\LaArtistica\LaArtistica\LaArtistica.Android\obj\Debug\90\stamp\_GenerateJavaStubs.stamp
 C:\Users\Robert\Desktop\LaArtistica\LaArtistica\LaArtistica.Android\obj\Debug\90\stamp\_GeneratePackageManagerJava.stamp
 C:\Users\Robert\Desktop\LaArtistica\LaArtistica\LaArtistica.Android\obj\Debug\90\stamp\_ResolveLibraryProjectImports.stamp
+C:\Users\Robert\Desktop\LaArtistica\LaArtistica\LaArtistica.Android\obj\Debug\90\res\drawable\sillon.png
+C:\Users\Robert\Desktop\LaArtistica\LaArtistica\LaArtistica.Android\obj\Debug\90\res\drawable\escritorio.jpg
+C:\Users\Robert\Desktop\LaArtistica\LaArtistica\LaArtistica.Android\obj\Debug\90\res\drawable\mesaplaya.jpg
+C:\Users\Robert\Desktop\LaArtistica\LaArtistica\LaArtistica.Android\obj\Debug\90\res\drawable\silloncasual.jpg
+C:\Users\Robert\Desktop\LaArtistica\LaArtistica\LaArtistica.Android\obj\Debug\90\res\drawable\sillongrande.jpg
+C:\Users\Robert\Desktop\LaArtistica\LaArtistica\LaArtistica.Android\obj\Debug\90\res\drawable\sillonrojo.jpg

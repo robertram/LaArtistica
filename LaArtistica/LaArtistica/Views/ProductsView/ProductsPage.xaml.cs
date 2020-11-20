@@ -16,19 +16,7 @@ namespace LaArtistica.Views.ProductsView
         public ProductsPage()
         {
             InitializeComponent();
-            //ProductsRepository.Instancia.AddNewProduct("Mueble", "4", "10.000", "2", "");
-            //UserRepository.Instancia.AddNewUser("robert@gmail.com", "1234");
-            UserRepository.Instancia.AddNewProduct("Sillon Cafe", "14", "45.000", "2", "Sillon.png");
-            //ProductsRepository.Instancia.AddNewProduct("Mesa", "4", "30.000", "2", "");
-            //ProductsRepository.Instancia.AddNewProduct("Cama", "4", "100.000", "2", "");
-            //ProductsRepository.Instancia.AddNewProduct("Escritorio", "4", "50.000", "2", "");
             List<Products> products = UserRepository.Instancia.GetAllProducts().ToList();
-            //UserRepository.Instancia.AddNewProduct("Mueble", "4", "10.000", "2", "");
-            //var products = UserRepository.Instancia.GetAllProducts();
-
-            //this.BindingContext = products;
-            //listView.ItemsSource = products;
-
 
             var allNotes = UserRepository.Instancia.GetAllProducts();
             listView.ItemsSource = allNotes;
@@ -50,7 +38,7 @@ namespace LaArtistica.Views.ProductsView
                 }
                 else
                 {
-                   await DisplayAlert("Cancelled", "Buy was cancelled.", "OK");
+                   await DisplayAlert("La Artística", "Compra cancelada", "Aceptar");
                 }
             }
         }

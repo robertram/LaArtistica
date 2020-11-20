@@ -22,7 +22,7 @@ namespace LaArtistica.Views.ProductsView
 
         async void BtnCancel_Clicked(object sender, EventArgs e)
         {
-            await DisplayAlert("Message", "Your buy has been cancelled", "Ok");
+            await DisplayAlert("La Artística", "Tu compra ha sido cancelada", "Aceptar");
             Application.Current.MainPage = new ProductsPage();
         }
 
@@ -33,7 +33,7 @@ namespace LaArtistica.Views.ProductsView
             {
                 if (!string.IsNullOrEmpty(picker.ToString()))
                 {
-                    await DisplayAlert("Thank You", "You've bought your product!!", "Ok");
+                    await DisplayAlert("La Artística", "Has comprado el producto", "Aceptar");
                     Application.Current.MainPage = new ProductsPage();
                 }
                 else
@@ -57,7 +57,7 @@ namespace LaArtistica.Views.ProductsView
 
         private async Task cardSelectAlert()
         {
-            await DisplayAlert("La Artistica", "Por favor introduzca una tarjeta valida", "Aceptar");
+            await DisplayAlert("La Artistica", "Por favor introduzca una tarjeta válida", "Aceptar");
         }
     }
 }

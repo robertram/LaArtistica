@@ -3,6 +3,9 @@ using LaArtistica.Views.AccessView;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 using LaArtistica.Models;
+using System.Linq;
+
+using System.Collections.Generic;
 
 namespace LaArtistica
 {
@@ -13,6 +16,26 @@ namespace LaArtistica
             InitializeComponent();
             UserRepository.Inicializador(filename);
             MainPage = new NavigationPage(new LoginPage());
+
+            List<Products> products = UserRepository.Instancia.GetAllProducts().ToList();
+
+            if (products.Count()> 0)
+            {
+                foreach (Products p in products)
+                {
+                    UserRepository.Instancia.DeleteProduct(p);
+                }
+            }
+
+            UserRepository.Instancia.AddNewProduct("Sillon Cafe", "14", "45.000", "2", "Sillon.png");
+            //UserRepository.Instancia.AddNewProduct("Mueble Playa", "5", "75.000", "2", "MueblePlaya.jpg");
+            UserRepository.Instancia.AddNewProduct("Escritorio", "5", "75.000", "2", "Escritorio.png");
+            UserRepository.Instancia.AddNewProduct("Sillon", "5", "75.000", "2", "Sillon.png");
+            UserRepository.Instancia.AddNewProduct("Sillon Casual", "5", "75.000", "2", "SillonCasual.png");
+            UserRepository.Instancia.AddNewProduct("Sillon Grande", "5", "75.000", "2", "SillonGrande.png");
+            UserRepository.Instancia.AddNewProduct("Sillon Rojo", "5", "75.000", "2", "SillonRojo.png");
+
+
         }
 
         protected override void OnStart()

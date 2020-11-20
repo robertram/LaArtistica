@@ -6,6 +6,7 @@ using System.IO;
 using System.Linq;
 using LaArtistica.Models;
 using LaArtistica.Views.ProductsView;
+using LaArtistica.Models;
 
 namespace LaArtistica.Views.AccessView
 {
