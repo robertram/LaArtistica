@@ -3,10 +3,8 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="LaArtistica.Views.ProductsView.ProductsPage">
 
-
     <ContentPage.ToolbarItems>
-        <ToolbarItem Text="Guardar" x:Name="tbiGuardar"/>
-        <ToolbarItem IconImageSource="eye.png" x:Name="tbiVer"/>
+        <ToolbarItem IconImageSource="CerrarSesion.png" x:Name="tbiLogOut"/>
     </ContentPage.ToolbarItems>
     <StackLayout>
         <Label Text="Productos" FontSize="20" HorizontalOptions="Center" Margin="20"/> 

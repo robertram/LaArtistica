@@ -23,7 +23,7 @@ namespace LaArtistica.Views.ProductsView
         async void BtnCancel_Clicked(object sender, EventArgs e)
         {
             await DisplayAlert("La Artística", "Tu compra ha sido cancelada", "Aceptar");
-            Application.Current.MainPage = new ProductsPage();
+            Application.Current.MainPage = new NavigationPage(new ProductsPage());
         }
 
         async void BtnBuy_Clicked(object sender, EventArgs e)
@@ -34,7 +34,7 @@ namespace LaArtistica.Views.ProductsView
                 if (!string.IsNullOrEmpty(picker.ToString()))
                 {
                     await DisplayAlert("La Artística", "Has comprado el producto", "Aceptar");
-                    Application.Current.MainPage = new ProductsPage();
+                    Application.Current.MainPage = new NavigationPage(new ProductsPage());
                 }
                 else
                 {

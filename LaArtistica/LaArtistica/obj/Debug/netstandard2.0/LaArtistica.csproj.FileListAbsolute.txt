@@ -62,3 +62,5 @@ C:\Users\Robert\Desktop\LaArtistica\LaArtistica\LaArtistica\obj\Debug\netstandar
 C:\Users\Robert\Desktop\LaArtistica\LaArtistica\LaArtistica\obj\Debug\netstandard2.0\LaArtistica.dll
 C:\Users\Robert\Desktop\LaArtistica\LaArtistica\LaArtistica\obj\Debug\netstandard2.0\ref\LaArtistica.dll
 C:\Users\Robert\Desktop\LaArtistica\LaArtistica\LaArtistica\obj\Debug\netstandard2.0\LaArtistica.pdb
+C:\Users\PC\Desktop\U\Lenguaje C#\LaArtistica\LaArtistica\LaArtistica\obj\Debug\netstandard2.0\Views\ProductsView\CheckOutPage.xaml.g.cs
+C:\Users\PC\Desktop\U\Lenguaje C#\LaArtistica\LaArtistica\LaArtistica\obj\Debug\netstandard2.0\Views\ProductsView\ProductsPage.xaml.g.cs

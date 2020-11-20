@@ -6,7 +6,6 @@ using System.IO;
 using System.Linq;
 using LaArtistica.Models;
 using LaArtistica.Views.ProductsView;
-using LaArtistica.Models;
 
 namespace LaArtistica.Views.AccessView
 {
@@ -46,8 +45,8 @@ namespace LaArtistica.Views.AccessView
                 {
                     if (canLogin)
                     {
-                        //((NavigationPage)this.Parent).PushAsync(new Page());
-                        Application.Current.MainPage = new ProductsPage();
+                        //((NavigationPage)this.Parent).PushAsync(new ProductsPage());
+                        Application.Current.MainPage = new NavigationPage(new ProductsPage());
                     }
                     else
                     {
