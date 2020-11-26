@@ -13,6 +13,7 @@ namespace LaArtistica.Views.ProductsView
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class ProductsPage : ContentPage
     {
+        int res = 0;
         public ProductsPage()
         {
             InitializeComponent();
@@ -21,6 +22,20 @@ namespace LaArtistica.Views.ProductsView
             var allNotes = UserRepository.Instancia.GetAllProducts();
             listView.ItemsSource = allNotes;
 
+            ToolbarItems.Add(new ToolbarItem("WishList", "wishlist.png", async () =>
+            {
+                await ((NavigationPage)this.Parent).PushAsync(new Wishlist());
+            }));
+
+            ToolbarItems.Add(new ToolbarItem("LogOut", "CerrarSesion.png", async () =>
+            {
+                await DisplayAlert("La Artística", "Cerrando sesion", "Aceptar");
+                Application.Current.MainPage = new AccessView.LoginPage();
+            }));
+
+            txtUser.Text = Name;
+
+
         }
 
         async void ListView_ItemTapped(object sender, ItemTappedEventArgs e)
@@ -28,21 +43,54 @@ namespace LaArtistica.Views.ProductsView
             var index = e.Item as Products;
             if (index != null)
             {
-                bool buy = await DisplayAlert("Producto elegido", "Producto: " + index.Nombre + "\nPrecio: " + index.Precio + "\nGarantias por mes: " + index.GarantiaMeses +
-                     "\nEn stock: " + index.Stock, "Comprar", "Cancelar");
-
-                if (buy == true)
+                bool wish = await DisplayAlert("Producto elegido", "Producto: " + index.Nombre + "\nPrecio: " + index.Precio + "\nGarantias por mes: " + index.GarantiaMeses +
+                     "\nEn stock: " + index.Stock, "Wishlist", "Cancelar");
+                if (wish)
                 {
-                    //((NavigationPage)this.Parent).PushAsync(new CheckOutPage());
-                    Application.Current.MainPage = new CheckOutPage();
+                    List<User> activeUser = UserRepository.Instancia.GetAllUsers().ToList();
+                    foreach (User activeU in activeUser)
+                    {
+                        
+                        if (Name.Equals(activeU.Username))
+                        {
+                           res = activeU.Id;
+                        }
+                    }
+                    UserRepository.Instancia.AddtoWishlist(index.Nombre,res, index.Stock, index.Precio, index.GarantiaMeses, index.Stock);
+                    await DisplayAlert("La Artística", "Producto agregado al Wishlist!", "Aceptar");
                 }
                 else
                 {
-                   await DisplayAlert("La Artística", "Compra cancelada", "Aceptar");
+                    bool buy = await DisplayAlert("Producto elegido", "Producto: " + index.Nombre + "\nPrecio: " + index.Precio + "\nGarantias por mes: " + index.GarantiaMeses +
+                     "\nEn stock: " + index.Stock, "Comprar", "Cancelar");
+
+                    if (buy == true)
+                    {
+                        //((NavigationPage)this.Parent).PushAsync(new CheckOutPage());
+                        Application.Current.MainPage = new CheckOutPage();
+                    }
+                    else
+                    {
+                        await DisplayAlert("La Artística", "Compra cancelada", "Aceptar");
+                    }
                 }
+
+                
             }
         }
 
-        
+        public string Name
+        {
+            get
+            {
+                return this.txtUser.Text;
+            }
+            set
+            {
+                this.txtUser.Text = value;
+            }
+        }
+
+
     }
 }

@@ -25,7 +25,7 @@
 
 	/* 2: LaArtistica.Android.dll */
 	/* uncompressed_file_size */
-	.long	216064
+	.long	216576
 	/* loaded */
 	.byte	0
 	/* data */
@@ -34,7 +34,7 @@
 
 	/* 3: LaArtistica.dll */
 	/* uncompressed_file_size */
-	.long	59904
+	.long	79872
 	/* loaded */
 	.byte	0
 	/* data */

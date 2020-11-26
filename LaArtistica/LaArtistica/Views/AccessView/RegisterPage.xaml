@@ -11,7 +11,6 @@
                     <RowDefinition Height="Auto"/>  <!--5-->
                     <RowDefinition Height="Auto"/>  <!--6-->
                     <RowDefinition Height="Auto"/>  <!--7-->
-                    <RowDefinition Height="Auto"/>  <!--8-->
             </Grid.RowDefinitions>
 
                 <Grid.ColumnDefinitions>
@@ -57,6 +56,7 @@
                     FontSize="15"
                     Text="{Binding NameTxt, Mode=TwoWay}"
                     IsEnabled="{Binding IsEnabledTxt}"
+                    x:Name="txtUsername"
                     />
                     
                        </Frame>
@@ -76,7 +76,7 @@
                 <Entry
                     Placeholder="example@email.com"
                     Keyboard="Email"
-                    MaxLength="25"
+                    MaxLength="30"
                     FontSize="15"
                     Text="{Binding EmailTxt, Mode=TwoWay}"
                     IsEnabled="{Binding IsEnabledTxt}"
@@ -114,35 +114,9 @@
             </StackLayout>
 
              
-             <StackLayout Grid.Row="6" HorizontalOptions="Center" WidthRequest="300" Orientation="Horizontal" Spacing="20">
-                 <StackLayout WidthRequest="140">
+             
 
-                 <Label
-                     Text="Age"
-                     FontSize="13"
-                     TextColor="Black"/>
-
-                    <Frame
-                     HasShadow="True"
-                     Padding="6"
-                     CornerRadius="7">
-                        
-                        <Entry
-                    Placeholder="18"
-                    MaxLength="2"
-                    FontSize="15"
-                    Keyboard="Numeric"
-                    Text="{Binding AgeTxt, Mode=TwoWay}"
-                    IsEnabled="{Binding IsEnabledTxt}" />
-                    </Frame>
-
-                </StackLayout>
-
-
-
-            </StackLayout>
-
-             <StackLayout Grid.Row="7" HorizontalOptions="Center">
+             <StackLayout Grid.Row="6" HorizontalOptions="Center">
                 <ActivityIndicator
                        IsRunning="{Binding IsRunningTxt, Mode=TwoWay}"
                        IsVisible="{Binding IsVisibleTxt, Mode=TwoWay}"
@@ -150,7 +124,7 @@
             </StackLayout>
 
 
-            <StackLayout Grid.Row="8" HorizontalOptions="Center" Orientation="Vertical" >
+            <StackLayout Grid.Row="7" HorizontalOptions="Center" Orientation="Vertical" >
                       <Button
                      Text="Register"
                             TextColor="Black"

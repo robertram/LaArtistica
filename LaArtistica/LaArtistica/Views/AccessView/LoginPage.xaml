@@ -57,7 +57,7 @@
                 <Entry
                     Placeholder="Enter your email address"
                     Keyboard="Email"
-                    MaxLength="25"
+                    MaxLength="30"
                     Text="{Binding EmailTxt, Mode=TwoWay}"
                     IsEnabled="{Binding IsEnabledTxt}"
                     FontSize="{OnPlatform Android=15,iOS=16}"
@@ -86,6 +86,7 @@
                      HeightRequest="40"
                      Padding="0"
                      IsEnabled="{Binding IsEnabledTxt}"
+                      x:Name="forgotPass"
                     />
                  </StackLayout> 
                  <Frame

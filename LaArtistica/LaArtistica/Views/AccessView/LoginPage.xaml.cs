@@ -16,6 +16,12 @@ namespace LaArtistica.Views.AccessView
             InitializeComponent();
             btnLogIn.Clicked += BtnLogIn_Clicked;
             btnSingUp.Clicked += BtnSingUp_Clicked;
+            forgotPass.Clicked += ForgotPass_Clicked;
+        }
+
+        private void ForgotPass_Clicked(object sender, EventArgs e)
+        {
+            ((NavigationPage)this.Parent).PushAsync(new ForgotPassword());
         }
 
         private void BtnSingUp_Clicked(object sender, EventArgs e)
@@ -46,6 +52,16 @@ namespace LaArtistica.Views.AccessView
                     if (canLogin)
                     {
                         //((NavigationPage)this.Parent).PushAsync(new ProductsPage());
+                        ProductsPage myUser = new ProductsPage();
+                        List<User> activeUser = UserRepository.Instancia.GetAllUsers().ToList();
+                        foreach(User activeU in activeUser)
+                        {
+                            if (txtEmail.Text.Equals(activeU.Email))
+                            {
+                                myUser.Name = activeU.Username;
+                            }
+                        }
+                        DisplayAlert("La Artistica", "Bienvenido: " + myUser.Name, "Ok");
                         Application.Current.MainPage = new NavigationPage(new ProductsPage());
                     }
                     else
@@ -62,6 +78,8 @@ namespace LaArtistica.Views.AccessView
                 noDataAlert();
             }
         }
+
+        
 
         private async Task noEmailRegistered()
         {

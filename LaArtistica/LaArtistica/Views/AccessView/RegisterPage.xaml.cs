@@ -30,7 +30,7 @@ namespace LaArtistica.Views.AccessView
                 bool exists = false;
                 foreach (User u in users)
                 {
-                    if (txtEmail.Text==u.Email)
+                    if (txtEmail.Text==u.Email || txtUsername.Text==u.Username)
                     {
                         exists = true;
                         break;
@@ -45,7 +45,7 @@ namespace LaArtistica.Views.AccessView
                     }
                     else
                     {
-                        UserRepository.Instancia.AddNewUser(txtEmail.Text,txtPassword.Text);
+                        UserRepository.Instancia.AddNewUser(txtEmail.Text,txtPassword.Text,txtUsername.Text);
                         if (UserRepository.Instancia.EstadoMensaje.Equals("Insertado"))
                         {
                             succesfulRegistered();
@@ -91,7 +91,7 @@ namespace LaArtistica.Views.AccessView
 
         private async Task duplicatedEmail()
         {
-            await DisplayAlert("La Artistica", "Este correo ya está registrado", "Aceptar");
+            await DisplayAlert("La Artistica", "Este correo o nombre de usuario ya está registrado", "Aceptar");
         }
     }
 }

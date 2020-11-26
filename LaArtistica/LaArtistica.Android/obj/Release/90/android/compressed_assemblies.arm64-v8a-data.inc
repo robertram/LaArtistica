@@ -8,11 +8,11 @@
 
 	.type	compressed_assembly_data_2, @object
 	.local	compressed_assembly_data_2
-	.comm	compressed_assembly_data_2,216064,16
+	.comm	compressed_assembly_data_2,216576,16
 
 	.type	compressed_assembly_data_3, @object
 	.local	compressed_assembly_data_3
-	.comm	compressed_assembly_data_3,59904,16
+	.comm	compressed_assembly_data_3,79872,16
 
 	.type	compressed_assembly_data_4, @object
 	.local	compressed_assembly_data_4

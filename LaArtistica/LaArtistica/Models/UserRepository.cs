@@ -43,7 +43,7 @@ namespace LaArtistica.Models
 
         public string EstadoMensaje;
         // Insert
-        public int AddNewUser(string email, string password)
+        public int AddNewUser(string email, string password,string username)
         {
             int result = 0;
             try
@@ -51,7 +51,8 @@ namespace LaArtistica.Models
                 result = con.Insert(new User
                 {
                     Email = email,
-                    Password = password
+                    Password = password,
+                    Username = username
                 });
                 EstadoMensaje = "Insertado";
             }
@@ -72,6 +73,7 @@ namespace LaArtistica.Models
             return Enumerable.Empty<User>();
         }
 
+        //DELETE
         public int DeleteProduct(Products p)
         {
             int result = 0;
@@ -83,6 +85,11 @@ namespace LaArtistica.Models
             catch (Exception e)
             { EstadoMensaje = e.Message; }
             return result;
+        }
+
+        public IEnumerable<Wishlist> DeleteWish(string nombre)
+        {
+                return con.Query<Wishlist>("DELETE FROM Wishlist WHERE = Nombre '" + nombre+"'").AsEnumerable();
         }
 
 
@@ -112,6 +119,29 @@ namespace LaArtistica.Models
             { EstadoMensaje = e.Message; }
             return result;
         }
+
+        public int AddtoWishlist(string nombre,int client_id, string stock, string precio, string garantiaMeses, string imagen)
+        {
+            int result = 0;
+            try
+            {
+                result = con.Insert(new Wishlist
+                {
+                    Nombre = nombre,
+                    Cliente = client_id,
+                    Stock = stock,
+                    Precio = precio,
+                    GarantiaMeses = garantiaMeses,
+                    Imagen = imagen
+                }); ;
+                EstadoMensaje = "Insertado";
+            }
+
+
+            catch (Exception e)
+            { EstadoMensaje = e.Message; }
+            return result;
+        }
         public IEnumerable<Products> GetAllProducts()
         {
             try
@@ -125,5 +155,48 @@ namespace LaArtistica.Models
             return Enumerable.Empty<Products>();
         }
 
+        public IEnumerable<Wishlist> GetAllWishes(int id)
+        {
+            try
+            {
+                return con.Query<Wishlist>("Select * from Wishlist Where Cliente = "+id);
+            }
+            catch (Exception e)
+            {
+                EstadoMensaje = e.Message;
+            }
+            return Enumerable.Empty<Wishlist>();
+        }
+
+        public IEnumerable<Wishlist> GetAllUsersWishes2()
+        {
+            try
+            {
+                return con.Table<Wishlist>();
+            }
+            catch (Exception e)
+            {
+                EstadoMensaje = e.Message;
+            }
+            return Enumerable.Empty<Wishlist>();
+        }
+
+        //Updates
+        public IEnumerable<User> getUser(string newPassword, string email)
+        {
+            return con.Query<User>("UPDATE User SET Password = '"+newPassword+ "' where Email = '"+email+"'").AsEnumerable();
+        }
+
+        //Select
+        public string getUsername(string email)
+        {
+            string resultado =  con.Query<User>("Select Username FROM User Where Email = '"+email+"'").AsEnumerable().ToString();
+            return resultado;
+        }
+
+        public IEnumerable<User> getUsername2(string email)
+        {
+            return con.Query<User>("Select Username FROM User Where Email = '" + email + "'").ToArray();
+        }
     }
 }
