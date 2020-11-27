@@ -24,5 +24,7 @@ namespace LaArtistica.Models
         public String GarantiaMeses { get; set; }
 
         public String Imagen { get; set; }
+
+        public String Descripcion { get; set; }
     }
 }

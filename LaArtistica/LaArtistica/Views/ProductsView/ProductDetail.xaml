@@ -1,0 +1,160 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="LaArtistica.Views.ProductsView.ProductDetail">
+    <ContentPage.Resources>
+
+        <ResourceDictionary>
+
+            <Style x:Key="ProductNameStyle" TargetType="Label">
+                <Setter Property="FontAttributes" Value="Bold" />
+                <Setter Property="FontSize" Value="32" />
+                <Setter Property="TextColor" Value="Black" />
+                <Setter Property="Margin" Value="24, 24, 0, 12" />
+            </Style>
+
+            <Style TargetType="controls:NumericUpDown">
+                <Setter Property="WidthRequest" Value="80" />
+                <Setter Property="Margin" Value="24, 2" />
+            </Style>
+
+            <Style x:Key="ProductPriceStyle" TargetType="Label">
+                <Setter Property="FontAttributes" Value="Bold" />
+                <Setter Property="FontSize" Value="28" />
+                <Setter Property="TextColor" Value="#CE2A46" />
+                <Setter Property="HorizontalOptions" Value="End" />
+                <Setter Property="VerticalOptions" Value="Center" />
+                <Setter Property="Margin" Value="48, 0" />
+            </Style>
+
+            <Style x:Key="ProductDescriptionTitleStyle" TargetType="Label">
+                <Setter Property="FontAttributes" Value="Bold" />
+                <Setter Property="FontSize" Value="14" />
+                <Setter Property="TextColor" Value="Black" />
+                <Setter Property="Margin" Value="24, 12, 0, 0" />
+            </Style>
+
+            <Style x:Key="ProductDescriptionStyle" TargetType="Label">
+                <Setter Property="FontSize" Value="12" />
+                <Setter Property="TextColor" Value="#8E8F93" />
+                <Setter Property="Margin" Value="24, 12, 24, 0" />
+            </Style>
+
+            <Style x:Key="BuyNowStyle" TargetType="Label">
+                <Setter Property="FontSize" Value="20" />
+                <Setter Property="TextColor" Value="White" />
+                <Setter Property="VerticalOptions" Value="Center" />
+                <Setter Property="Margin" Value="24, 0" />
+            </Style>
+
+        </ResourceDictionary>
+    </ContentPage.Resources>
+
+    <ContentPage.Content>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="300" />
+                <RowDefinition Height="40" />
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+            <Image
+          x:Name="HeaderView"
+          Grid.Row="0"
+          Grid.RowSpan="2"
+          Aspect="AspectFill"
+          Source="{Binding Plant.Image}"/>
+            <ScrollView
+          x:Name="Parallax"
+          Grid.Row="0"
+          Grid.RowSpan="3">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="300" />
+                        <RowDefinition />
+                    </Grid.RowDefinitions>
+                    <pancakeview:PancakeView
+              Grid.Row="1"
+              CornerRadius="24, 24, 0, 0"
+              BackgroundColor="{StaticResource WhiteColor}"
+              Margin="0, 20, 0, 0">
+                        <Grid>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="Auto" />
+                                <RowDefinition Height="Auto" />
+                                <RowDefinition Height="Auto" />
+                                <RowDefinition Height="*" />
+                                <RowDefinition Height="Auto" />
+                            </Grid.RowDefinitions>
+                            <!-- Product name  -->
+                            <Label
+                  Grid.Row="0"
+                  Text="{Binding Product.Nombre}"
+                  Style="{StaticResource ProductNameStyle}"/>
+                            <!-- QUANTITY -->
+                            <Grid
+                  Grid.Row="1">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="Auto" />
+                                    <ColumnDefinition Width="*" />
+                                </Grid.ColumnDefinitions>
+                                <Entry
+                    Placeholder="18"
+                    MaxLength="2"
+                    FontSize="12"
+                    Keyboard="Numeric"
+                     />
+                                <Label
+                    Grid.Column="1"
+                    Text="{Binding Product.Precio, StringFormat='{0:C0}'}"
+                    Style="{StaticResource ProductPriceStyle}"/>
+                            </Grid>
+                            <!-- ABOUT -->
+                            <Label
+                  Grid.Row="2"
+                  Text="Detalles"
+                  Style="{StaticResource ProductDescriptionTitleStyle}"/>
+                            <!-- DESCRIPTION -->
+                            <Label
+                  Grid.Row="3"
+                  Text="{Binding Product.Description}"
+                  Style="{StaticResource ProductDescriptionStyle}"/>
+                            <Grid
+                  Grid.Row="4"
+                  Margin="0, 12">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="80"/>
+                                    <ColumnDefinition Width="*" />
+                                </Grid.ColumnDefinitions>
+
+                                <!-- BUY NOW BUTTON -->
+                                <pancakeview:PancakeView
+                    Grid.Column="1"
+                    HeightRequest="48"
+                    CornerRadius="24, 0, 24, 0"
+                    BackgroundColor="{StaticResource GreenColor}"
+                    Margin="24, 0, 0, 0">
+                                    <Grid>
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="30" />
+                                            <ColumnDefinition Width="*" />
+                                            <ColumnDefinition Width="Auto" />
+                                        </Grid.ColumnDefinitions>
+                                        <Label
+                        Grid.Column="1"
+                        Text="Comprar"
+                        Style="{StaticResource BuyNowStyle}"/>
+                                        <Label
+                        Grid.Column="2"
+                        Text=">"
+                        Style="{StaticResource BuyNowStyle}"/>
+                                    </Grid>
+                                </pancakeview:PancakeView>
+                            </Grid>
+                        </Grid>
+                    </pancakeview:PancakeView>
+                </Grid>
+            </ScrollView>
+        </Grid>
+    </ContentPage.Content>
+
+</ContentPage>

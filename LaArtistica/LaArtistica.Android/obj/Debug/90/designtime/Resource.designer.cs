@@ -8411,6 +8411,12 @@ namespace LaArtistica.Droid
 			// aapt resource value: 0x7F070078
 			public const int tooltip_frame_light = 2131165304;
 			
+			// aapt resource value: 0x7F070079
+			public const int wishlist = 2131165305;
+			
+			// aapt resource value: 0x7F07007A
+			public const int wishlist2 = 2131165306;
+			
 			static Drawable()
 			{
 				global::Android.Runtime.ResourceIdManager.UpdateIdValues();
@@ -9400,14 +9406,17 @@ namespace LaArtistica.Droid
 		public partial class Mipmap
 		{
 			
-			// aapt resource value: 0x7F0C0000
-			public const int icon = 2131492864;
-			
 			// aapt resource value: 0x7F0C0001
-			public const int icon_round = 2131492865;
+			public const int icon = 2131492865;
 			
 			// aapt resource value: 0x7F0C0002
-			public const int launcher_foreground = 2131492866;
+			public const int icon_round = 2131492866;
+			
+			// aapt resource value: 0x7F0C0000
+			public const int LaArtistica = 2131492864;
+			
+			// aapt resource value: 0x7F0C0003
+			public const int launcher_foreground = 2131492867;
 			
 			static Mipmap()
 			{

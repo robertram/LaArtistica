@@ -1488,3 +1488,11 @@ C:\Users\PC\Desktop\U\Lenguaje C#\LaArtistica\LaArtistica\LaArtistica.Android\ob
 C:\Users\PC\Desktop\U\Lenguaje C#\LaArtistica\LaArtistica\LaArtistica.Android\obj\Debug\90\res\drawable\sillongrande.jpg
 C:\Users\PC\Desktop\U\Lenguaje C#\LaArtistica\LaArtistica\LaArtistica.Android\obj\Debug\90\res\drawable\sillonrojo.jpg
 C:\Users\PC\Desktop\U\Lenguaje C#\LaArtistica\LaArtistica\LaArtistica.Android\obj\Debug\90\res\drawable\cerrarsesion.png
+C:\Users\Robert\Desktop\LaArtistica\LaArtistica\LaArtistica.Android\obj\Debug\90\res\drawable\cerrarsesion.png
+C:\Users\Robert\Desktop\LaArtistica\LaArtistica\LaArtistica.Android\obj\Debug\90\res\mipmap-hdpi\laartistica.png
+C:\Users\Robert\Desktop\LaArtistica\LaArtistica\LaArtistica.Android\obj\Debug\90\res\mipmap-mdpi\laartistica.png
+C:\Users\Robert\Desktop\LaArtistica\LaArtistica\LaArtistica.Android\obj\Debug\90\res\mipmap-xhdpi\laartistica.png
+C:\Users\Robert\Desktop\LaArtistica\LaArtistica\LaArtistica.Android\obj\Debug\90\res\mipmap-xxhdpi\laartistica.png
+C:\Users\Robert\Desktop\LaArtistica\LaArtistica\LaArtistica.Android\obj\Debug\90\res\mipmap-xxxhdpi\laartistica.png
+C:\Users\Robert\Desktop\LaArtistica\LaArtistica\LaArtistica.Android\obj\Debug\90\res\drawable\wishlist2.png
+C:\Users\Robert\Desktop\LaArtistica\LaArtistica\LaArtistica.Android\obj\Debug\90\res\drawable\wishlist.png
