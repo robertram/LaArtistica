@@ -2,7 +2,7 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="LaArtistica.Views.Templates.ArticleDataTemplate">
-    <ContentView.Resources>
+    <!--<ContentView.Resources>
         <ResourceDictionary>
             <Style x:Key="PriceStyle" TargetType="Label">
                 <Setter Property="FontSize" Value="16"/>
@@ -29,14 +29,14 @@
                     <RowDefinition Height="Auto"/>
                     <RowDefinition Height="Auto"/>
                 </Grid.RowDefinitions>
-                <pancakeview:PancakeView
+                --><!--<pancakeview:PancakeView
                     Grid.Row="0"
                     CornerRadius="12"
                     BorderThickness="0">
                     <Image Aspect="AspectFit"
                        Source="{Binding Imagen}"/>
 
-                </pancakeview:PancakeView>
+                </pancakeview:PancakeView>--><!--
 
                 <Label Grid.Row="1" Text="{Binding Precio, StringFormat='{0:c0}'}"
                        Style="{StaticResource PriceStyle}"/>
@@ -44,6 +44,6 @@
                        Style="{StaticResource NameStyle}"/>
             </Grid>
         </Grid>
-    </ContentView.Content>
+    </ContentView.Content>-->
 
 </ContentPage>

@@ -12,13 +12,13 @@ namespace LaArtistica.ViewModel
 {
     public class ProductViewModel
     {
-        public ObservableCollection<Products> _products;
+        //public ObservableCollection<Products> _products;
 
         public ProductViewModel()
         {
-            LoadData();
+            //LoadData();
         }
-        public ObservableCollection<Products> Products
+        /*public ObservableCollection<Products> Products
         {
             get { return _products; }
             set
@@ -26,11 +26,11 @@ namespace LaArtistica.ViewModel
                 _products = value;
                 OnPropertyChanged();
             }
-
-        }
+        
+        }*/
         private void LoadData()
         {
-            Products = new ObservableCollection<Products>(ProductoService.Instance.GetProducts());
+            //Products = new ObservableCollection<Products>(ProductoService.Instance.GetProducts());
         }
 
     }

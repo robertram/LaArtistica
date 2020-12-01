@@ -18,7 +18,7 @@ namespace LaArtistica.Views.ProductsView
             InitializeComponent();
             //List<Wishlist> wishlist = UserRepository.Instancia.GetAllWishes(Convert.ToInt32(clientList.Text)).ToList();
             var allNotes = UserRepository.Instancia.GetAllUsersWishes2();
-            //listViewWish.ItemsSource = allNotes;
+            listViewWish.ItemsSource = allNotes;
         }
 
         async void ListView_ItemTapped(object sender, ItemTappedEventArgs e)
@@ -41,16 +41,16 @@ namespace LaArtistica.Views.ProductsView
             }
         }
 
-        //public string wish
+        //public string wish()
         //{
-        //    //get
-        //    //{
-        //    //    //return this.clientList.Text;
-        //    //}
-        //    //set
-        //    //{
-        //    //    //this.clientList.Text = value;
-        //    //}
+        //    get
+        //    {
+        //        return this.clientList.Text;
+        //    }
+        //    set
+        //    {
+        //        this.clientList.Text = value;
+        //    }
         //}
     }
 }

@@ -21,7 +21,7 @@ namespace LaArtistica.Services
             }
         }
 
-        public List<Products> GetProducts()
+        /*public List<Products> GetProducts()
         {
             return new List<Products>
             {
@@ -31,7 +31,7 @@ namespace LaArtistica.Services
                 new Products{ Id = 4, Nombre = "Sofá Navi Smoke", Imagen = "orange.jpg", Precio = "$730", Description = "If you love the cool look of leather but long for the warm feel of fabric, you can take comfort in this loveseat. Wrapped in a fabulous faux leather with a weathered hue and hint of pebbly texture to resemble the real deal, this decidedly modern loveseat proves less is more. Elements include angled side profiling and track armrests wrapped with a layer of pillowy softness for that little something extra. Prominent jumbo stitching and clean-lined divided back styling lend fashion-forward flair." },
 
             };
-        }
+        }*/
     }
 
 }

@@ -8,8 +8,7 @@
     </NavigationPage.TitleView>
 
     <ContentPage.ToolbarItems>
-       <!-- <ToolbarItem IconImageSource="CerrarSesion.png" x:Name="tbiLogOut"/> -->
-        <!--<ToolbarItem Text="TITULO"  x:Name="txtUser2"/>-->
+       <!--Items are in ProductsPage cs -->
     </ContentPage.ToolbarItems>
     <StackLayout>
         <Label Text="Productos" FontSize="20" HorizontalOptions="Center" Margin="20"/> 

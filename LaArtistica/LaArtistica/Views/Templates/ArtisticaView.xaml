@@ -12,7 +12,7 @@
             </Style>
 
             <DataTemplate x:Key="ArticleDataTemplate">
-                <templates:ArticleDataTemplate />
+                <!--<templates:ArticleDataTemplate />-->
             </DataTemplate>
 
         </ResourceDictionary>
