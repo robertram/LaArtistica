@@ -6,7 +6,6 @@ using System.Threading.Tasks;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 using System.IO;
-using System.Linq;
 using LaArtistica.Models;
 using LaArtistica.Views.ProductsView;
 

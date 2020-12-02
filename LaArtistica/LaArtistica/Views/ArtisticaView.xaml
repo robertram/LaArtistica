@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:templates="clr-namespace:LaArtistica.Views.Templates"
+             x:Class="LaArtistica.Views.ArtisticaView"
+             BackgroundColor="White">
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Style x:Key="TitleStyle" TargetType="Label">
+                <Setter Property="FontAttributes" Value="Bold" />
+                <Setter Property="FontSize" Value="14"/>
+                <Setter Property="TextColor" Value="#000000"/>
+                <Setter Property="Margin" Value="18, 24, 0, 0"/>
+            </Style>
+
+            <DataTemplate x:Key="ProductDataTemplate">
+                <templates:ProductDataTemplate />
+            </DataTemplate>
+
+        </ResourceDictionary>
+
+    </ContentPage.Resources>
+
+    <ContentPage.Content>
+        <Grid>
+            <!-- MAIN CONTENT PANEL -->
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="70" />
+                </Grid.RowDefinitions>
+                <Image 
+                    Aspect="AspectFit"
+                    Source="logo.jpg"
+                    HeightRequest="60"
+                    WidthRequest="100"
+                    Margin="30"/>
+                <Label 
+                    Grid.Row="0"
+                    Style="{StaticResource TitleStyle}">
+                </Label>
+                <CollectionView
+                    Grid.Row="1"
+                    ItemsSource="{Binding Products}"
+                    ItemTemplate="{StaticResource ProductDataTemplate}"
+                    SelectionMode="Single"
+                    Margin="12, 0">
+                    <CollectionView.ItemsLayout>
+                        <GridItemsLayout 
+                            Orientation="Vertical"
+                            Span="2" />
+                    </CollectionView.ItemsLayout>
+                </CollectionView>
+            </Grid>
+
+        </Grid>
+    </ContentPage.Content>
+
+</ContentPage>

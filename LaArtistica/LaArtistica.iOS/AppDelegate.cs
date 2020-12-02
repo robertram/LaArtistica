@@ -5,7 +5,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using LaArtistica.Models;
-
+using Xamarin.Forms;
 
 
 namespace LaArtistica.iOS
@@ -25,6 +25,8 @@ namespace LaArtistica.iOS
         //
         public override bool FinishedLaunching(UIApplication app, NSDictionary options)
         {
+
+            Forms.SetFlags("CollectionView_Experimental");
             global::Xamarin.Forms.Forms.Init();
             string dbPath = FileAccess.GetLocalFilePath("users.db3");
             LoadApplication(new App(dbPath));

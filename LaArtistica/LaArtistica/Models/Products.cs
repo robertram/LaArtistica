@@ -6,7 +6,7 @@ using SQLite;
 namespace LaArtistica.Models
 {
     [Table("Products")]
-    class Products
+    public class Products
     {
         [PrimaryKey, AutoIncrement]
         public int Id { get; set; }

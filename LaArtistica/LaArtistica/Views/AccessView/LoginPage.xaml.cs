@@ -63,6 +63,7 @@ namespace LaArtistica.Views.AccessView
                         }
                         DisplayAlert("La Artistica", "Bienvenido: " + myUser.Name, "Ok");
                         Application.Current.MainPage = new NavigationPage(new ProductsPage());
+
                     }
                     else
                     {

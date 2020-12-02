@@ -6,6 +6,7 @@ using LaArtistica.Models;
 using System.Linq;
 
 using System.Collections.Generic;
+using LaArtistica.Views;
 
 namespace LaArtistica
 {
@@ -16,6 +17,8 @@ namespace LaArtistica
             InitializeComponent();
             UserRepository.Inicializador(filename);
             MainPage = new NavigationPage(new LoginPage());
+            //MainPage = new NavigationPage(new ArtisticaView());
+
 
             List<Products> products = UserRepository.Instancia.GetAllProducts().ToList();
 

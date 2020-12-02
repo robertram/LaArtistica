@@ -1,37 +1,36 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
+﻿using LaArtistica.Models;
 using LaArtistica.Services;
-using LaArtistica.Models;
 using System.Collections.ObjectModel;
+using System.Linq;
+using System.Windows.Input;
 using Xamarin.Forms;
-
 
 namespace LaArtistica.ViewModel
 {
-    public class ProductViewModel
+    public class ProductViewModel : BindableObject
     {
-        //public ObservableCollection<Products> _products;
+        private ObservableCollection<Products> _products;
 
         public ProductViewModel()
         {
-            //LoadData();
+            LoadData();
         }
-        /*public ObservableCollection<Products> Products
+
+        public ObservableCollection<Products> Products
         {
-            get { return _products; }
+            get { return _products;  }
             set
             {
                 _products = value;
                 OnPropertyChanged();
             }
-        
-        }*/
-        private void LoadData()
-        {
-            //Products = new ObservableCollection<Products>(ProductoService.Instance.GetProducts());
         }
-
+        public void LoadData()
+        {
+            Products = new ObservableCollection<Products>(ProductService.Instance.GetProducts());
+        }
     }
 }
+
+
+

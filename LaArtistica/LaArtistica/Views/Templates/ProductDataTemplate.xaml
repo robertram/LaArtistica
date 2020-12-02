@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentView xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:pancakeview="clr-namespace:Xamarin.Forms.PancakeView;assembly=Xamarin.Forms.PancakeView"
+             x:Class="LaArtistica.Views.Templates.ProductDataTemplate"
+             BackgroundColor="White">
+    <ContentView.Resources>
+        <ResourceDictionary>
+            <Style x:Key="PriceStyle" TargetType="Label">
+                <Setter Property="FontSize" Value="16"/>
+                <Setter Property="TextColor" Value="#000000"/>
+                <Setter Property= "Margin" Value="0,12,0,6"/>
+            </Style>
+            <Style x:Key="NameStyle" TargetType="Label">
+                <Setter Property="FontSize" Value="12"/>
+                <Setter Property="TextColor" Value="#8E8F93"/>
+                <Setter Property= "Margin" Value="0,0,0,18"/>
+            </Style>
+        </ResourceDictionary>
+
+    </ContentView.Resources>
+    
+    <ContentView.Content>
+       <Grid
+            BackgroundColor="#FFFFFF"
+            HeightRequest="250">
+            <Grid
+                RowSpacing="0"
+                Margin="12,0">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+                <pancakeview:PancakeView
+                    Grid.Row="0"
+                    CornerRadius="12">
+                    <Image Aspect="AspectFit"
+                       Source="{Binding Imagen}"/>
+
+                </pancakeview:PancakeView>
+
+                <Label Grid.Row="1" Text="{Binding Precio, StringFormat='{0:c0}'}"
+                       Style="{StaticResource PriceStyle}"/>
+                <Label Grid.Row="2" Text="{Binding Nombre}"
+                       Style="{StaticResource NameStyle}"/>
+            </Grid>
+        </Grid>
+    </ContentView.Content>
+</ContentView>

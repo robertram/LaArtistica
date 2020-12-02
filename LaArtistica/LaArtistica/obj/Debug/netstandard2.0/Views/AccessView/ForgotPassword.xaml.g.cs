@@ -13,7 +13,7 @@
 namespace LaArtistica.Views.AccessView {
     
     
-    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("Views\\AccessView\\ForgotPassword.xaml")]
+    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("Views/AccessView/ForgotPassword.xaml")]
     public partial class ForgotPassword : global::Xamarin.Forms.ContentPage {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]

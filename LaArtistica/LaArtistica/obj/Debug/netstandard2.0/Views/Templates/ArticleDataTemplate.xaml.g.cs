@@ -13,8 +13,8 @@
 namespace LaArtistica.Views.Templates {
     
     
-    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("Views\\Templates\\ArticleDataTemplate.xaml")]
-    public partial class ArticleDataTemplate : global::Xamarin.Forms.ContentPage {
+    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("Views/Templates/ArticleDataTemplate.xaml")]
+    public partial class ArticleDataTemplate : global::Xamarin.Forms.ContentView {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
         private void InitializeComponent() {

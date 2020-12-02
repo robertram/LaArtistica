@@ -877,12 +877,28 @@
           "buildTransitive/Xamarin.Forms.targets": {}
         }
       },
+      "Xamarin.Forms.PancakeView/1.0.21": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.Forms": "3.5.0.129452"
+        },
+        "frameworkAssemblies": [
+          "Java.Interop"
+        ],
+        "compile": {
+          "lib/monoandroid90/Xamarin.Forms.PancakeView.dll": {}
+        },
+        "runtime": {
+          "lib/monoandroid90/Xamarin.Forms.PancakeView.dll": {}
+        }
+      },
       "LaArtistica/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
           "Xamarin.Essentials": "1.5.3.2",
           "Xamarin.Forms": "4.8.0.1687",
+          "Xamarin.Forms.PancakeView": "1.0.21",
           "sqlite-net-pcl": "1.7.335"
         },
         "compile": {
@@ -2153,6 +2169,21 @@
         "xamarin.forms.nuspec"
       ]
     },
+    "Xamarin.Forms.PancakeView/1.0.21": {
+      "sha512": "MQkBObAAFw4V/rvIL8e2MigNjSZLse4w6r9mYf89334PznAWSfnfGiQoNModq8+2lGYfVIWjC9kuQy9QXqtpuQ==",
+      "type": "package",
+      "path": "xamarin.forms.pancakeview/1.0.21",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/monoandroid81/Xamarin.Forms.PancakeView.dll",
+        "lib/monoandroid90/Xamarin.Forms.PancakeView.dll",
+        "lib/netstandard2.0/Xamarin.Forms.PancakeView.dll",
+        "lib/xamarinios10/Xamarin.Forms.PancakeView.dll",
+        "xamarin.forms.pancakeview.1.0.21.nupkg.sha512",
+        "xamarin.forms.pancakeview.nuspec"
+      ]
+    },
     "LaArtistica/1.0.0": {
       "type": "project",
       "path": "../LaArtistica/LaArtistica.csproj",
@@ -2164,43 +2195,37 @@
       "LaArtistica >= 1.0.0",
       "Xamarin.Essentials >= 1.5.3.2",
       "Xamarin.Forms >= 4.8.0.1687",
+      "Xamarin.Forms.PancakeView >= 1.0.21",
       "sqlite-net-pcl >= 1.7.335"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Robert\\.nuget\\packages\\": {},
-    "C:\\Microsoft\\Xamarin\\NuGet\\": {}
+    "/Users/Valeria/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Robert\\Desktop\\LaArtistica\\LaArtistica\\LaArtistica.Android\\LaArtistica.Android.csproj",
+      "projectUniqueName": "/Users/Valeria/GitHub/LaArtistica/LaArtistica/LaArtistica.Android/LaArtistica.Android.csproj",
       "projectName": "LaArtistica.Android",
-      "projectPath": "C:\\Users\\Robert\\Desktop\\LaArtistica\\LaArtistica\\LaArtistica.Android\\LaArtistica.Android.csproj",
-      "packagesPath": "C:\\Users\\Robert\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Robert\\Desktop\\LaArtistica\\LaArtistica\\LaArtistica.Android\\obj\\",
+      "projectPath": "/Users/Valeria/GitHub/LaArtistica/LaArtistica/LaArtistica.Android/LaArtistica.Android.csproj",
+      "packagesPath": "/Users/Valeria/.nuget/packages/",
+      "outputPath": "/Users/Valeria/GitHub/LaArtistica/LaArtistica/LaArtistica.Android/obj/",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
-      "fallbackFolders": [
-        "C:\\Microsoft\\Xamarin\\NuGet\\"
-      ],
       "configFilePaths": [
-        "C:\\Users\\Robert\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        "/Users/Valeria/.config/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "monoandroid90"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "monoandroid90": {
           "projectReferences": {
-            "C:\\Users\\Robert\\Desktop\\LaArtistica\\LaArtistica\\LaArtistica\\LaArtistica.csproj": {
-              "projectPath": "C:\\Users\\Robert\\Desktop\\LaArtistica\\LaArtistica\\LaArtistica\\LaArtistica.csproj"
+            "/Users/Valeria/GitHub/LaArtistica/LaArtistica/LaArtistica/LaArtistica.csproj": {
+              "projectPath": "/Users/Valeria/GitHub/LaArtistica/LaArtistica/LaArtistica/LaArtistica.csproj"
             }
           }
         }
@@ -2216,6 +2241,10 @@
           "Xamarin.Forms": {
             "target": "Package",
             "version": "[4.8.0.1687, )"
+          },
+          "Xamarin.Forms.PancakeView": {
+            "target": "Package",
+            "version": "[1.0.21, )"
           },
           "sqlite-net-pcl": {
             "target": "Package",
