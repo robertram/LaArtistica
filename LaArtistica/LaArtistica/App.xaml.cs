@@ -7,6 +7,7 @@ using System.Linq;
 
 using System.Collections.Generic;
 using LaArtistica.Views;
+using LaArtistica.Views.ProductsView;
 
 namespace LaArtistica
 {

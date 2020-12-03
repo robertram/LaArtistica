@@ -1,33 +1,35 @@
 {
   "format": 1,
   "restore": {
-    "/Users/Valeria/GitHub/LaArtistica/LaArtistica/LaArtistica/LaArtistica.csproj": {}
+    "C:\\Users\\Robert\\Documents\\Proyecto C#\\LaArtistica\\LaArtistica\\LaArtistica\\LaArtistica.csproj": {}
   },
   "projects": {
-    "/Users/Valeria/GitHub/LaArtistica/LaArtistica/LaArtistica/LaArtistica.csproj": {
+    "C:\\Users\\Robert\\Documents\\Proyecto C#\\LaArtistica\\LaArtistica\\LaArtistica\\LaArtistica.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/Valeria/GitHub/LaArtistica/LaArtistica/LaArtistica/LaArtistica.csproj",
+        "projectUniqueName": "C:\\Users\\Robert\\Documents\\Proyecto C#\\LaArtistica\\LaArtistica\\LaArtistica\\LaArtistica.csproj",
         "projectName": "LaArtistica",
-        "projectPath": "/Users/Valeria/GitHub/LaArtistica/LaArtistica/LaArtistica/LaArtistica.csproj",
-        "packagesPath": "/Users/Valeria/.nuget/packages/",
-        "outputPath": "/Users/Valeria/GitHub/LaArtistica/LaArtistica/LaArtistica/obj/",
+        "projectPath": "C:\\Users\\Robert\\Documents\\Proyecto C#\\LaArtistica\\LaArtistica\\LaArtistica\\LaArtistica.csproj",
+        "packagesPath": "C:\\Users\\Robert\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Robert\\Documents\\Proyecto C#\\LaArtistica\\LaArtistica\\LaArtistica\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
+          "C:\\Microsoft\\Xamarin\\NuGet\\"
         ],
         "configFilePaths": [
-          "/Users/Valeria/.config/NuGet/NuGet.Config"
+          "C:\\Users\\Robert\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netstandard2.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "netstandard2.0": {
-            "targetAlias": "netstandard2.0",
             "projectReferences": {}
           }
         },
@@ -39,13 +41,16 @@
       },
       "frameworks": {
         "netstandard2.0": {
-          "targetAlias": "netstandard2.0",
           "dependencies": {
             "NETStandard.Library": {
               "suppressParent": "All",
               "target": "Package",
               "version": "[2.0.3, )",
               "autoReferenced": true
+            },
+            "Syncfusion.Xamarin.Pdf": {
+              "target": "Package",
+              "version": "[18.3.0.52, )"
             },
             "Xamarin.Essentials": {
               "target": "Package",
@@ -74,7 +79,7 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/5.0.100/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.402\\RuntimeIdentifierGraph.json"
         }
       }
     }

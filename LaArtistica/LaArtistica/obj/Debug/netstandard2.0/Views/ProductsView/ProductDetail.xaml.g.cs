@@ -13,7 +13,7 @@
 namespace LaArtistica.Views.ProductsView {
     
     
-    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("Views/ProductsView/ProductDetail.xaml")]
+    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("Views\\ProductsView\\ProductDetail.xaml")]
     public partial class ProductDetail : global::Xamarin.Forms.ContentPage {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
