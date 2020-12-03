@@ -13,7 +13,7 @@
 namespace LaArtistica.Views {
     
     
-    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("Views/ArtisticaView.xaml")]
+    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("Views\\ArtisticaView.xaml")]
     public partial class ArtisticaView : global::Xamarin.Forms.ContentPage {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
