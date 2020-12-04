@@ -36,6 +36,7 @@ namespace LaArtistica.Views.AccessView
                 bool isRegistered = false;
                 bool canLogin = false;
                 List<User> users = UserRepository.Instancia.GetAllUsers().ToList();
+                User currentUser = null;
                 foreach (User u in users)
                 {
                     if (txtEmail.Text.Equals(u.Email))
@@ -44,6 +45,7 @@ namespace LaArtistica.Views.AccessView
                         if (txtPassword.Text.Equals(u.Password))
                         {
                             canLogin = true;
+                            currentUser = u;
                         }
                     }
                 }
@@ -52,7 +54,7 @@ namespace LaArtistica.Views.AccessView
                     if (canLogin)
                     {
                         //((NavigationPage)this.Parent).PushAsync(new ProductsPage());
-                        ProductsPage myUser = new ProductsPage();
+                        ProductsPage myUser = new ProductsPage(currentUser);
                         List<User> activeUser = UserRepository.Instancia.GetAllUsers().ToList();
                         foreach(User activeU in activeUser)
                         {
@@ -62,7 +64,7 @@ namespace LaArtistica.Views.AccessView
                             }
                         }
                         DisplayAlert("La Artistica", "Bienvenido: " + myUser.Name, "Ok");
-                        Application.Current.MainPage = new NavigationPage(new ProductsPage());
+                        Application.Current.MainPage = new NavigationPage(new ProductsPage(currentUser));
 
                     }
                     else

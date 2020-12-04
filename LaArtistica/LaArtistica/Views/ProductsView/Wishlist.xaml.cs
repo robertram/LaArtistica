@@ -13,9 +13,12 @@ namespace LaArtistica.Views.ProductsView
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class Wishlist : ContentPage
     {
-        public Wishlist()
+        private User currentUser;
+        private Products currentProduct;
+        public Wishlist(User u)
         {
             InitializeComponent();
+            currentUser = u;
             //List<Wishlist> wishlist = UserRepository.Instancia.GetAllWishes(Convert.ToInt32(clientList.Text)).ToList();
             var allNotes = UserRepository.Instancia.GetAllUsersWishes2();
             listViewWish.ItemsSource = allNotes;
@@ -32,7 +35,7 @@ namespace LaArtistica.Views.ProductsView
                 if (buy == true)
                 {
                     //((NavigationPage)this.Parent).PushAsync(new CheckOutPage());
-                    Application.Current.MainPage = new CheckOutPage();
+                    Application.Current.MainPage = new CheckOutPage(currentUser,index);
                 }
                 else
                 {

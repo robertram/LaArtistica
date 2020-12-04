@@ -53,7 +53,7 @@ namespace LaArtistica.Views.ProductsView
             document.Close(true);
 
             //Save the stream as a file in the device and invoke it for viewing
-            Xamarin.Forms.DependencyService.Get<ISave>().SaveAndView("Output.pdf", "application / pdf", stream);
+            //Xamarin.Forms.DependencyService.Get<ISave>().SaveAndView("Output.pdf", "application / pdf", stream);
         }
     }
 }

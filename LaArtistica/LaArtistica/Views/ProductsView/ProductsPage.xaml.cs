@@ -14,9 +14,11 @@ namespace LaArtistica.Views.ProductsView
     public partial class ProductsPage : ContentPage
     {
         int res = 0;
-        public ProductsPage()
+        User currentUser;
+        public ProductsPage(User u)
         {
             InitializeComponent();
+            currentUser = u;
             List<Products> products = UserRepository.Instancia.GetAllProducts().ToList();
 
             var allNotes = UserRepository.Instancia.GetAllProducts();
@@ -24,7 +26,7 @@ namespace LaArtistica.Views.ProductsView
 
             ToolbarItems.Add(new ToolbarItem("WishList", "wishlist.png", async () =>
             {
-                await ((NavigationPage)this.Parent).PushAsync(new Wishlist());
+                await ((NavigationPage)this.Parent).PushAsync(new Wishlist(currentUser));
             }));
 
             ToolbarItems.Add(new ToolbarItem("LogOut", "CerrarSesion.png", async () =>
@@ -67,7 +69,7 @@ namespace LaArtistica.Views.ProductsView
                     if (buy == true)
                     {
                         //((NavigationPage)this.Parent).PushAsync(new CheckOutPage());
-                        Application.Current.MainPage = new CheckOutPage();
+                        Application.Current.MainPage = new CheckOutPage(currentUser, index);
                     }
                     else
                     {

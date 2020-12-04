@@ -13,22 +13,6 @@ C:/Users/Dannia/Documents/GitHub/LaArtistica/LaArtistica/LaArtistica/obj/Debug/n
 C:/Users/Dannia/Documents/GitHub/LaArtistica/LaArtistica/LaArtistica/obj/Debug/netstandard2.0/LaArtistica.dll
 C:/Users/Dannia/Documents/GitHub/LaArtistica/LaArtistica/LaArtistica/obj/Debug/netstandard2.0/ref/LaArtistica.dll
 C:/Users/Dannia/Documents/GitHub/LaArtistica/LaArtistica/LaArtistica/obj/Debug/netstandard2.0/LaArtistica.pdb
-C:/Users/PC/Desktop/U/Lenguaje C#/LaArtistica/LaArtistica/LaArtistica/bin/Debug/netstandard2.0/LaArtistica.deps.json
-C:/Users/PC/Desktop/U/Lenguaje C#/LaArtistica/LaArtistica/LaArtistica/bin/Debug/netstandard2.0/LaArtistica.dll
-C:/Users/PC/Desktop/U/Lenguaje C#/LaArtistica/LaArtistica/LaArtistica/bin/Debug/netstandard2.0/ref/LaArtistica.dll
-C:/Users/PC/Desktop/U/Lenguaje C#/LaArtistica/LaArtistica/LaArtistica/bin/Debug/netstandard2.0/LaArtistica.pdb
-C:/Users/PC/Desktop/U/Lenguaje C#/LaArtistica/LaArtistica/LaArtistica/obj/Debug/netstandard2.0/LaArtistica.csprojAssemblyReference.cache
-C:/Users/PC/Desktop/U/Lenguaje C#/LaArtistica/LaArtistica/LaArtistica/obj/Debug/netstandard2.0/App.xaml.g.cs
-C:/Users/PC/Desktop/U/Lenguaje C#/LaArtistica/LaArtistica/LaArtistica/obj/Debug/netstandard2.0/MainPage.xaml.g.cs
-C:/Users/PC/Desktop/U/Lenguaje C#/LaArtistica/LaArtistica/LaArtistica/obj/Debug/netstandard2.0/Views/AccessView/LoginPage.xaml.g.cs
-C:/Users/PC/Desktop/U/Lenguaje C#/LaArtistica/LaArtistica/LaArtistica/obj/Debug/netstandard2.0/Views/AccessView/RegisterPage.xaml.g.cs
-C:/Users/PC/Desktop/U/Lenguaje C#/LaArtistica/LaArtistica/LaArtistica/obj/Debug/netstandard2.0/LaArtistica.AssemblyInfoInputs.cache
-C:/Users/PC/Desktop/U/Lenguaje C#/LaArtistica/LaArtistica/LaArtistica/obj/Debug/netstandard2.0/LaArtistica.AssemblyInfo.cs
-C:/Users/PC/Desktop/U/Lenguaje C#/LaArtistica/LaArtistica/LaArtistica/obj/Debug/netstandard2.0/LaArtistica.csproj.CoreCompileInputs.cache
-C:/Users/PC/Desktop/U/Lenguaje C#/LaArtistica/LaArtistica/LaArtistica/obj/Debug/netstandard2.0/XamlC.stamp
-C:/Users/PC/Desktop/U/Lenguaje C#/LaArtistica/LaArtistica/LaArtistica/obj/Debug/netstandard2.0/LaArtistica.dll
-C:/Users/PC/Desktop/U/Lenguaje C#/LaArtistica/LaArtistica/LaArtistica/obj/Debug/netstandard2.0/ref/LaArtistica.dll
-C:/Users/PC/Desktop/U/Lenguaje C#/LaArtistica/LaArtistica/LaArtistica/obj/Debug/netstandard2.0/LaArtistica.pdb
 C:/Users/Robert/Desktop/LaArtistica/LaArtistica/LaArtistica/bin/Debug/netstandard2.0/LaArtistica.deps.json
 C:/Users/Robert/Desktop/LaArtistica/LaArtistica/LaArtistica/bin/Debug/netstandard2.0/LaArtistica.dll
 C:/Users/Robert/Desktop/LaArtistica/LaArtistica/LaArtistica/bin/Debug/netstandard2.0/ref/LaArtistica.dll
@@ -46,8 +30,6 @@ C:/Users/Robert/Desktop/LaArtistica/LaArtistica/LaArtistica/obj/Debug/netstandar
 C:/Users/Robert/Desktop/LaArtistica/LaArtistica/LaArtistica/obj/Debug/netstandard2.0/LaArtistica.dll
 C:/Users/Robert/Desktop/LaArtistica/LaArtistica/LaArtistica/obj/Debug/netstandard2.0/ref/LaArtistica.dll
 C:/Users/Robert/Desktop/LaArtistica/LaArtistica/LaArtistica/obj/Debug/netstandard2.0/LaArtistica.pdb
-C:/Users/PC/Desktop/U/Lenguaje C#/LaArtistica/LaArtistica/LaArtistica/obj/Debug/netstandard2.0/Views/ProductsView/CheckOutPage.xaml.g.cs
-C:/Users/PC/Desktop/U/Lenguaje C#/LaArtistica/LaArtistica/LaArtistica/obj/Debug/netstandard2.0/Views/ProductsView/ProductsPage.xaml.g.cs
 C:/Users/Robert/Desktop/LaArtistica/LaArtistica/LaArtistica/obj/Debug/netstandard2.0/LaArtistica.csprojAssemblyReference.cache
 C:/Users/Robert/Desktop/LaArtistica/LaArtistica/LaArtistica/obj/Debug/netstandard2.0/Views/AccessView/ForgotPassword.xaml.g.cs
 C:/Users/Robert/Desktop/LaArtistica/LaArtistica/LaArtistica/obj/Debug/netstandard2.0/Views/ProductsView/Wishlist.xaml.g.cs
@@ -101,3 +83,26 @@ C:\Users\Robert\Documents\Proyecto C#\LaArtistica\LaArtistica\LaArtistica\obj\De
 C:\Users\Robert\Documents\Proyecto C#\LaArtistica\LaArtistica\LaArtistica\obj\Debug\netstandard2.0\Views\ProductsView\ReportsPage.xaml.g.cs
 C:\Users\Robert\Documents\Proyecto C#\LaArtistica\LaArtistica\LaArtistica\obj\Debug\netstandard2.0\LaArtistica.csproj.CoreCompileInputs.cache
 C:\Users\Robert\Documents\Proyecto C#\LaArtistica\LaArtistica\LaArtistica\obj\Debug\netstandard2.0\XamlC.stamp
+C:\Users\PC\Desktop\U\Lenguaje C#\LaArtistica\LaArtistica\LaArtistica\bin\Debug\netstandard2.0\LaArtistica.deps.json
+C:\Users\PC\Desktop\U\Lenguaje C#\LaArtistica\LaArtistica\LaArtistica\bin\Debug\netstandard2.0\LaArtistica.dll
+C:\Users\PC\Desktop\U\Lenguaje C#\LaArtistica\LaArtistica\LaArtistica\bin\Debug\netstandard2.0\ref\LaArtistica.dll
+C:\Users\PC\Desktop\U\Lenguaje C#\LaArtistica\LaArtistica\LaArtistica\bin\Debug\netstandard2.0\LaArtistica.pdb
+C:\Users\PC\Desktop\U\Lenguaje C#\LaArtistica\LaArtistica\LaArtistica\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\Users\PC\Desktop\U\Lenguaje C#\LaArtistica\LaArtistica\LaArtistica\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
+C:\Users\PC\Desktop\U\Lenguaje C#\LaArtistica\LaArtistica\LaArtistica\obj\Debug\netstandard2.0\Views\AccessView\ForgotPassword.xaml.g.cs
+C:\Users\PC\Desktop\U\Lenguaje C#\LaArtistica\LaArtistica\LaArtistica\obj\Debug\netstandard2.0\Views\AccessView\LoginPage.xaml.g.cs
+C:\Users\PC\Desktop\U\Lenguaje C#\LaArtistica\LaArtistica\LaArtistica\obj\Debug\netstandard2.0\Views\AccessView\RegisterPage.xaml.g.cs
+C:\Users\PC\Desktop\U\Lenguaje C#\LaArtistica\LaArtistica\LaArtistica\obj\Debug\netstandard2.0\Views\ArtisticaView.xaml.g.cs
+C:\Users\PC\Desktop\U\Lenguaje C#\LaArtistica\LaArtistica\LaArtistica\obj\Debug\netstandard2.0\Views\ProductsView\CheckOutPage.xaml.g.cs
+C:\Users\PC\Desktop\U\Lenguaje C#\LaArtistica\LaArtistica\LaArtistica\obj\Debug\netstandard2.0\Views\ProductsView\ProductDetail.xaml.g.cs
+C:\Users\PC\Desktop\U\Lenguaje C#\LaArtistica\LaArtistica\LaArtistica\obj\Debug\netstandard2.0\Views\ProductsView\ProductsPage.xaml.g.cs
+C:\Users\PC\Desktop\U\Lenguaje C#\LaArtistica\LaArtistica\LaArtistica\obj\Debug\netstandard2.0\Views\ProductsView\ReportsPage.xaml.g.cs
+C:\Users\PC\Desktop\U\Lenguaje C#\LaArtistica\LaArtistica\LaArtistica\obj\Debug\netstandard2.0\Views\ProductsView\Wishlist.xaml.g.cs
+C:\Users\PC\Desktop\U\Lenguaje C#\LaArtistica\LaArtistica\LaArtistica\obj\Debug\netstandard2.0\Views\Templates\ProductDataTemplate.xaml.g.cs
+C:\Users\PC\Desktop\U\Lenguaje C#\LaArtistica\LaArtistica\LaArtistica\obj\Debug\netstandard2.0\LaArtistica.AssemblyInfoInputs.cache
+C:\Users\PC\Desktop\U\Lenguaje C#\LaArtistica\LaArtistica\LaArtistica\obj\Debug\netstandard2.0\LaArtistica.AssemblyInfo.cs
+C:\Users\PC\Desktop\U\Lenguaje C#\LaArtistica\LaArtistica\LaArtistica\obj\Debug\netstandard2.0\LaArtistica.csproj.CoreCompileInputs.cache
+C:\Users\PC\Desktop\U\Lenguaje C#\LaArtistica\LaArtistica\LaArtistica\obj\Debug\netstandard2.0\XamlC.stamp
+C:\Users\PC\Desktop\U\Lenguaje C#\LaArtistica\LaArtistica\LaArtistica\obj\Debug\netstandard2.0\LaArtistica.dll
+C:\Users\PC\Desktop\U\Lenguaje C#\LaArtistica\LaArtistica\LaArtistica\obj\Debug\netstandard2.0\ref\LaArtistica.dll
+C:\Users\PC\Desktop\U\Lenguaje C#\LaArtistica\LaArtistica\LaArtistica\obj\Debug\netstandard2.0\LaArtistica.pdb
