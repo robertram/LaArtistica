@@ -54,7 +54,7 @@ namespace LaArtistica.Views.AccessView
                     if (canLogin)
                     {
                         //((NavigationPage)this.Parent).PushAsync(new ProductsPage());
-                        ProductsPage myUser = new ProductsPage(currentUser);
+                        ArtisticaView myUser = new ArtisticaView(currentUser);
                         List<User> activeUser = UserRepository.Instancia.GetAllUsers().ToList();
                         foreach(User activeU in activeUser)
                         {
@@ -64,7 +64,7 @@ namespace LaArtistica.Views.AccessView
                             }
                         }
                         DisplayAlert("La Artistica", "Bienvenido: " + myUser.Name, "Ok");
-                        Application.Current.MainPage = new NavigationPage(new ProductsPage(currentUser));
+                        Application.Current.MainPage = new NavigationPage(new ArtisticaView(currentUser));
 
                     }
                     else

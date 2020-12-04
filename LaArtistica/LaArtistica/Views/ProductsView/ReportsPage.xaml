@@ -4,7 +4,101 @@
              x:Class="LaArtistica.Views.ProductsView.ReportsPage">
     <ContentPage.Content>
         <StackLayout>
-            <Button Text="Garantias" x:Name="btnGarantias"></Button>
+            <ScrollView>
+                <Grid RowSpacing="20">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <!--1-->
+                        <RowDefinition Height="Auto"/>
+                        <!--2-->
+                        <RowDefinition Height="Auto"/>
+                        <!--3-->
+                        <RowDefinition Height="Auto"/>
+                        <!--4-->
+                        <RowDefinition Height="Auto"/>
+                        <!--5-->
+
+                    </Grid.RowDefinitions>
+
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+
+                    <StackLayout Grid.Row="1">
+                        <Image
+                    Source="logo.png"
+                    HeightRequest="60"
+                    WidthRequest="0"
+                    Margin="20"
+                    />
+                    </StackLayout>
+
+                    <StackLayout Grid.Row="2" HorizontalOptions="Center">
+                        <Label
+                    Text="Solicitar Reportes"
+                            FontAttributes="Bold"
+                            TextColor="Black"
+                            Font="Montserrat-Medium.otf"
+                            FontSize="20"
+                            WidthRequest="300"
+                    />
+                    </StackLayout>
+
+
+
+                    <StackLayout Grid.Row="3" HorizontalOptions="Center" Orientation="Vertical" >
+                        <Button
+                     Text="Garantias"
+                            TextColor="Black"
+                            Font="Montserrat-Medium.otf"
+                            FontSize="15"
+                            BackgroundColor="#fcfcfc"
+                            BorderColor="#f2f2f2"
+                            BorderWidth="1.5"
+                            WidthRequest="300"
+                            HeightRequest="50"
+                            CornerRadius="7"
+                            Command="{Binding RegisterCommand}"
+                            IsEnabled="{Binding IsEnabledTxt, Mode=TwoWay}"
+                            x:Name="btnGarantias"/>
+                    </StackLayout>
+
+                    <StackLayout Grid.Row="4" HorizontalOptions="Center" Orientation="Vertical" >
+                        <Button
+                     Text="Compras"
+                            TextColor="Black"
+                            Font="Montserrat-Medium.otf"
+                            FontSize="15"
+                            BackgroundColor="#fcfcfc"
+                            BorderColor="#f2f2f2"
+                            BorderWidth="1.5"
+                            WidthRequest="300"
+                            HeightRequest="50"
+                            CornerRadius="7"
+                            Command="{Binding RegisterCommand}"
+                            IsEnabled="{Binding IsEnabledTxt, Mode=TwoWay}"
+                            x:Name="btnCompras"/>
+                    </StackLayout>
+
+                    <StackLayout Grid.Row="5" HorizontalOptions="Center" Orientation="Vertical" >
+                        <Button
+                     Text="Abonos"
+                            TextColor="Black"
+                            Font="Montserrat-Medium.otf"
+                            FontSize="15"
+                            BackgroundColor="#fcfcfc"
+                            BorderColor="#f2f2f2"
+                            BorderWidth="1.5"
+                            WidthRequest="300"
+                            HeightRequest="50"
+                            CornerRadius="7"
+                            Command="{Binding RegisterCommand}"
+                            IsEnabled="{Binding IsEnabledTxt, Mode=TwoWay}"
+                            x:Name="btnAbonos"/>
+                    </StackLayout>
+
+                </Grid>
+            </ScrollView>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

@@ -24,10 +24,10 @@ namespace LaArtistica.Views.ProductsView
             var allNotes = UserRepository.Instancia.GetAllProducts();
             listView.ItemsSource = allNotes;
 
-            ToolbarItems.Add(new ToolbarItem("WishList", "wishlist.png", async () =>
-            {
-                await ((NavigationPage)this.Parent).PushAsync(new Wishlist(currentUser));
-            }));
+            //ToolbarItems.Add(new ToolbarItem("WishList", "wishlist.png", async () =>
+            //{
+            //    await ((NavigationPage)this.Parent).PushAsync(new Wishlist(currentUser));
+            //}));
 
             ToolbarItems.Add(new ToolbarItem("LogOut", "CerrarSesion.png", async () =>
             {
