@@ -4,6 +4,14 @@
              xmlns:templates="clr-namespace:LaArtistica.Views.Templates"
              x:Class="LaArtistica.Views.ArtisticaView"
              BackgroundColor="White">
+    <NavigationPage.TitleView>
+        <Label Text="" FontSize="Medium" TextColor="Black" x:Name="txtUser" />
+    </NavigationPage.TitleView>
+
+    <ContentPage.ToolbarItems>
+        <!--Items are in ProductsPage cs -->
+    </ContentPage.ToolbarItems>
+
     <ContentPage.Resources>
         <ResourceDictionary>
             <Style x:Key="TitleStyle" TargetType="Label">
@@ -53,7 +61,6 @@
                     </CollectionView.ItemsLayout>
                 </CollectionView>
             </Grid>
-
         </Grid>
     </ContentPage.Content>
 
