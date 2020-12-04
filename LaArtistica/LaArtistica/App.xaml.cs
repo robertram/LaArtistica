@@ -17,7 +17,7 @@ namespace LaArtistica
         {
             InitializeComponent();
             UserRepository.Inicializador(filename);
-            MainPage = new NavigationPage(new LoginPage());
+            MainPage = new NavigationPage(new ReportsPage());
             //MainPage = new NavigationPage(new ArtisticaView());
 
 
