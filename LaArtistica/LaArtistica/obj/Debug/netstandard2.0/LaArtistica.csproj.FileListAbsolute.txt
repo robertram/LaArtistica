@@ -87,6 +87,7 @@ C:\Users\PC\Desktop\U\Lenguaje C#\LaArtistica\LaArtistica\LaArtistica\bin\Debug\
 C:\Users\PC\Desktop\U\Lenguaje C#\LaArtistica\LaArtistica\LaArtistica\bin\Debug\netstandard2.0\LaArtistica.dll
 C:\Users\PC\Desktop\U\Lenguaje C#\LaArtistica\LaArtistica\LaArtistica\bin\Debug\netstandard2.0\ref\LaArtistica.dll
 C:\Users\PC\Desktop\U\Lenguaje C#\LaArtistica\LaArtistica\LaArtistica\bin\Debug\netstandard2.0\LaArtistica.pdb
+C:\Users\PC\Desktop\U\Lenguaje C#\LaArtistica\LaArtistica\LaArtistica\obj\Debug\netstandard2.0\LaArtistica.csprojAssemblyReference.cache
 C:\Users\PC\Desktop\U\Lenguaje C#\LaArtistica\LaArtistica\LaArtistica\obj\Debug\netstandard2.0\App.xaml.g.cs
 C:\Users\PC\Desktop\U\Lenguaje C#\LaArtistica\LaArtistica\LaArtistica\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
 C:\Users\PC\Desktop\U\Lenguaje C#\LaArtistica\LaArtistica\LaArtistica\obj\Debug\netstandard2.0\Views\AccessView\ForgotPassword.xaml.g.cs
