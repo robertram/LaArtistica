@@ -25,6 +25,8 @@ namespace LaArtistica.Models
 
         public String Imagen { get; set; }
 
+        public String ImagenUrl { get; set; }
+
         public String Descripcion { get; set; }
     }
 }

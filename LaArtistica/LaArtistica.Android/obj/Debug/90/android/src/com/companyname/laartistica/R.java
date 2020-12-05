@@ -4596,14 +4596,15 @@ public final class R {
     public static final int orange=0x7f07007a;
     public static final int pink=0x7f07007b;
     public static final int portada1=0x7f07007c;
-    public static final int sillon=0x7f07007d;
-    public static final int silloncasual=0x7f07007e;
-    public static final int sillongrande=0x7f07007f;
-    public static final int sillonrojo=0x7f070080;
-    public static final int tooltip_frame_dark=0x7f070081;
-    public static final int tooltip_frame_light=0x7f070082;
-    public static final int wishlist=0x7f070083;
-    public static final int wishlist2=0x7f070084;
+    public static final int productos=0x7f07007d;
+    public static final int sillon=0x7f07007e;
+    public static final int silloncasual=0x7f07007f;
+    public static final int sillongrande=0x7f070080;
+    public static final int sillonrojo=0x7f070081;
+    public static final int tooltip_frame_dark=0x7f070082;
+    public static final int tooltip_frame_light=0x7f070083;
+    public static final int wishlist=0x7f070084;
+    public static final int wishlist2=0x7f070085;
   }
   public static final class id {
     public static final int ALT=0x7f080000;
