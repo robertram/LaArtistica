@@ -31,38 +31,38 @@
 	.section	.rodata.map_aname.5,"aMS",@progbits,1
 	.type	.L.map_aname.5, @object
 .L.map_aname.5:
-	.asciz	"FormsViewGroup"
-	.size	.L.map_aname.5, 15
+	.asciz	"LaArtistica.Android"
+	.size	.L.map_aname.5, 20
 
 	.section	.rodata.map_aname.6,"aMS",@progbits,1
 	.type	.L.map_aname.6, @object
 .L.map_aname.6:
-	.asciz	"Xamarin.Android.Support.v7.RecyclerView"
-	.size	.L.map_aname.6, 40
+	.asciz	"FormsViewGroup"
+	.size	.L.map_aname.6, 15
 
 	.section	.rodata.map_aname.7,"aMS",@progbits,1
 	.type	.L.map_aname.7, @object
 .L.map_aname.7:
-	.asciz	"Xamarin.Android.Arch.Lifecycle.LiveData.Core"
-	.size	.L.map_aname.7, 45
+	.asciz	"Xamarin.Android.Support.v7.RecyclerView"
+	.size	.L.map_aname.7, 40
 
 	.section	.rodata.map_aname.8,"aMS",@progbits,1
 	.type	.L.map_aname.8, @object
 .L.map_aname.8:
-	.asciz	"Xamarin.Forms.PancakeView"
-	.size	.L.map_aname.8, 26
+	.asciz	"Xamarin.Android.Arch.Lifecycle.LiveData.Core"
+	.size	.L.map_aname.8, 45
 
 	.section	.rodata.map_aname.9,"aMS",@progbits,1
 	.type	.L.map_aname.9, @object
 .L.map_aname.9:
-	.asciz	"Mono.Android"
-	.size	.L.map_aname.9, 13
+	.asciz	"Xamarin.Forms.PancakeView"
+	.size	.L.map_aname.9, 26
 
 	.section	.rodata.map_aname.10,"aMS",@progbits,1
 	.type	.L.map_aname.10, @object
 .L.map_aname.10:
-	.asciz	"LaArtistica.Android"
-	.size	.L.map_aname.10, 20
+	.asciz	"Mono.Android"
+	.size	.L.map_aname.10, 13
 
 	.section	.rodata.map_aname.11,"aMS",@progbits,1
 	.type	.L.map_aname.11, @object

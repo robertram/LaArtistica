@@ -31,7 +31,7 @@ namespace LaArtistica.Views.ProductsView
 
             ToolbarItems.Add(new ToolbarItem("LogOut", "CerrarSesion.png", async () =>
             {
-                await DisplayAlert("La Artística", "Desea cerrar sesión?", "Aceptar", "Cancelar");
+                bool x = await DisplayAlert("La Artística", "Desea cerrar sesión?", "Aceptar", "Cancelar");
                 Application.Current.MainPage = new AccessView.LoginPage();
             }));
 

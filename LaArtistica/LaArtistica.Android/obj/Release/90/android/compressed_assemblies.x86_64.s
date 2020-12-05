@@ -34,7 +34,7 @@
 
 	/* 3: LaArtistica.dll */
 	/* uncompressed_file_size */
-	.long	103424
+	.long	119808
 	/* loaded */
 	.byte	0
 	/* data */
@@ -241,7 +241,7 @@
 
 	/* 26: System.dll */
 	/* uncompressed_file_size */
-	.long	920064
+	.long	920576
 	/* loaded */
 	.byte	0
 	/* data */

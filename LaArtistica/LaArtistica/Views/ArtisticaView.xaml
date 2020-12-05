@@ -8,9 +8,9 @@
         <Label Text="" FontSize="Medium" TextColor="Black" x:Name="txtUser" />
     </NavigationPage.TitleView>
 
-    <ContentPage.ToolbarItems>
-        <!--Items are in ProductsPage cs -->
-    </ContentPage.ToolbarItems>
+    <!-- <ContentPage.ToolbarItems>
+        Items are in ProductsPage cs 
+    </ContentPage.ToolbarItems> -->
 
     <ContentPage.Resources>
         <ResourceDictionary>

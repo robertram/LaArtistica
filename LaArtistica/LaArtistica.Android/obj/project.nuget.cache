@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "/rDpTfCH9nxmqOTt/Hmz3Ys/RJLUbAvjb2CISbb14r4eNJqeTMg3bILjAEXpV2poeoqgIqQsePY489Jr/g+jiA==",
+  "dgSpecHash": "jt1fygGozQoQvWNh2Soomys3Je0TImN1GC3zylYmNBFlKszbkJ1IGv9zb+ZkQ+dNaKYqSzSPsJlSsa0bdcN7fQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\XP^C\\Desktop\\LaArtistica12-4-2020\\LaArtistica\\LaArtistica.Android\\LaArtistica.Android.csproj",
+  "projectFilePath": "C:\\Users\\XP^C\\Desktop\\ArtisticaHamburger\\LaArtistica\\LaArtistica.Android\\LaArtistica.Android.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\XP^C\\.nuget\\packages\\sqlite-net-pcl\\1.7.335\\sqlite-net-pcl.1.7.335.nupkg.sha512",
     "C:\\Users\\XP^C\\.nuget\\packages\\sqlitepclraw.bundle_green\\2.0.3\\sqlitepclraw.bundle_green.2.0.3.nupkg.sha512",

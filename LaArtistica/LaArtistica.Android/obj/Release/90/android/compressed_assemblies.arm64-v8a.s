@@ -35,7 +35,7 @@
 
 	/* 3: LaArtistica.dll */
 	/* uncompressed_file_size */
-	.word	103424
+	.word	119808
 	/* loaded */
 	.byte	0
 	/* data */
@@ -242,7 +242,7 @@
 
 	/* 26: System.dll */
 	/* uncompressed_file_size */
-	.word	920064
+	.word	920576
 	/* loaded */
 	.byte	0
 	/* data */

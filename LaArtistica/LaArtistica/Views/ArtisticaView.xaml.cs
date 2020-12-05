@@ -10,24 +10,23 @@ namespace LaArtistica.Views
     public partial class ArtisticaView : ContentPage
     {
         User currentUser;
-        public ArtisticaView(User u)
+        public ArtisticaView()
         {
             InitializeComponent();
-            currentUser = u;
             BindingContext = new ProductViewModel();
-            ToolbarItems.Add(new ToolbarItem("WishList", "wishlist.png", async () =>
-            {
-                await ((NavigationPage)this.Parent).PushAsync(new ReportsPage());
-            }));
-            ToolbarItems.Add(new ToolbarItem("LogOut", "CerrarSesion.png", async () =>
-            {
-                bool x = await DisplayAlert("La Artística", "Desea cerrar sesión?", "Aceptar", "Cancelar");
-                if (x)
-                {
-                    Application.Current.MainPage = new AccessView.LoginPage();
-                }
+            //ToolbarItems.Add(new ToolbarItem("WishList", "wishlist.png", async () =>
+            //{
+            //    await ((NavigationPage)this.Parent).PushAsync(new ReportsPage());
+            //}));
+            //ToolbarItems.Add(new ToolbarItem("LogOut", "CerrarSesion.png", async () =>
+            //{
+            //    bool x = await DisplayAlert("La Artística", "Desea cerrar sesión?", "Aceptar", "Cancelar");
+            //    if (x)
+            //    {
+            //        Application.Current.MainPage = new AccessView.LoginPage();
+            //    }
                 
-            }));
+            //}));
 
             txtUser.Text = Name;
         }

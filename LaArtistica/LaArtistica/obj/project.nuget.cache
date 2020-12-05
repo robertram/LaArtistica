@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "pKiXIxi2zWNWmijv/PWDrClgFNfXUEK20EhzYIeDhGjz7Wr+ro2tlKV0dpDjXqvc5WAn9E8+Cv3ClujvalTuMg==",
+  "dgSpecHash": "o4iGii8KfxCJi//PIf4C0TJGdvL9Z/5zV3A3AHJrjfY4SprpEetHwr1YPsLl/Cqr16tKjn34U8IQf6rcKSc9jg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\XP^C\\Desktop\\LaArtistica12-4-2020\\LaArtistica\\LaArtistica\\LaArtistica.csproj",
+  "projectFilePath": "C:\\Users\\XP^C\\Desktop\\ArtisticaHamburger\\LaArtistica\\LaArtistica\\LaArtistica.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\XP^C\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
     "C:\\Users\\XP^C\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",

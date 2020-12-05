@@ -2301,11 +2301,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\XP^C\\Desktop\\LaArtistica12-4-2020\\LaArtistica\\LaArtistica.Android\\LaArtistica.Android.csproj",
+      "projectUniqueName": "C:\\Users\\XP^C\\Desktop\\ArtisticaHamburger\\LaArtistica\\LaArtistica.Android\\LaArtistica.Android.csproj",
       "projectName": "LaArtistica.Android",
-      "projectPath": "C:\\Users\\XP^C\\Desktop\\LaArtistica12-4-2020\\LaArtistica\\LaArtistica.Android\\LaArtistica.Android.csproj",
+      "projectPath": "C:\\Users\\XP^C\\Desktop\\ArtisticaHamburger\\LaArtistica\\LaArtistica.Android\\LaArtistica.Android.csproj",
       "packagesPath": "C:\\Users\\XP^C\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\XP^C\\Desktop\\LaArtistica12-4-2020\\LaArtistica\\LaArtistica.Android\\obj\\",
+      "outputPath": "C:\\Users\\XP^C\\Desktop\\ArtisticaHamburger\\LaArtistica\\LaArtistica.Android\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
@@ -2326,8 +2326,8 @@
       "frameworks": {
         "monoandroid90": {
           "projectReferences": {
-            "C:\\Users\\XP^C\\Desktop\\LaArtistica12-4-2020\\LaArtistica\\LaArtistica\\LaArtistica.csproj": {
-              "projectPath": "C:\\Users\\XP^C\\Desktop\\LaArtistica12-4-2020\\LaArtistica\\LaArtistica\\LaArtistica.csproj"
+            "C:\\Users\\XP^C\\Desktop\\ArtisticaHamburger\\LaArtistica\\LaArtistica\\LaArtistica.csproj": {
+              "projectPath": "C:\\Users\\XP^C\\Desktop\\ArtisticaHamburger\\LaArtistica\\LaArtistica\\LaArtistica.csproj"
             }
           }
         }

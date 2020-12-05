@@ -1705,11 +1705,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\XP^C\\Desktop\\LaArtistica12-4-2020\\LaArtistica\\LaArtistica.iOS\\LaArtistica.iOS.csproj",
+      "projectUniqueName": "C:\\Users\\XP^C\\Desktop\\ArtisticaHamburger\\LaArtistica\\LaArtistica.iOS\\LaArtistica.iOS.csproj",
       "projectName": "LaArtistica.iOS",
-      "projectPath": "C:\\Users\\XP^C\\Desktop\\LaArtistica12-4-2020\\LaArtistica\\LaArtistica.iOS\\LaArtistica.iOS.csproj",
+      "projectPath": "C:\\Users\\XP^C\\Desktop\\ArtisticaHamburger\\LaArtistica\\LaArtistica.iOS\\LaArtistica.iOS.csproj",
       "packagesPath": "C:\\Users\\XP^C\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\XP^C\\Desktop\\LaArtistica12-4-2020\\LaArtistica\\LaArtistica.iOS\\obj\\",
+      "outputPath": "C:\\Users\\XP^C\\Desktop\\ArtisticaHamburger\\LaArtistica\\LaArtistica.iOS\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
@@ -1730,8 +1730,8 @@
       "frameworks": {
         "xamarinios10": {
           "projectReferences": {
-            "C:\\Users\\XP^C\\Desktop\\LaArtistica12-4-2020\\LaArtistica\\LaArtistica\\LaArtistica.csproj": {
-              "projectPath": "C:\\Users\\XP^C\\Desktop\\LaArtistica12-4-2020\\LaArtistica\\LaArtistica\\LaArtistica.csproj"
+            "C:\\Users\\XP^C\\Desktop\\ArtisticaHamburger\\LaArtistica\\LaArtistica\\LaArtistica.csproj": {
+              "projectPath": "C:\\Users\\XP^C\\Desktop\\ArtisticaHamburger\\LaArtistica\\LaArtistica\\LaArtistica.csproj"
             }
           }
         }
