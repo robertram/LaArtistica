@@ -81,7 +81,6 @@ C:\Users\XP^C\Desktop\ArtisticaHamburger\LaArtistica\LaArtistica\bin\Release\net
 C:\Users\XP^C\Desktop\ArtisticaHamburger\LaArtistica\LaArtistica\bin\Release\netstandard2.0\LaArtistica.dll
 C:\Users\XP^C\Desktop\ArtisticaHamburger\LaArtistica\LaArtistica\bin\Release\netstandard2.0\ref\LaArtistica.dll
 C:\Users\XP^C\Desktop\ArtisticaHamburger\LaArtistica\LaArtistica\bin\Release\netstandard2.0\LaArtistica.pdb
-C:\Users\XP^C\Desktop\ArtisticaHamburger\LaArtistica\LaArtistica\obj\Release\netstandard2.0\LaArtistica.csprojAssemblyReference.cache
 C:\Users\XP^C\Desktop\ArtisticaHamburger\LaArtistica\LaArtistica\obj\Release\netstandard2.0\App.xaml.g.cs
 C:\Users\XP^C\Desktop\ArtisticaHamburger\LaArtistica\LaArtistica\obj\Release\netstandard2.0\MainPage.xaml.g.cs
 C:\Users\XP^C\Desktop\ArtisticaHamburger\LaArtistica\LaArtistica\obj\Release\netstandard2.0\Views\AccessView\ForgotPassword.xaml.g.cs
@@ -102,3 +101,4 @@ C:\Users\XP^C\Desktop\ArtisticaHamburger\LaArtistica\LaArtistica\obj\Release\net
 C:\Users\XP^C\Desktop\ArtisticaHamburger\LaArtistica\LaArtistica\obj\Release\netstandard2.0\ref\LaArtistica.dll
 C:\Users\XP^C\Desktop\ArtisticaHamburger\LaArtistica\LaArtistica\obj\Release\netstandard2.0\LaArtistica.pdb
 C:\Users\XP^C\Desktop\ArtisticaHamburger\LaArtistica\LaArtistica\obj\Release\netstandard2.0\Views\ProductsView\Menu.xaml.g.cs
+C:\Users\XP^C\Desktop\ArtisticaHamburger\LaArtistica\LaArtistica\obj\Release\netstandard2.0\LaArtistica.csprojAssemblyReference.cache

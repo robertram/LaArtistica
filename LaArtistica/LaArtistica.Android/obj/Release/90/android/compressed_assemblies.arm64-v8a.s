@@ -26,7 +26,7 @@
 
 	/* 2: LaArtistica.Android.dll */
 	/* uncompressed_file_size */
-	.word	216576
+	.word	218112
 	/* loaded */
 	.byte	0
 	/* data */
@@ -35,7 +35,7 @@
 
 	/* 3: LaArtistica.dll */
 	/* uncompressed_file_size */
-	.word	119808
+	.word	120320
 	/* loaded */
 	.byte	0
 	/* data */
@@ -44,7 +44,7 @@
 
 	/* 4: Mono.Android.dll */
 	/* uncompressed_file_size */
-	.word	1981440
+	.word	1987072
 	/* loaded */
 	.byte	0
 	/* data */
