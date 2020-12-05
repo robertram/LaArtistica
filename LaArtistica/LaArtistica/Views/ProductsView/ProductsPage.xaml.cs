@@ -45,27 +45,8 @@ namespace LaArtistica.Views.ProductsView
             var index = e.Item as Products;
             if (index != null)
             {
-                bool wish = await DisplayAlert("Producto elegido", "Producto: " + index.Nombre + "\nPrecio: " + index.Precio + "\nGarantias por mes: " + index.GarantiaMeses +
-                     "\nEn stock: " + index.Stock, "Wishlist", "Cancelar");
-                if (wish)
-                {
-                    List<User> activeUser = UserRepository.Instancia.GetAllUsers().ToList();
-                    foreach (User activeU in activeUser)
-                    {
-                        
-                        if (Name.Equals(activeU.Username))
-                        {
-                           res = activeU.Id;
-                        }
-                    }
-                    UserRepository.Instancia.AddtoWishlist(index.Nombre,res, index.Stock, index.Precio, index.GarantiaMeses, index.Stock);
-                    await DisplayAlert("La Artística", "Producto agregado al Wishlist!", "Aceptar");
-                }
-                else
-                {
                     bool buy = await DisplayAlert("Producto elegido", "Producto: " + index.Nombre + "\nPrecio: " + index.Precio + "\nGarantias por mes: " + index.GarantiaMeses +
                      "\nEn stock: " + index.Stock, "Comprar", "Cancelar");
-
                     if (buy == true)
                     {
                         //((NavigationPage)this.Parent).PushAsync(new CheckOutPage());
@@ -75,7 +56,7 @@ namespace LaArtistica.Views.ProductsView
                     {
                         await DisplayAlert("La Artística", "Compra cancelada", "Aceptar");
                     }
-                }
+                
 
                 
             }

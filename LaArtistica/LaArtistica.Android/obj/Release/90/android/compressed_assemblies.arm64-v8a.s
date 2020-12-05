@@ -242,7 +242,7 @@
 
 	/* 26: System.dll */
 	/* uncompressed_file_size */
-	.word	920576
+	.word	944128
 	/* loaded */
 	.byte	0
 	/* data */

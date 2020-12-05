@@ -241,7 +241,7 @@
 
 	/* 26: System.dll */
 	/* uncompressed_file_size */
-	.long	920576
+	.long	944128
 	/* loaded */
 	.byte	0
 	/* data */
