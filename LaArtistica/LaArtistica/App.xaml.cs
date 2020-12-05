@@ -4,7 +4,8 @@ using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 using LaArtistica.Models;
 using System.Linq;
-
+using System.Threading.Tasks;
+using LaArtistica.Services;
 using System.Collections.Generic;
 using LaArtistica.Views;
 using LaArtistica.Views.ProductsView;
@@ -16,11 +17,15 @@ namespace LaArtistica
         public App(string filename)
         {
             InitializeComponent();
+            InitNavigation();
             UserRepository.Inicializador(filename);
-            MainPage = new NavigationPage(new LoginPage());
-            //MainPage = new NavigationPage(new ArtisticaView());
+            //MainPage = new NavigationPage(new LoginPage());
+            MainPage = new NavigationPage(new ArtisticaView());
 
-
+            Task InitNavigation()
+            {
+                return NavigationService.Instance.InitializeAsync();
+            }
             List<Products> products = UserRepository.Instancia.GetAllProducts().ToList();
 
             if (products.Count()> 0)
@@ -40,6 +45,7 @@ namespace LaArtistica
                 UserRepository.Instancia.AddNewProduct("Sillon Rojo", "5", "75.000", "2", "SillonRojo.png");
             }
         }
+        
 
         protected override void OnStart()
         {

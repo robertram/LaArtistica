@@ -7,12 +7,12 @@ using System.Threading.Tasks;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
-namespace LaArtistica.Views.ProductsView
+namespace LaArtistica.Views
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class ProductDetail : ContentPage
+    public partial class ProductDetailView : ContentPage
     {
-        public ProductDetail()
+        public ProductDetailView()
         {
             InitializeComponent();
         }

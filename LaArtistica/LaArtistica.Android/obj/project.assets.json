@@ -2295,39 +2295,32 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\PC\\.nuget\\packages\\": {},
-    "C:\\Microsoft\\Xamarin\\NuGet\\": {}
+    "/Users/Valeria/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\PC\\Desktop\\U\\Lenguaje C#\\LaArtistica\\LaArtistica\\LaArtistica.Android\\LaArtistica.Android.csproj",
+      "projectUniqueName": "/Users/Valeria/GitHub/LaArtistica/LaArtistica/LaArtistica.Android/LaArtistica.Android.csproj",
       "projectName": "LaArtistica.Android",
-      "projectPath": "C:\\Users\\PC\\Desktop\\U\\Lenguaje C#\\LaArtistica\\LaArtistica\\LaArtistica.Android\\LaArtistica.Android.csproj",
-      "packagesPath": "C:\\Users\\PC\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\PC\\Desktop\\U\\Lenguaje C#\\LaArtistica\\LaArtistica\\LaArtistica.Android\\obj\\",
+      "projectPath": "/Users/Valeria/GitHub/LaArtistica/LaArtistica/LaArtistica.Android/LaArtistica.Android.csproj",
+      "packagesPath": "/Users/Valeria/.nuget/packages/",
+      "outputPath": "/Users/Valeria/GitHub/LaArtistica/LaArtistica/LaArtistica.Android/obj/",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
-      "fallbackFolders": [
-        "C:\\Microsoft\\Xamarin\\NuGet\\"
-      ],
       "configFilePaths": [
-        "C:\\Users\\PC\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        "/Users/Valeria/.config/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "monoandroid90"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "monoandroid90": {
           "projectReferences": {
-            "C:\\Users\\PC\\Desktop\\U\\Lenguaje C#\\LaArtistica\\LaArtistica\\LaArtistica\\LaArtistica.csproj": {
-              "projectPath": "C:\\Users\\PC\\Desktop\\U\\Lenguaje C#\\LaArtistica\\LaArtistica\\LaArtistica\\LaArtistica.csproj"
+            "/Users/Valeria/GitHub/LaArtistica/LaArtistica/LaArtistica/LaArtistica.csproj": {
+              "projectPath": "/Users/Valeria/GitHub/LaArtistica/LaArtistica/LaArtistica/LaArtistica.csproj"
             }
           }
         }

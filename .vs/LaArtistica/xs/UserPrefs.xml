@@ -1,37 +1,39 @@
 ﻿<Properties GitUserInfo="UsingGIT" StartupConfiguration="{863779EB-5939-4BE1-BEEF-47AFF2BEF24E}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="LaArtistica/LaArtistica/App.xaml.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="LaArtistica/LaArtistica/Views/ProductDetailView.xaml">
     <Files>
-      <File FileName="LaArtistica/LaArtistica/Views/ArtisticaView.xaml" Line="60" Column="15" />
-      <File FileName="LaArtistica/LaArtistica/Services/ProductService.cs" Line="29" Column="81" />
-      <File FileName="LaArtistica/LaArtistica/Views/Templates/ProductDataTemplate.xaml" Line="1" Column="1" />
-      <File FileName="LaArtistica/LaArtistica/MainPage.xaml" Line="1" Column="1" />
+      <File FileName="LaArtistica/LaArtistica/Views/ArtisticaView.xaml" Line="1" Column="1" />
+      <File FileName="LaArtistica/LaArtistica/Views/Templates/ProductDataTemplate.xaml" Line="39" Column="47" />
+      <File FileName="LaArtistica/LaArtistica/Views/ProductDetailView.xaml" Line="117" Column="70" />
+      <File FileName="LaArtistica/LaArtistica/Views/AccessView/LoginPage.xaml" Line="141" Column="47" />
       <File FileName="LaArtistica/LaArtistica/App.xaml" Line="1" Column="1" />
-      <File FileName="LaArtistica/LaArtistica/App.xaml.cs" Line="19" Column="13" />
+      <File FileName="LaArtistica/LaArtistica/App.xaml.cs" Line="23" Column="13" />
+      <File FileName="LaArtistica/LaArtistica/Services/ProductService.cs" Line="1" Column="1" />
+      <File FileName="LaArtistica/LaArtistica/Views/AccessView/RegisterPage.xaml" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="LaArtistica" expanded="True">
             <Node name="LaArtistica" expanded="True">
+              <Node name="Models" expanded="True" />
               <Node name="Services" expanded="True" />
-              <Node name="ViewModel" expanded="True" />
+              <Node name="ViewModel" expanded="True">
+                <Node name="Base" expanded="True" />
+              </Node>
               <Node name="Views" expanded="True">
-                <Node name="Templates" expanded="True">
-                  <Node name="ProductDataTemplate.xaml" expanded="True" />
-                </Node>
-                <Node name="ArtisticaView.xaml" expanded="True" />
+                <Node name="AccessView" expanded="True" />
+                <Node name="Templates" expanded="True" />
+                <Node name="ProductDetailView.xaml" expanded="True" selected="True" />
               </Node>
-              <Node name="App.xaml" expanded="True">
-                <Node name="App.xaml.cs" selected="True" />
-              </Node>
+              <Node name="App.xaml" expanded="True" />
+              <Node name="MainPage.xaml" expanded="True" />
             </Node>
-            <Node name="LaArtistica.Android" expanded="True" />
           </Node>
         </State>
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.ItemProperties.LaArtistica.Android Xamarin.HotReload.UnhandledDeviceException.LaArtistica.Android.HideInfoBar="True" AndroidDesignerPreferredTheme="Theme.AppCompat.Light.NoActionBar" Xamarin.HotReload.DebuggerTimeoutException.LaArtistica.Android.HideInfoBar="True" TriggeredFromHotReload="False" PreferredExecutionTarget="Android.4d00984077f950ef" />
+  <MonoDevelop.Ide.ItemProperties.LaArtistica.Android Xamarin.HotReload.UnhandledDeviceException.LaArtistica.Android.HideInfoBar="True" AndroidDesignerPreferredTheme="Theme.AppCompat.Light.NoActionBar" Xamarin.HotReload.DebuggerTimeoutException.LaArtistica.Android.HideInfoBar="True" TriggeredFromHotReload="False" PreferredExecutionTarget="Android.SelectDevice" />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
