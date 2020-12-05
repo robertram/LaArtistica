@@ -58,6 +58,8 @@ namespace LaArtistica.Views.ProductsView
             
         }
 
+        
+
         private void sendEmail(User u, Products p)
         {
             try
