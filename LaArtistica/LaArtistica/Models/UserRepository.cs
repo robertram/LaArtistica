@@ -98,7 +98,7 @@ namespace LaArtistica.Models
 
 
         // Insert
-        public int AddNewProduct(string nombre, string stock, string precio, string garantiaMeses, string imagen)
+        public int AddNewProduct(string nombre, string stock, string precio, string garantiaMeses, string imagen, string imagenUrl)
         {
             int result = 0;
             try
@@ -109,7 +109,8 @@ namespace LaArtistica.Models
                     Stock = stock,
                     Precio = precio,
                     GarantiaMeses = garantiaMeses,
-                    Imagen = imagen
+                    Imagen = imagen,
+                    ImagenUrl = imagenUrl
                 });
                 EstadoMensaje = "Insertado";
             }

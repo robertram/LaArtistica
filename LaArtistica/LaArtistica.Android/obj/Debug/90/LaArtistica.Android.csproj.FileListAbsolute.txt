@@ -2599,3 +2599,4 @@ C:\Users\Robert\Desktop\LaArtistica\LaArtistica\LaArtistica.Android\obj\Debug\90
 C:\Users\Robert\Desktop\LaArtistica\LaArtistica\LaArtistica.Android\obj\Debug\90\android\src\crc64f8908e42fa42e603\PancakeViewRenderer.java
 C:\Users\Robert\Desktop\LaArtistica\LaArtistica\LaArtistica.Android\obj\Debug\90\android\src\crc64f8908e42fa42e603\PancakeViewRenderer_PancakeDrawable.java
 C:\Users\Robert\Desktop\LaArtistica\LaArtistica\LaArtistica.Android\obj\Debug\90\android\src\crc64f8908e42fa42e603\RoundedCornerOutlineProvider.java
+C:\Users\PC\Desktop\U\Lenguaje C#\LaArtistica\LaArtistica\LaArtistica.Android\obj\Debug\90\res\drawable\productos.png

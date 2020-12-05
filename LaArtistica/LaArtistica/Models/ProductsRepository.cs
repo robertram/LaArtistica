@@ -53,8 +53,8 @@ namespace LaArtistica.Models
                     Stock = stock,
                     Precio = precio,
                     GarantiaMeses = garantiaMeses,
-                    Imagen= imagen
-                });
+                    Imagen = imagen
+                }); ;
                 EstadoMensaje = "Insertado";
             }
 
