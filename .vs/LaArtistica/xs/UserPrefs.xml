@@ -1,24 +1,38 @@
-﻿<Properties GitUserInfo="UsingGIT">
-  <MonoDevelop.Ide.Workbench ActiveDocument="LaArtistica/LaArtistica/App.xaml.cs">
+﻿<Properties GitUserInfo="UsingGIT" StartupConfiguration="{863779EB-5939-4BE1-BEEF-47AFF2BEF24E}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="LaArtistica/LaArtistica/Views/AccessView/LoginPage.xaml.cs">
     <Files>
       <File FileName="LaArtistica/LaArtistica/Views/ArtisticaView.xaml" Line="1" Column="1" />
       <File FileName="LaArtistica/LaArtistica/Views/Templates/ProductDataTemplate.xaml" />
-      <File FileName="LaArtistica/LaArtistica/Views/ProductDetailView.xaml" Line="117" Column="70" />
-      <File FileName="LaArtistica/LaArtistica/Views/AccessView/LoginPage.xaml" Line="141" Column="47" />
-      <File FileName="LaArtistica/LaArtistica/App.xaml" Line="1" Column="1" />
-      <File FileName="LaArtistica/LaArtistica/App.xaml.cs" Line="22" Column="13" />
-      <File FileName="LaArtistica/LaArtistica/Services/ProductService.cs" />
+      <File FileName="LaArtistica/LaArtistica/Views/ProductDetailView.xaml" />
+      <File FileName="LaArtistica/LaArtistica/Views/AccessView/LoginPage.xaml" />
+      <File FileName="LaArtistica/LaArtistica/App.xaml" />
+      <File FileName="LaArtistica/LaArtistica/App.xaml.cs" />
+      <File FileName="LaArtistica/LaArtistica/Views/AccessView/LoginPage.xaml.cs" Line="57" Column="26" />
       <File FileName="LaArtistica/LaArtistica/Views/AccessView/RegisterPage.xaml" />
+      <File FileName="LaArtistica/LaArtistica/Views/ProductsView/CheckOutPage.xaml" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
-          <Node name="LaArtistica" expanded="True" selected="True" />
+          <Node name="LaArtistica" expanded="True">
+            <Node name="LaArtistica" expanded="True">
+              <Node name="ViewModel" expanded="True" />
+              <Node name="Views" expanded="True">
+                <Node name="AccessView" expanded="True">
+                  <Node name="LoginPage.xaml" expanded="True">
+                    <Node name="LoginPage.xaml.cs" selected="True" />
+                  </Node>
+                </Node>
+                <Node name="ProductsView" expanded="True" />
+              </Node>
+              <Node name="App.xaml" expanded="True" />
+            </Node>
+          </Node>
         </State>
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.ItemProperties.LaArtistica.Android Xamarin.HotReload.UnhandledDeviceException.LaArtistica.Android.HideInfoBar="True" AndroidDesignerPreferredTheme="Theme.AppCompat.Light.NoActionBar" Xamarin.HotReload.DebuggerTimeoutException.LaArtistica.Android.HideInfoBar="True" TriggeredFromHotReload="False" PreferredExecutionTarget="Android.SelectDevice" />
+  <MonoDevelop.Ide.ItemProperties.LaArtistica.Android Xamarin.HotReload.UnhandledDeviceException.LaArtistica.Android.HideInfoBar="True" AndroidDesignerPreferredTheme="Theme.AppCompat.Light.NoActionBar" Xamarin.HotReload.DebuggerTimeoutException.LaArtistica.Android.HideInfoBar="True" TriggeredFromHotReload="False" PreferredExecutionTarget="Android.4d00984077f950ef" />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

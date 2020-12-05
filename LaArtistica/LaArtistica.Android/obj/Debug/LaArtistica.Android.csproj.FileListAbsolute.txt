@@ -536,3 +536,4 @@
 /Users/Valeria/GitHub/LaArtistica/LaArtistica/LaArtistica.Android/obj/Debug/stamp/_GenerateJavaStubs.stamp
 /Users/Valeria/GitHub/LaArtistica/LaArtistica/LaArtistica.Android/obj/Debug/stamp/_GeneratePackageManagerJava.stamp
 /Users/Valeria/GitHub/LaArtistica/LaArtistica/LaArtistica.Android/obj/Debug/stamp/_ResolveLibraryProjectImports.stamp
+/Users/Valeria/GitHub/LaArtistica/LaArtistica/LaArtistica.Android/obj/Debug/res/drawable/productos.png

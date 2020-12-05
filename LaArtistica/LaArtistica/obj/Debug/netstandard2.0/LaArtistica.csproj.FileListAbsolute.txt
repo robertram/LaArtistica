@@ -106,3 +106,5 @@ C:/Users/PC/Desktop/U/Lenguaje C#/LaArtistica/LaArtistica/LaArtistica/obj/Debug/
 /Users/Valeria/GitHub/LaArtistica/LaArtistica/LaArtistica/obj/Debug/netstandard2.0/LaArtistica.dll
 /Users/Valeria/GitHub/LaArtistica/LaArtistica/LaArtistica/obj/Debug/netstandard2.0/ref/LaArtistica.dll
 /Users/Valeria/GitHub/LaArtistica/LaArtistica/LaArtistica/obj/Debug/netstandard2.0/LaArtistica.pdb
+/Users/Valeria/GitHub/LaArtistica/LaArtistica/LaArtistica/obj/Debug/netstandard2.0/LaArtistica.csprojAssemblyReference.cache
+/Users/Valeria/GitHub/LaArtistica/LaArtistica/LaArtistica/obj/Debug/netstandard2.0/Views/ProductsView/Menu.xaml.g.cs
