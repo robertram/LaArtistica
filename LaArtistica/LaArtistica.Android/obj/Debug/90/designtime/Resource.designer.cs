@@ -8405,9 +8405,6 @@ namespace LaArtistica.Droid
 			// aapt resource value: 0x7F070003
 			public const int Portada1 = 2131165187;
 			
-			// aapt resource value: 0x7F07007B
-			public const int productos = 2131165307;
-			
 			// aapt resource value: 0x7F070004
 			public const int Sillon = 2131165188;
 			
@@ -8420,17 +8417,17 @@ namespace LaArtistica.Droid
 			// aapt resource value: 0x7F070007
 			public const int SillonRojo = 2131165191;
 			
+			// aapt resource value: 0x7F07007B
+			public const int tooltip_frame_dark = 2131165307;
+			
 			// aapt resource value: 0x7F07007C
-			public const int tooltip_frame_dark = 2131165308;
+			public const int tooltip_frame_light = 2131165308;
 			
 			// aapt resource value: 0x7F07007D
-			public const int tooltip_frame_light = 2131165309;
+			public const int wishlist = 2131165309;
 			
 			// aapt resource value: 0x7F07007E
-			public const int wishlist = 2131165310;
-			
-			// aapt resource value: 0x7F07007F
-			public const int wishlist2 = 2131165311;
+			public const int wishlist2 = 2131165310;
 			
 			static Drawable()
 			{

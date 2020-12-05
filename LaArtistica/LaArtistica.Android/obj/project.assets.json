@@ -2295,24 +2295,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\PC\\.nuget\\packages\\": {},
+    "C:\\Users\\XP^C\\.nuget\\packages\\": {},
     "C:\\Microsoft\\Xamarin\\NuGet\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\PC\\Desktop\\U\\Lenguaje C#\\LaArtistica\\LaArtistica\\LaArtistica.Android\\LaArtistica.Android.csproj",
+      "projectUniqueName": "C:\\Users\\XP^C\\Desktop\\ArtisticaHamburger\\LaArtistica\\LaArtistica.Android\\LaArtistica.Android.csproj",
       "projectName": "LaArtistica.Android",
-      "projectPath": "C:\\Users\\PC\\Desktop\\U\\Lenguaje C#\\LaArtistica\\LaArtistica\\LaArtistica.Android\\LaArtistica.Android.csproj",
-      "packagesPath": "C:\\Users\\PC\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\PC\\Desktop\\U\\Lenguaje C#\\LaArtistica\\LaArtistica\\LaArtistica.Android\\obj\\",
+      "projectPath": "C:\\Users\\XP^C\\Desktop\\ArtisticaHamburger\\LaArtistica\\LaArtistica.Android\\LaArtistica.Android.csproj",
+      "packagesPath": "C:\\Users\\XP^C\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\XP^C\\Desktop\\ArtisticaHamburger\\LaArtistica\\LaArtistica.Android\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\"
       ],
       "configFilePaths": [
-        "C:\\Users\\PC\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\XP^C\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
@@ -2326,8 +2326,8 @@
       "frameworks": {
         "monoandroid90": {
           "projectReferences": {
-            "C:\\Users\\PC\\Desktop\\U\\Lenguaje C#\\LaArtistica\\LaArtistica\\LaArtistica\\LaArtistica.csproj": {
-              "projectPath": "C:\\Users\\PC\\Desktop\\U\\Lenguaje C#\\LaArtistica\\LaArtistica\\LaArtistica\\LaArtistica.csproj"
+            "C:\\Users\\XP^C\\Desktop\\ArtisticaHamburger\\LaArtistica\\LaArtistica\\LaArtistica.csproj": {
+              "projectPath": "C:\\Users\\XP^C\\Desktop\\ArtisticaHamburger\\LaArtistica\\LaArtistica\\LaArtistica.csproj"
             }
           }
         }
