@@ -1,7 +1,7 @@
 ﻿using System.Threading.Tasks;
 using LaArtistica.Models;
 using LaArtistica.ViewModel.Base;
-
+using System;
 
 namespace LaArtistica.ViewModel
 
@@ -12,7 +12,8 @@ namespace LaArtistica.ViewModel
 
         public Products Products
         {
-            get { return _products; }
+            get {
+                return _products; }
             set
             {
                 _products = value;
@@ -21,7 +22,7 @@ namespace LaArtistica.ViewModel
         }
         public override Task InitializeAsync (object navigationData)
         {
-            if (navigationData is Products)
+            if (navigationData is Products);
                 Products = (Products)navigationData;
 
             return base.InitializeAsync(navigationData);

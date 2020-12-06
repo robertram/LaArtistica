@@ -5,7 +5,8 @@ using System.Collections.ObjectModel;
 using System.Linq;
 using System.Windows.Input;
 using Xamarin.Forms;
-
+using System;
+using LaArtistica.Views.AccessView;
 
 namespace LaArtistica.ViewModel
 {
@@ -20,7 +21,15 @@ namespace LaArtistica.ViewModel
         }
         public Products SelectedProduct
         {
-            get { return _selectedProduct; }
+            get {
+                //este if hace que el producto estatico nunca pase de su valor real a null, permitiendo mandar el correo al hacer la compra una etapa futura del programa
+                //este es un metodo de prevencion 100% efectivo, innovador y nunca antes visto
+                if(_selectedProduct != null)
+                {
+                    LoginPage.ProductToBuy = _selectedProduct;
+                }
+                
+                return _selectedProduct; }
             set
             {
                 _selectedProduct = value;
@@ -45,6 +54,7 @@ namespace LaArtistica.ViewModel
 
         public void NavigateToProductDetail()
         {
+            Console.WriteLine("Adios " + SelectedProduct);
             NavigationService.Instance.NavigateToAsync<ProductDetailViewModel>(SelectedProduct);
         }
     }

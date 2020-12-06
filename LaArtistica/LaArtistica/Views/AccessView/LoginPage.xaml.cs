@@ -11,6 +11,9 @@ namespace LaArtistica.Views.AccessView
 {
     public partial class LoginPage : ContentPage
     {
+
+        public static User LogedUser;
+        public static Products ProductToBuy;
         public LoginPage()
         {
             InitializeComponent();
@@ -46,6 +49,7 @@ namespace LaArtistica.Views.AccessView
                         {
                             canLogin = true;
                             currentUser = u;
+                            LogedUser = currentUser;
                         }
                     }
                 }

@@ -31,7 +31,7 @@ namespace LaArtistica.Views.ProductsView
             this.ListMenu.ItemsSource = MiMenu;
             Detail = new NavigationPage((Page)Activator.CreateInstance(typeof(ArtisticaView)))
             {
-                BarBackgroundColor = Color.Red
+                BarBackgroundColor = Color.FromHex("#CC1921")
             };
             this.ListMenu.ItemSelected += ListMenu_ItemSelected1;
         }

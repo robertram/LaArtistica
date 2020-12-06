@@ -9,6 +9,7 @@ using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 using LaArtistica.Models;
 using Xamarin.Essentials;
+using LaArtistica.Views.AccessView;
 
 namespace LaArtistica.Views.ProductsView
 {
@@ -17,11 +18,14 @@ namespace LaArtistica.Views.ProductsView
     {
         private User currentUser;
         private Products currentProduct;
-        public CheckOutPage(User u, Products p)
+        private int cantidad;
+        public CheckOutPage(User u, Products p, int c)
         {
             InitializeComponent();
+            //Console.WriteLine(LoginPage.ProductToBuy);
             currentUser = u;
             currentProduct = p;
+            cantidad = c;
             txtEmail.Text = currentUser.Email;
             btnBuy.Clicked += BtnBuy_Clicked;
             btnCancel.Clicked += BtnCancel_Clicked;
@@ -35,14 +39,14 @@ namespace LaArtistica.Views.ProductsView
 
         async void BtnBuy_Clicked(object sender, EventArgs e)
         {
-            if(!string.IsNullOrEmpty(txtName.Text) || !string.IsNullOrEmpty(txtCedula.Text) || !string.IsNullOrEmpty(txtEmail.Text)
+            if (!string.IsNullOrEmpty(txtName.Text) || !string.IsNullOrEmpty(txtCedula.Text) || !string.IsNullOrEmpty(txtEmail.Text)
             || !string.IsNullOrEmpty(txtNumeroC.Text) || !string.IsNullOrEmpty(txtDireccion.Text) || !string.IsNullOrEmpty(txtCVV.Text))
             {
                 if (!string.IsNullOrEmpty(picker.ToString()))
                 {
                     await DisplayAlert("La Artística", "Has comprado el producto", "Aceptar");
                     sendEmail(currentUser, currentProduct);
-                    Application.Current.MainPage = new NavigationPage(new ProductsPage(currentUser));
+                    //Application.Current.MainPage = new NavigationPage(new ProductsPage(currentUser));
                 }
                 else
                 {
@@ -64,16 +68,16 @@ namespace LaArtistica.Views.ProductsView
         {
             try
             {
-
+                
                 MailMessage mail = new MailMessage();
                 SmtpClient SmtpServer = new SmtpClient("smtp.gmail.com");
 
                 mail.From = new MailAddress("laartisticaulacit@gmail.com");
                 mail.To.Add(u.Email);
-                mail.Subject = "Confirmacion de compra La Artistica";
+                mail.Subject = "Confirmacion de compra La Artistica - " + DateTime.Now.ToString("hhmmss");
 
                 mail.IsBodyHtml = true;
-                mail.Body = getEmailBody(u, p);
+                mail.Body = getEmailBody(u, LoginPage.ProductToBuy);
                 //mail.Body = "Gracias por comprar en La Artistica \nA continuacion los detalles de su compra: \n" +
                 //    "Producto: " + p.Nombre + "\nPrecio: " + p.Precio;
 
@@ -89,7 +93,7 @@ namespace LaArtistica.Views.ProductsView
             {
                 DisplayAlert("Faild", ex.Message, "OK");
             }
-        }
+}
 
 
 
@@ -111,14 +115,14 @@ namespace LaArtistica.Views.ProductsView
                         "padding: 0!important; " +
                         "height: 100 % !important; " +
                         "width: 100 % !important; " +
-                        "background: #f1f1f1;" +
+                        "background: #ffffff;" +
                     "}" +
                     "div[style*='margin: 16px 0'] {" +
                         "margin: 0 !important;" +
                     "}" +
                     "a {text-decoration: none;}" +
                     ".a6S {display: none !important;opacity: 0.01 !important;}" +
-                    ".im {color: inherit !important;}" +
+                    //".im {color: #000000 !important;}" +
                 "</style>" +
                 "<style>" +
                     ".primary{background: #17bebb;}" +
@@ -140,7 +144,6 @@ namespace LaArtistica.Views.ProductsView
                     "table{}" +
                     "/*LOGO*/" +
                     ".logo h1{margin: 0;}" +
-                    ".logo h1 a{color: #17bebb;font-size: 24px;font-weight: 700;font-family: 'Work Sans', sans-serif;}" +
                     "/*HERO*/" +
                     ".hero{ position: relative; z - index: 0; }" +
                     ".hero.text{ color: rgba(0, 0, 0, .3); }" +
@@ -165,7 +168,7 @@ namespace LaArtistica.Views.ProductsView
                 "</style>" +
             "</head>" +
             "<body width='100%' style='margin: 0; padding: 0 !important; mso-line-height-rule: exactly; background-color: #f1f1f1;'>" +
-            "<center style='width: 100%; background-color: #f1f1f1;'>" +
+            "<center style='width: 100%; background-color: white;'>" +
             "<div style='display: none; font-size: 1px;max-height: 0px; max-width: 0px; opacity: 0; overflow: hidden; mso-hide: all; font-family: sans-serif;'>" +
             "&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;" +
             "&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;" +
@@ -177,7 +180,7 @@ namespace LaArtistica.Views.ProductsView
                         "<td valign='top' class='bg_white' style='padding: 1em 2.5em 0 2.5em;'>" +
                             "<table role='presentation' border='0' cellpadding='0' cellspacing='0' width='100%'>" +
                                 "<tr>" +
-                                    "<td class='logo' style='text-align: left;'>" +
+                                    "<td class='logo' style='text-align: center;'>" +
                                         "<a><img src='https://www.empleos.net//rhmanager/logos/original_size/46892_20191008060521.jpg' width='120px' class='Icenter'></img></a>" +
                                     "</td>" +
                                 "</tr>" +
@@ -207,16 +210,16 @@ namespace LaArtistica.Views.ProductsView
                              "<tr style='border-bottom: 1px solid rgba(0,0,0,.05);'>" +
                                 "<td valign='middle' width='80%' style='text-align:left; padding: 0 2.5em;'>" +
                                     "<div class='product-entry'>" +
-                                        "<img src='' alt='" + p.ImagenUrl + "' style='width: 100px; max-width: 600px; height: auto; margin-bottom: 20px; display: block;'>" +
+                                        "<img src='"+ p.ImagenUrl +"' alt='" + p.ImagenUrl + "' style='width: 100px; max-width: 600px; height: auto; margin-bottom: 20px; display: block;'>" +
                                         "<div class='text'>" +
-                                            "<h3>" + p.Nombre + "</h3>" +
-                                            "<span>ARTÍCULO# - " + p.Id + "</span>" +
-                                            "<p>" + p.Descripcion + "</p>" +
+                                            "<h3>" + p.Nombre + " </h3>" +
+                                            "<span>ARTÍCULO# - " + p.Id + " CANTIDAD: " + cantidad + "</span>" +
+                                            "<p>" + p.Descripcion + " </p>" +
                                         "</div>" +
                                     "</div>" +
                                 "</td>" +
                                 "<td valign='middle' width='20%' style='text-align:left; padding: 0 2.5em;'> " +
-                                    "<span class='price' style='color: #000; font-size: 20px;'>" + p.Precio + "</span> " +
+                                    "<span class='price' style='color: #000; font-size: 20px;'>$" + (Int32.Parse(p.Precio)*cantidad).ToString() + " </span> " +
                                 "</td>" +
                             "</tr>" +
                         "</table>" +
@@ -230,7 +233,7 @@ namespace LaArtistica.Views.ProductsView
                                     "<td valign = 'top' width='33.333%' style='padding-top: 20px;'>" +
                                         "<table role = 'presentation' cellspacing='0' cellpadding='0' border='0' width='100%'>" +
                                             "<tr>" +
-                                                "<td style = 'text-align: left; padding-right: 10px;'>" +
+                                                "<td style = 'text-align: center; padding-right: 10px;'>" +
                                                     "<h3 class='heading'>Sobre Nosotros</h3>" +
                                                     "<p>Mueblería con más de 80 años en el mercado costarricense.</p>" +
                                                 "</td>" +
@@ -240,7 +243,7 @@ namespace LaArtistica.Views.ProductsView
                                     "<td valign = 'top' width= '33.333%' style= 'padding-top: 20px;'>" +
                                         "<table role= 'presentation' cellspacing= '0' cellpadding= '0' border= '0' width= '100%'>" +
                                             "<tr>" +
-                                                "<td style= 'text-align: left; padding-left: 5px; padding-right: 5px;'>" +
+                                                "<td style= 'text-align: center; padding-left: 5px; padding-right: 5px;'>" +
                                                     "<h3 class='heading'>Contáctenos</h3>" +
                                                     "<ul>" +
                                                         "<li><span class='text'>Diagonal al Walmart de Curridabat</span></li>" +

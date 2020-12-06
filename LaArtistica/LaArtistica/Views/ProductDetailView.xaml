@@ -99,6 +99,7 @@
                                     MaxLength="2"
                                     FontSize="14"
                                     Keyboard="Numeric"
+                                    x:Name="txtCantidad"
                                     />
                                 <Label
                                     Grid.Column="1"
@@ -135,10 +136,12 @@
                                             <ColumnDefinition Width="*" />
                                             <ColumnDefinition Width="Auto" />
                                         </Grid.ColumnDefinitions>
-                                        <Label
+                                        <Button
                                             Grid.Column="1"
                                             Text="Comprar"
-                                            Style="{StaticResource BuyNowStyle}"/>
+                                            Style="{StaticResource BuyNowStyle}"
+                                            x:Name="btnComprar"
+                                            BackgroundColor="#CC0700"/>
                                         <Label
                                             Grid.Column="2"
                                             Text=">"

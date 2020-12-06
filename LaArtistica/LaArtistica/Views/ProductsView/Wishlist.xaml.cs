@@ -35,7 +35,7 @@ namespace LaArtistica.Views.ProductsView
                 if (buy == true)
                 {
                     //((NavigationPage)this.Parent).PushAsync(new CheckOutPage());
-                    Application.Current.MainPage = new CheckOutPage(currentUser,index);
+                    Application.Current.MainPage = new CheckOutPage(currentUser,index,1);
                 }
                 else
                 {
