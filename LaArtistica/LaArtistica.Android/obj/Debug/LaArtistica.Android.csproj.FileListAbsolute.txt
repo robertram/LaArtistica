@@ -54,6 +54,8 @@
 /Users/Valeria/GitHub/LaArtistica/LaArtistica/LaArtistica.Android/obj/Debug/res/drawable/logo.jpg
 /Users/Valeria/GitHub/LaArtistica/LaArtistica/LaArtistica.Android/obj/Debug/res/drawable/blue.jpg
 /Users/Valeria/GitHub/LaArtistica/LaArtistica/LaArtistica.Android/obj/Debug/res/drawable/orange.jpg
+/Users/Valeria/GitHub/LaArtistica/LaArtistica/LaArtistica.Android/obj/Debug/res/drawable/dark.jpg
+/Users/Valeria/GitHub/LaArtistica/LaArtistica/LaArtistica.Android/obj/Debug/res/drawable/pink.jpg
 /Users/Valeria/GitHub/LaArtistica/LaArtistica/LaArtistica.Android/obj/Debug/res/drawable/portada1.png
 /Users/Valeria/GitHub/LaArtistica/LaArtistica/LaArtistica.Android/obj/Debug/res/drawable/sillon.png
 /Users/Valeria/GitHub/LaArtistica/LaArtistica/LaArtistica.Android/obj/Debug/res/drawable/escritorio.jpg
@@ -90,7 +92,11 @@
 /Users/Valeria/GitHub/LaArtistica/LaArtistica/LaArtistica.Android/obj/Debug/android/assets/SQLitePCLRaw.core.dll
 /Users/Valeria/GitHub/LaArtistica/LaArtistica/LaArtistica.Android/obj/Debug/android/assets/SQLitePCLRaw.lib.e_sqlite3.android.dll
 /Users/Valeria/GitHub/LaArtistica/LaArtistica/LaArtistica.Android/obj/Debug/android/assets/SQLitePCLRaw.provider.e_sqlite3.dll
+/Users/Valeria/GitHub/LaArtistica/LaArtistica/LaArtistica.Android/obj/Debug/android/assets/Syncfusion.Compression.Portable.dll
+/Users/Valeria/GitHub/LaArtistica/LaArtistica/LaArtistica.Android/obj/Debug/android/assets/Syncfusion.Licensing.dll
+/Users/Valeria/GitHub/LaArtistica/LaArtistica/LaArtistica.Android/obj/Debug/android/assets/Syncfusion.Pdf.Portable.dll
 /Users/Valeria/GitHub/LaArtistica/LaArtistica/LaArtistica.Android/obj/Debug/android/assets/System.Buffers.dll
+/Users/Valeria/GitHub/LaArtistica/LaArtistica/LaArtistica.Android/obj/Debug/android/assets/System.Collections.dll
 /Users/Valeria/GitHub/LaArtistica/LaArtistica/LaArtistica.Android/obj/Debug/android/assets/System.ComponentModel.Composition.dll
 /Users/Valeria/GitHub/LaArtistica/LaArtistica/LaArtistica.Android/obj/Debug/android/assets/System.ComponentModel.Composition.pdb
 /Users/Valeria/GitHub/LaArtistica/LaArtistica/LaArtistica.Android/obj/Debug/android/assets/System.Core.dll
@@ -106,6 +112,7 @@
 /Users/Valeria/GitHub/LaArtistica/LaArtistica/LaArtistica.Android/obj/Debug/android/assets/System.IO.Compression.FileSystem.dll
 /Users/Valeria/GitHub/LaArtistica/LaArtistica/LaArtistica.Android/obj/Debug/android/assets/System.IO.Compression.FileSystem.pdb
 /Users/Valeria/GitHub/LaArtistica/LaArtistica/LaArtistica.Android/obj/Debug/android/assets/System.IO.Compression.pdb
+/Users/Valeria/GitHub/LaArtistica/LaArtistica/LaArtistica.Android/obj/Debug/android/assets/System.Linq.dll
 /Users/Valeria/GitHub/LaArtistica/LaArtistica/LaArtistica.Android/obj/Debug/android/assets/System.Memory.dll
 /Users/Valeria/GitHub/LaArtistica/LaArtistica/LaArtistica.Android/obj/Debug/android/assets/System.Net.Http.dll
 /Users/Valeria/GitHub/LaArtistica/LaArtistica/LaArtistica.Android/obj/Debug/android/assets/System.Net.Http.pdb
@@ -114,12 +121,20 @@
 /Users/Valeria/GitHub/LaArtistica/LaArtistica/LaArtistica.Android/obj/Debug/android/assets/System.Numerics.Vectors.dll
 /Users/Valeria/GitHub/LaArtistica/LaArtistica/LaArtistica.Android/obj/Debug/android/assets/System.Numerics.Vectors.pdb
 /Users/Valeria/GitHub/LaArtistica/LaArtistica/LaArtistica.Android/obj/Debug/android/assets/System.pdb
+/Users/Valeria/GitHub/LaArtistica/LaArtistica/LaArtistica.Android/obj/Debug/android/assets/System.Reflection.dll
+/Users/Valeria/GitHub/LaArtistica/LaArtistica/LaArtistica.Android/obj/Debug/android/assets/System.Reflection.Extensions.dll
+/Users/Valeria/GitHub/LaArtistica/LaArtistica/LaArtistica.Android/obj/Debug/android/assets/System.Resources.ResourceManager.dll
 /Users/Valeria/GitHub/LaArtistica/LaArtistica/LaArtistica.Android/obj/Debug/android/assets/System.Runtime.CompilerServices.Unsafe.dll
 /Users/Valeria/GitHub/LaArtistica/LaArtistica/LaArtistica.Android/obj/Debug/android/assets/System.Runtime.dll
+/Users/Valeria/GitHub/LaArtistica/LaArtistica/LaArtistica.Android/obj/Debug/android/assets/System.Runtime.Extensions.dll
 /Users/Valeria/GitHub/LaArtistica/LaArtistica/LaArtistica.Android/obj/Debug/android/assets/System.Runtime.Serialization.dll
 /Users/Valeria/GitHub/LaArtistica/LaArtistica/LaArtistica.Android/obj/Debug/android/assets/System.Runtime.Serialization.pdb
 /Users/Valeria/GitHub/LaArtistica/LaArtistica/LaArtistica.Android/obj/Debug/android/assets/System.ServiceModel.Internals.dll
 /Users/Valeria/GitHub/LaArtistica/LaArtistica/LaArtistica.Android/obj/Debug/android/assets/System.ServiceModel.Internals.pdb
+/Users/Valeria/GitHub/LaArtistica/LaArtistica/LaArtistica.Android/obj/Debug/android/assets/System.Text.Encoding.CodePages.dll
+/Users/Valeria/GitHub/LaArtistica/LaArtistica/LaArtistica.Android/obj/Debug/android/assets/System.Text.Encoding.CodePages.pdb
+/Users/Valeria/GitHub/LaArtistica/LaArtistica/LaArtistica.Android/obj/Debug/android/assets/System.Text.Encoding.dll
+/Users/Valeria/GitHub/LaArtistica/LaArtistica/LaArtistica.Android/obj/Debug/android/assets/System.Text.RegularExpressions.dll
 /Users/Valeria/GitHub/LaArtistica/LaArtistica/LaArtistica.Android/obj/Debug/android/assets/System.Transactions.dll
 /Users/Valeria/GitHub/LaArtistica/LaArtistica/LaArtistica.Android/obj/Debug/android/assets/System.Transactions.pdb
 /Users/Valeria/GitHub/LaArtistica/LaArtistica/LaArtistica.Android/obj/Debug/android/assets/System.Web.Services.dll
@@ -521,5 +536,4 @@
 /Users/Valeria/GitHub/LaArtistica/LaArtistica/LaArtistica.Android/obj/Debug/stamp/_GenerateJavaStubs.stamp
 /Users/Valeria/GitHub/LaArtistica/LaArtistica/LaArtistica.Android/obj/Debug/stamp/_GeneratePackageManagerJava.stamp
 /Users/Valeria/GitHub/LaArtistica/LaArtistica/LaArtistica.Android/obj/Debug/stamp/_ResolveLibraryProjectImports.stamp
-/Users/Valeria/GitHub/LaArtistica/LaArtistica/LaArtistica.Android/obj/Debug/res/drawable/pink.jpg
-/Users/Valeria/GitHub/LaArtistica/LaArtistica/LaArtistica.Android/obj/Debug/res/drawable/dark.jpg
+/Users/Valeria/GitHub/LaArtistica/LaArtistica/LaArtistica.Android/obj/Debug/res/drawable/productos.png
