@@ -98,7 +98,7 @@ namespace LaArtistica.Models
 
 
         // Insert
-        public int AddNewProduct(string nombre, string stock, string precio, string garantiaMeses, string imagen, string imagenUrl)
+        public int AddNewProduct(string nombre, string stock, string precio, string garantiaMeses, string descripcion, string imagen, string imagenUrl)
         {
             int result = 0;
             try
@@ -110,8 +110,9 @@ namespace LaArtistica.Models
                     Precio = precio,
                     GarantiaMeses = garantiaMeses,
                     Imagen = imagen,
-                    ImagenUrl = imagenUrl
-                });
+                    ImagenUrl = imagenUrl,
+                    Descripcion = descripcion
+                }); ;
                 EstadoMensaje = "Insertado";
             }
 
@@ -151,6 +152,39 @@ namespace LaArtistica.Models
             }
             catch (Exception e)
             {
+                EstadoMensaje = e.Message;
+            }
+            return Enumerable.Empty<Products>();
+        }
+
+        public IEnumerable<Products> GetProductsForReport(List<int> ids)
+        {
+            try
+            {
+                string idsV = "";
+                Console.WriteLine("Este si");
+                Console.WriteLine(ids.Count());
+                for(int i = 0; i < ids.Count(); i++)
+                {
+                    Console.WriteLine("Este no" + i);
+                    if(ids[i+1].Equals(ids.Count()))
+                    {
+                        Console.WriteLine("If 1");
+                        idsV += ids[i];
+                    }
+                    else
+                    {
+                        Console.WriteLine("If 2");
+                        idsV += ids[i] + ",";
+                    }
+                    
+                }
+                Console.WriteLine("ids" + idsV);
+                return con.Query<Products>("SELECT * FROM Products WHERE Id IN (?)",idsV);
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine("Catch");
                 EstadoMensaje = e.Message;
             }
             return Enumerable.Empty<Products>();
@@ -198,6 +232,50 @@ namespace LaArtistica.Models
         public IEnumerable<User> getUsername2(string email)
         {
             return con.Query<User>("Select Username FROM User Where Email = '" + email + "'").ToArray();
+        }
+
+
+        ///Ventas
+        public int AddNewVenta(int user, int product)
+        {
+            int result = 0;
+            try
+            {
+                result = con.Insert(new Venta
+                {
+                    UserID = user,
+                    ProductoID = product
+                });
+                EstadoMensaje = "Insertado";
+            }
+            catch (Exception e)
+            { EstadoMensaje = e.Message; }
+            return result;
+        }
+        public IEnumerable<Venta> GetAllVentas()
+        {
+            try
+            {
+                return con.Table<Venta>();
+            }
+            catch (Exception e)
+            {
+                EstadoMensaje = e.Message;
+            }
+            return Enumerable.Empty<Venta>();
+        }
+
+        public IEnumerable<Venta> GetVentasReport(int user)
+        {
+            try
+            {
+                return con.Query<Venta>("SELECT ProductoID FROM Venta WHERE UserID = ?", user);
+            }
+            catch (Exception e)
+            {
+                EstadoMensaje = e.Message;
+            }
+            return Enumerable.Empty<Venta>();
         }
     }
 }

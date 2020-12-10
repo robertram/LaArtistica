@@ -26,9 +26,28 @@ namespace LaArtistica.Views.ProductsView
             currentUser = u;
             currentProduct = p;
             cantidad = c;
+            abonado.CheckedChanged += Abonado_CheckedChanged;
             txtEmail.Text = currentUser.Email;
             btnBuy.Clicked += BtnBuy_Clicked;
             btnCancel.Clicked += BtnCancel_Clicked;
+        }
+
+        private void Abonado_CheckedChanged(object sender, CheckedChangedEventArgs e)
+        {
+            if (abonado.IsChecked)
+            {
+                abonosPick.IsEnabled = true;
+                abonosPick.IsVisible = true;
+                lblCantidad.IsVisible = true;
+                frameCantidad.IsVisible = true;
+            }
+            else 
+            {
+                abonosPick.IsEnabled = false;
+                abonosPick.IsVisible = false;
+                lblCantidad.IsVisible = false;
+                frameCantidad.IsVisible = false;
+            }
         }
 
         async void BtnCancel_Clicked(object sender, EventArgs e)
@@ -46,6 +65,8 @@ namespace LaArtistica.Views.ProductsView
                 {
                     await DisplayAlert("La Artística", "Has comprado el producto", "Aceptar");
                     sendEmail(currentUser, currentProduct);
+
+                    UserRepository.Instancia.AddNewVenta(currentUser.Id, LoginPage.ProductToBuy.Id);
                     //Application.Current.MainPage = new NavigationPage(new ProductsPage(currentUser));
                 }
                 else

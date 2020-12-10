@@ -180,3 +180,4 @@ C:\Users\PC\Desktop\U\Lenguaje C#\LaArtistica\LaArtistica\LaArtistica\obj\Debug\
 C:\Users\PC\Desktop\U\Lenguaje C#\LaArtistica\LaArtistica\LaArtistica\obj\Debug\netstandard2.0\LaArtistica.dll
 C:\Users\PC\Desktop\U\Lenguaje C#\LaArtistica\LaArtistica\LaArtistica\obj\Debug\netstandard2.0\ref\LaArtistica.dll
 C:\Users\PC\Desktop\U\Lenguaje C#\LaArtistica\LaArtistica\LaArtistica\obj\Debug\netstandard2.0\LaArtistica.pdb
+C:\Users\PC\Desktop\U\Lenguaje C#\LaArtistica\LaArtistica\LaArtistica\obj\Debug\netstandard2.0\LaArtistica.csprojAssemblyReference.cache

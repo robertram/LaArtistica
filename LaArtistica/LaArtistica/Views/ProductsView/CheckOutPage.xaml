@@ -27,6 +27,10 @@
                 <!--10-->
                 <RowDefinition Height="Auto"/>
                 <!--11-->
+                <RowDefinition Height="Auto"/>
+                <!--12-->
+                <RowDefinition Height="Auto"/>
+                <!--13-->
             </Grid.RowDefinitions>
 
             <Grid.ColumnDefinitions>
@@ -235,7 +239,63 @@
 
             </StackLayout>
 
-            <StackLayout Grid.Row="10" HorizontalOptions="Center">
+            <StackLayout Grid.Row="10" HorizontalOptions="Center" WidthRequest="300" Orientation="Vertical" Spacing="20">
+
+                <Label
+                    Text="Pago con abonos"
+                    FontSize="13"
+                    TextColor="Black"
+                    />
+
+                <Frame
+                     HasShadow="True"
+                     Padding="6"
+                    CornerRadius="7"
+                     >
+
+                    <CheckBox 
+                        IsChecked="False"
+                        x:Name="abonado"
+                              />
+
+
+                </Frame>
+            </StackLayout>
+
+            <StackLayout Grid.Row="11" HorizontalOptions="Center" WidthRequest="300" Orientation="Vertical">
+
+                <Label
+                    Text="Cantidad de meses"
+                    FontSize="13"
+                    TextColor="Black"
+                    IsVisible="false"
+                    x:Name="lblCantidad"
+                    />
+
+                <Frame
+                     HasShadow="True"
+                     Padding="6"
+                    CornerRadius="7"
+                    IsVisible="false"
+                    x:Name="frameCantidad"
+                     >
+
+                    <Picker x:Name="abonosPick"  TitleColor="Black" IsEnabled="False" IsVisible="false">
+                        <Picker.ItemsSource>
+                            <x:Array Type="{x:Type x:String}">
+                                <x:String>3 meses</x:String>
+                                <x:String>6 meses</x:String>
+                                <x:String>9 meses</x:String>
+                                <x:String>12 meses</x:String>
+                            </x:Array>
+                        </Picker.ItemsSource>
+                    </Picker>
+
+
+                </Frame>
+            </StackLayout>
+
+            <StackLayout Grid.Row="12" HorizontalOptions="Center">
                 <ActivityIndicator
                        IsRunning="{Binding IsRunningTxt, Mode=TwoWay}"
                        IsVisible="{Binding IsVisibleTxt, Mode=TwoWay}"
@@ -244,7 +304,7 @@
 
 
 
-            <StackLayout Grid.Row="11" HorizontalOptions="Center" Orientation="Vertical" >
+            <StackLayout Grid.Row="13" HorizontalOptions="Center" Orientation="Vertical" >
                 <Button
                      Text="BUY"
                             TextColor="Black"

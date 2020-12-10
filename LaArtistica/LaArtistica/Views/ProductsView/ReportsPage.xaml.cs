@@ -7,6 +7,8 @@ using System.Threading.Tasks;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
+using LaArtistica.Models;
+using LaArtistica.Views.AccessView;
 using Syncfusion.Pdf;
 using Syncfusion.Pdf.Parsing;
 using Syncfusion.Pdf.Graphics;
@@ -31,35 +33,48 @@ namespace LaArtistica.Views.ProductsView
 
         private void GarantiasBtn_Clicked(object sender, EventArgs e)
         {
-            // Create a new PDF document
-            PdfDocument document = new PdfDocument();
+            //// Create a new PDF document
+            //PdfDocument document = new PdfDocument();
 
-            //Add a page to the document
-            PdfPage page = document.Pages.Add();
+            ////Add a page to the document
+            //PdfPage page = document.Pages.Add();
 
-            //Create PDF graphics for the page
-            PdfGraphics graphics = page.Graphics;
+            ////Create PDF graphics for the page
+            //PdfGraphics graphics = page.Graphics;
 
-            //Set the standard font
-            PdfFont font = new PdfStandardFont(PdfFontFamily.Helvetica, 20);
+            ////Set the standard font
+            //PdfFont font = new PdfStandardFont(PdfFontFamily.Helvetica, 20);
 
-            //Draw the text
-            graphics.DrawString("Hello World!!!", font, PdfBrushes.Black, new PointF(0, 0));
+            ////Draw the text
+            //graphics.DrawString("Hello World!!!", font, PdfBrushes.Black, new PointF(0, 0));
 
-            //Save the document to the stream
-            MemoryStream stream = new MemoryStream();
-            document.Save(stream);
+            ////Save the document to the stream
+            //MemoryStream stream = new MemoryStream();
+            //document.Save(stream);
 
-            //Close the document
-            //document.Close(true);
+            ////Close the document
+            ////document.Close(true);
 
-            //Save the stream as a file in the device and invoke it for viewing
-            Xamarin.Forms.DependencyService.Get<ISave>().SaveAndView("LaArtistica/Output.pdf", "application / pdf", stream);
+            ////Save the stream as a file in the device and invoke it for viewing
+            //Xamarin.Forms.DependencyService.Get<ISave>().SaveAndView("LaArtistica/Output.pdf", "application / pdf", stream);
 
-            //PdfLoadedDocument loadedDocument = new PdfLoadedDocument(stream,true);
-            sendPDFEmail(stream);
+            ////PdfLoadedDocument loadedDocument = new PdfLoadedDocument(stream,true);
+            List<Venta> ventas=  UserRepository.Instancia.GetVentasReport(LoginPage.LogedUser.Id).ToList();
+            List<int> ids = new List<int>();
+            foreach(Venta v in ventas){
+                ids.Add(v.ProductoID);
+            }
+            List<Products> products = UserRepository.Instancia.GetProductsForReport(ids).ToList();
+            Console.WriteLine("COUNT" + products.Count());
+            foreach (Products p in products)
+            {
+                Console.WriteLine(p.Nombre);
+            }
+            //sendPDFEmail();
+
+
         }
-        private void sendPDFEmail(MemoryStream p)
+        private void sendPDFEmail()
         {
             try
             {
