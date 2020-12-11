@@ -8,7 +8,7 @@ namespace LaArtistica.Models
     [Table("Products")]
     public class Products
     {
-        [PrimaryKey, AutoIncrement]
+        [PrimaryKey]
         public int Id { get; set; }
 
         [MaxLength(100)]

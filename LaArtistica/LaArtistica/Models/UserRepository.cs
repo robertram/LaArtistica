@@ -98,13 +98,14 @@ namespace LaArtistica.Models
 
 
         // Insert
-        public int AddNewProduct(string nombre, string stock, string precio, string garantiaMeses, string descripcion, string imagen, string imagenUrl)
+        public int AddNewProduct(int id,string nombre, string stock, string precio, string garantiaMeses, string descripcion, string imagen, string imagenUrl)
         {
             int result = 0;
             try
             {
                 result = con.Insert(new Products
                 {
+                    Id = id,
                     Nombre = nombre,
                     Stock = stock,
                     Precio = precio,
@@ -112,7 +113,7 @@ namespace LaArtistica.Models
                     Imagen = imagen,
                     ImagenUrl = imagenUrl,
                     Descripcion = descripcion
-                }); ;
+                }); ; ;
                 EstadoMensaje = "Insertado";
             }
 
@@ -161,30 +162,27 @@ namespace LaArtistica.Models
         {
             try
             {
-                string idsV = "";
-                Console.WriteLine("Este si");
-                Console.WriteLine(ids.Count());
+                string v = string.Join(",", ids);
+                string query = "SELECT * FROM Products WHERE Id IN (";
                 for(int i = 0; i < ids.Count(); i++)
                 {
-                    Console.WriteLine("Este no" + i);
-                    if(ids[i+1].Equals(ids.Count()))
+                    if(ids.Count - 1 == i)
                     {
-                        Console.WriteLine("If 1");
-                        idsV += ids[i];
+                        query += ids[i];
                     }
                     else
                     {
-                        Console.WriteLine("If 2");
-                        idsV += ids[i] + ",";
+                        query += ids[i] + ",";
                     }
                     
                 }
-                Console.WriteLine("ids" + idsV);
-                return con.Query<Products>("SELECT * FROM Products WHERE Id IN (?)",idsV);
+                query += ")";
+                Console.WriteLine(query);
+                return con.Query<Products>(query);
             }
             catch (Exception e)
             {
-                Console.WriteLine("Catch");
+                Console.WriteLine(e.Message);
                 EstadoMensaje = e.Message;
             }
             return Enumerable.Empty<Products>();

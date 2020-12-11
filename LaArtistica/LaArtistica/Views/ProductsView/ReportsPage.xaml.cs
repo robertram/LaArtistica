@@ -64,11 +64,11 @@ namespace LaArtistica.Views.ProductsView
             foreach(Venta v in ventas){
                 ids.Add(v.ProductoID);
             }
+            string s = string.Join(",", ids);
             List<Products> products = UserRepository.Instancia.GetProductsForReport(ids).ToList();
-            Console.WriteLine("COUNT" + products.Count());
             foreach (Products p in products)
             {
-                Console.WriteLine(p.Nombre);
+                
             }
             //sendPDFEmail();
 
