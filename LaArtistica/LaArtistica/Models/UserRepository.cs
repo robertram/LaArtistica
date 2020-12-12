@@ -234,7 +234,7 @@ namespace LaArtistica.Models
 
 
         ///Ventas
-        public int AddNewVenta(int user, int product)
+        public int AddNewVenta(int user, int product, string date)
         {
             int result = 0;
             try
@@ -242,8 +242,9 @@ namespace LaArtistica.Models
                 result = con.Insert(new Venta
                 {
                     UserID = user,
-                    ProductoID = product
-                });
+                    ProductoID = product,
+                    Fecha_Compra = date
+                }); ;
                 EstadoMensaje = "Insertado";
             }
             catch (Exception e)

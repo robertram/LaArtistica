@@ -10,6 +10,7 @@ using Xamarin.Forms.Xaml;
 using LaArtistica.Models;
 using Xamarin.Essentials;
 using LaArtistica.Views.AccessView;
+using LaArtistica.Views.ProductsView;
 
 namespace LaArtistica.Views.ProductsView
 {
@@ -53,7 +54,7 @@ namespace LaArtistica.Views.ProductsView
         async void BtnCancel_Clicked(object sender, EventArgs e)
         {
             await DisplayAlert("La Artística", "Tu compra ha sido cancelada", "Aceptar");
-            Application.Current.MainPage = new NavigationPage(new ProductsPage(currentUser));
+            Application.Current.MainPage = new NavigationPage(new ProductsView.Menu(currentUser));
         }
 
         async void BtnBuy_Clicked(object sender, EventArgs e)
@@ -66,7 +67,7 @@ namespace LaArtistica.Views.ProductsView
                     await DisplayAlert("La Artística", "Has comprado el producto", "Aceptar");
                     sendEmail(currentUser, currentProduct);
 
-                    UserRepository.Instancia.AddNewVenta(currentUser.Id, LoginPage.ProductToBuy.Id);
+                    UserRepository.Instancia.AddNewVenta(currentUser.Id, LoginPage.ProductToBuy.Id,DateTime.Now.ToString());
                     //Application.Current.MainPage = new NavigationPage(new ProductsPage(currentUser));
                 }
                 else

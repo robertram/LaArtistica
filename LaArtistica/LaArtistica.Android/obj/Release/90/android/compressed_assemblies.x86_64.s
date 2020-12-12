@@ -34,7 +34,7 @@
 
 	/* 3: LaArtistica.dll */
 	/* uncompressed_file_size */
-	.long	136192
+	.long	146432
 	/* loaded */
 	.byte	0
 	/* data */
@@ -241,7 +241,7 @@
 
 	/* 26: System.dll */
 	/* uncompressed_file_size */
-	.long	944128
+	.long	920576
 	/* loaded */
 	.byte	0
 	/* data */
@@ -628,7 +628,7 @@
 
 	/* 69: mscorlib.dll */
 	/* uncompressed_file_size */
-	.long	2114048
+	.long	2114560
 	/* loaded */
 	.byte	0
 	/* data */
