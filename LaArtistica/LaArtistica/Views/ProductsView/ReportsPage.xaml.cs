@@ -101,11 +101,11 @@ namespace LaArtistica.Views.ProductsView
                     }
 
             }
-            sendPDFEmail(reportBuy);
+            sendEmail(reportBuy);
 
 
         }
-        private void sendPDFEmail(string report)
+        private void sendEmail(string report)
         {
             try
             {
@@ -118,6 +118,7 @@ namespace LaArtistica.Views.ProductsView
                 mail.Subject = "Reporte Historial de Compras La Artistica";
                 DisplayAlert("Laarti", report, "Ok");
 
+                mail.IsBodyHtml = true;
                 mail.Body = getEmailBody(LoginPage.LogedUser,report);
                 //Attachment data = new Attachment(p, "Reports.pdf", System.Net.Mime.MediaTypeNames.Application.Pdf);
                 //Attachment data = new Attachment("Report.pdf");
