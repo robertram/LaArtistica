@@ -12,6 +12,7 @@ namespace LaArtistica.Models
         public int VentaID { get; set; }
         public int UserID { get; set; }
         public int ProductoID { get; set; }
+        public int Plazo { get; set; }
 
         [MaxLength(255)]
         public String Fecha_Compra { get; set; }

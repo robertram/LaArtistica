@@ -48,7 +48,7 @@
 
                     <StackLayout Grid.Row="3" HorizontalOptions="Center" Orientation="Vertical" >
                         <Button
-                     Text="Garantias"
+                     Text="Historial de Compras"
                             TextColor="Black"
                             Font="Montserrat-Medium.otf"
                             FontSize="15"
@@ -60,12 +60,12 @@
                             CornerRadius="7"
                             Command="{Binding RegisterCommand}"
                             IsEnabled="{Binding IsEnabledTxt, Mode=TwoWay}"
-                            x:Name="btnGarantias"/>
+                            x:Name="btnHistorial"/>
                     </StackLayout>
 
                     <StackLayout Grid.Row="4" HorizontalOptions="Center" Orientation="Vertical" >
                         <Button
-                     Text="Compras"
+                     Text="Proyección de Pagos"
                             TextColor="Black"
                             Font="Montserrat-Medium.otf"
                             FontSize="15"
@@ -77,7 +77,7 @@
                             CornerRadius="7"
                             Command="{Binding RegisterCommand}"
                             IsEnabled="{Binding IsEnabledTxt, Mode=TwoWay}"
-                            x:Name="btnCompras"/>
+                            x:Name="btnProyPagos"/>
                     </StackLayout>
 
                     <StackLayout Grid.Row="5" HorizontalOptions="Center" Orientation="Vertical" >

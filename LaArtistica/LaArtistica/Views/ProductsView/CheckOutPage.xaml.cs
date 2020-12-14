@@ -67,8 +67,7 @@ namespace LaArtistica.Views.ProductsView
                     await DisplayAlert("La Artística", "Has comprado el producto", "Aceptar");
                     sendEmail(currentUser, currentProduct);
 
-                    UserRepository.Instancia.AddNewVenta(currentUser.Id, LoginPage.ProductToBuy.Id,DateTime.Now.ToString());
-                    //Application.Current.MainPage = new NavigationPage(new ProductsPage(currentUser));
+                    UserRepository.Instancia.AddNewVenta(currentUser.Id, LoginPage.ProductToBuy.Id, DateTime.Now.ToString(), abonosPick.SelectedIndex);
                 }
                 else
                 {

@@ -152,3 +152,11 @@ C:\Users\XP^C\Desktop\lAaRTISTICAcomprarREPORT\LaArtistica\LaArtistica\bin\Relea
 C:\Users\XP^C\Desktop\lAaRTISTICAcomprarREPORT\LaArtistica\LaArtistica\bin\Release\netstandard2.0\ref\LaArtistica.dll
 C:\Users\XP^C\Desktop\lAaRTISTICAcomprarREPORT\LaArtistica\LaArtistica\bin\Release\netstandard2.0\LaArtistica.pdb
 C:\Users\XP^C\Desktop\lAaRTISTICAcomprarREPORT\LaArtistica\LaArtistica\obj\Release\netstandard2.0\XamlC.stamp
+C:\Users\Robert\Desktop\LaArtistica\LaArtistica\LaArtistica\obj\Release\netstandard2.0\LaArtistica.csprojAssemblyReference.cache
+C:\Users\Robert\Desktop\LaArtistica\LaArtistica\LaArtistica\obj\Release\netstandard2.0\Views\AccessView\ForgotPassword.xaml.g.cs
+C:\Users\Robert\Desktop\LaArtistica\LaArtistica\LaArtistica\obj\Release\netstandard2.0\Views\ArtisticaView.xaml.g.cs
+C:\Users\Robert\Desktop\LaArtistica\LaArtistica\LaArtistica\obj\Release\netstandard2.0\Views\ProductDetailView.xaml.g.cs
+C:\Users\Robert\Desktop\LaArtistica\LaArtistica\LaArtistica\obj\Release\netstandard2.0\Views\ProductsView\Menu.xaml.g.cs
+C:\Users\Robert\Desktop\LaArtistica\LaArtistica\LaArtistica\obj\Release\netstandard2.0\Views\ProductsView\ReportsPage.xaml.g.cs
+C:\Users\Robert\Desktop\LaArtistica\LaArtistica\LaArtistica\obj\Release\netstandard2.0\Views\ProductsView\Wishlist.xaml.g.cs
+C:\Users\Robert\Desktop\LaArtistica\LaArtistica\LaArtistica\obj\Release\netstandard2.0\Views\Templates\ProductDataTemplate.xaml.g.cs

@@ -283,9 +283,7 @@
                     <Picker x:Name="abonosPick"  TitleColor="Black" IsEnabled="False" IsVisible="false">
                         <Picker.ItemsSource>
                             <x:Array Type="{x:Type x:String}">
-                                <x:String>3 meses</x:String>
                                 <x:String>6 meses</x:String>
-                                <x:String>9 meses</x:String>
                                 <x:String>12 meses</x:String>
                             </x:Array>
                         </Picker.ItemsSource>

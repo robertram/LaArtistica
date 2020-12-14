@@ -39,6 +39,7 @@ namespace LaArtistica.Models
             con = new SQLiteConnection(dbPath);
             con.CreateTable<User>(); 
             con.CreateTable<Products>();
+            con.CreateTable<Venta>();
         }
 
         public string EstadoMensaje;
@@ -234,7 +235,7 @@ namespace LaArtistica.Models
 
 
         ///Ventas
-        public int AddNewVenta(int user, int product, string date)
+        public int AddNewVenta(int user, int product, string date, int plazo )
         {
             int result = 0;
             try
@@ -243,7 +244,8 @@ namespace LaArtistica.Models
                 {
                     UserID = user,
                     ProductoID = product,
-                    Fecha_Compra = date
+                    Fecha_Compra = date,
+                    Plazo = plazo
                 }); ;
                 EstadoMensaje = "Insertado";
             }
@@ -268,7 +270,7 @@ namespace LaArtistica.Models
         {
             try
             {
-                return con.Query<Venta>("SELECT ProductoID FROM Venta WHERE UserID = ?", user);
+                return con.Query<Venta>("SELECT ProductoID, VentaID, UserID, Fecha_Compra, Plazo FROM Venta WHERE UserID = ?", user);
             }
             catch (Exception e)
             {
