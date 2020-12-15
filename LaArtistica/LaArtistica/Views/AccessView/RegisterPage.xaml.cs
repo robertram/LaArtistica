@@ -30,7 +30,7 @@ namespace LaArtistica.Views.AccessView
                 bool exists = false;
                 foreach (User u in users)
                 {
-                    if (txtEmail.Text==u.Email || txtUsername.Text==u.Username)
+                    if (txtEmail.Text==u.Email)
                     {
                         exists = true;
                         break;
@@ -39,7 +39,7 @@ namespace LaArtistica.Views.AccessView
                 if (!exists)
                 {
 
-                    if (txtPassword.Text.Length < 8)
+                    if (txtPassword.Text.Length < 8 || txtPassword.Text.Length > 10)
                     {
                         passwordSize();
                     }
@@ -81,7 +81,7 @@ namespace LaArtistica.Views.AccessView
 
         private async Task passwordSize()
         {
-            await DisplayAlert("La Artistica", "La contraseña debe tener al menos 8 caracteres", "Aceptar");
+            await DisplayAlert("La Artistica", "La contraseña debe tener entre 8 y 10 caracteres", "Aceptar");
         }
 
         private async Task noDataAlert()

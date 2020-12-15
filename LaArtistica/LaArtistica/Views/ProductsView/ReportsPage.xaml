@@ -82,7 +82,7 @@
 
                     <StackLayout Grid.Row="5" HorizontalOptions="Center" Orientation="Vertical" >
                         <Button
-                     Text="Abonos"
+                     Text="Estado Actual de la Garantía"
                             TextColor="Black"
                             Font="Montserrat-Medium.otf"
                             FontSize="15"
@@ -94,7 +94,23 @@
                             CornerRadius="7"
                             Command="{Binding RegisterCommand}"
                             IsEnabled="{Binding IsEnabledTxt, Mode=TwoWay}"
-                            x:Name="btnAbonos"/>
+                            x:Name="btnGarantia"/>
+                    </StackLayout>
+                    <StackLayout Grid.Row="6" HorizontalOptions="Center" Orientation="Vertical" >
+                        <Button
+                     Text="Estado Actual de los Pagos"
+                            TextColor="Black"
+                            Font="Montserrat-Medium.otf"
+                            FontSize="15"
+                            BackgroundColor="#fcfcfc"
+                            BorderColor="#f2f2f2"
+                            BorderWidth="1.5"
+                            WidthRequest="300"
+                            HeightRequest="50"
+                            CornerRadius="7"
+                            Command="{Binding RegisterCommand}"
+                            IsEnabled="{Binding IsEnabledTxt, Mode=TwoWay}"
+                            x:Name="btnPagos"/>
                     </StackLayout>
 
                 </Grid>
