@@ -309,21 +309,25 @@ namespace LaArtistica.Views.ProductsView
                 {
                     mail.Subject = "Reporte Proyección de Pagos La Artistica | " + DateTime.Now.ToString();
                     mail.Body = getProyPagosEmailBody(LoginPage.LogedUser, report, plazos);
+                    DisplayAlert("La Artistica", "Reporte enviado a su correo electrónico", "Aceptar");
                 }
                 else if(tipoReporte == "Historial")
                 {
                     mail.Subject = "Reporte Historial de Compras La Artistica | " + DateTime.Now.ToString();
                     mail.Body = getEmailBody(LoginPage.LogedUser, report);
+                    DisplayAlert("La Artistica", "Reporte enviado a su correo electrónico", "Aceptar");
                 }
                 else if(tipoReporte == "Garantia")
                 {
                     mail.Subject = "Reporte Estado Garantia La Artistica | " + DateTime.Now.ToString();
                     mail.Body = getGarantiaEmailBody(LoginPage.LogedUser, report);
+                    DisplayAlert("La Artistica", "Reporte enviado a su correo electrónico", "Aceptar");
                 }
                 else if (tipoReporte == "Pagos")
                 {
                     mail.Subject = "Reporte Estado de Pagos La Artistica | " + DateTime.Now.ToString();
                     mail.Body = getPagosEmailBody(LoginPage.LogedUser, report);
+                    DisplayAlert("La Artistica", "Reporte enviado a su correo electrónico", "Aceptar");
                 }
 
                 SmtpServer.Port = 587;

@@ -31,6 +31,8 @@
                 <!--12-->
                 <RowDefinition Height="Auto"/>
                 <!--13-->
+                <RowDefinition Height="Auto"/>
+                <!--14-->
             </Grid.RowDefinitions>
 
             <Grid.ColumnDefinitions>
@@ -300,9 +302,20 @@
                        Color="Black"/>
             </StackLayout>
 
+            <StackLayout Grid.Row="13" HorizontalOptions="Center" WidthRequest="300" Orientation="Vertical">
+
+                <Label
+                    Text=""
+                    FontSize="13"
+                    TextColor="Black"
+                    x:Name="lblTotal"
+                    />
+
+            </StackLayout>
 
 
-            <StackLayout Grid.Row="13" HorizontalOptions="Center" Orientation="Vertical" >
+
+            <StackLayout Grid.Row="14" HorizontalOptions="Center" Orientation="Vertical" >
                 <Button
                      Text="BUY"
                             TextColor="Black"

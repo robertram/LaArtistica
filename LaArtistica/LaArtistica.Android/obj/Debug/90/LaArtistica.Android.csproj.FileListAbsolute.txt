@@ -2601,3 +2601,8 @@ C:\Users\Robert\Desktop\LaArtistica\LaArtistica\LaArtistica.Android\obj\Debug\90
 C:\Users\Robert\Desktop\LaArtistica\LaArtistica\LaArtistica.Android\obj\Debug\90\android\src\crc64f8908e42fa42e603\RoundedCornerOutlineProvider.java
 C:\Users\PC\Desktop\U\Lenguaje C#\LaArtistica\LaArtistica\LaArtistica.Android\obj\Debug\90\res\drawable\productos.png
 C:\Users\Robert\Desktop\LaArtistica\LaArtistica\LaArtistica.Android\obj\Debug\90\res\drawable\productos.png
+C:\Users\Robert\Desktop\LaArtistica\LaArtistica\LaArtistica.Android\obj\Debug\90\res\drawable\yacolt.jpg
+C:\Users\Robert\Desktop\LaArtistica\LaArtistica\LaArtistica.Android\obj\Debug\90\res\drawable\macleary.jpg
+C:\Users\Robert\Desktop\LaArtistica\LaArtistica\LaArtistica.Android\obj\Debug\90\res\drawable\loveseat.jpg
+C:\Users\Robert\Desktop\LaArtistica\LaArtistica\LaArtistica.Android\obj\Debug\90\res\drawable\hyndell.jpg
+C:\Users\Robert\Desktop\LaArtistica\LaArtistica\LaArtistica.Android\obj\Debug\90\res\drawable\baylow.jpg

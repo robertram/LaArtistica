@@ -103,7 +103,7 @@
                                     />
                                 <Label
                                     Grid.Column="1"
-                                    Text="{Binding Products.Precio, StringFormat='{0:C0}'}"
+                                    Text="{Binding Products.Precio, StringFormat='${0:C2}'}"
                                     Style="{StaticResource ProductPriceStyle}"/>
                             </Grid>
                             <!-- ABOUT -->

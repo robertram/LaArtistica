@@ -23,7 +23,6 @@ namespace LaArtistica.Views.ProductsView
         public CheckOutPage(User u, Products p, int c)
         {
             InitializeComponent();
-            //Console.WriteLine(LoginPage.ProductToBuy);
             currentUser = u;
             currentProduct = p;
             cantidad = c;
@@ -31,6 +30,7 @@ namespace LaArtistica.Views.ProductsView
             txtEmail.Text = currentUser.Email;
             btnBuy.Clicked += BtnBuy_Clicked;
             btnCancel.Clicked += BtnCancel_Clicked;
+            lblTotal.Text = "Precio Total: $" + (Int32.Parse(LoginPage.ProductToBuy.Precio) * cantidad).ToString();
         }
 
         private void Abonado_CheckedChanged(object sender, CheckedChangedEventArgs e)
@@ -68,6 +68,9 @@ namespace LaArtistica.Views.ProductsView
                     sendEmail(currentUser, currentProduct);
 
                     UserRepository.Instancia.AddNewVenta(currentUser.Id, LoginPage.ProductToBuy.Id, DateTime.Now.ToString(), abonosPick.SelectedIndex);
+
+                    Application.Current.MainPage = new NavigationPage(new ProductsView.Menu(currentUser));
+
                 }
                 else
                 {
